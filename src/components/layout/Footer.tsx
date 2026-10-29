@@ -3,7 +3,7 @@ import { CookieSettingsLink } from "@/components/ads/CookieSettingsLink";
 import { AMAZON_DISCLOSURE, ETSY_DISCLOSURE } from "@/lib/liens";
 import { siteConfig } from "@/lib/config";
 import { EmailLink } from "./EmailLink";
-import { Logo } from "./Logo";
+import { LogoComplet } from "./Logo";
 import { RUBRIQUES_NAV, SECONDARY_NAV } from "./nav";
 
 export function Footer() {
@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-line bg-surface">
       <div className="container-page grid gap-10 py-12 text-sm sm:grid-cols-3">
         <div>
-          <Logo className="text-[34px]" />
+          <LogoComplet className="w-52" />
           <p className="mt-3 max-w-xs text-muted">{siteConfig.tagline}, l&apos;art sénégalais de la séduction, raconté avec élégance.</p>
         </div>
         <nav aria-label="Rubriques" className="flex flex-col gap-2.5">

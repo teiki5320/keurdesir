@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * Habillage provisoire « Keur Désir » : fond crème chaud, encre brun profond, accent grenat et touche d'or.
+ * Habillage « Keur Désir » : fond crème chaud, encre brun profond, rouge et or du logo (docs/logos).
  * Grande serif (Cormorant Garamond) pour les titres, Geist pour le texte. Visuels sobres : matières et couleurs.
  */
 @theme {
@@ -12,8 +12,8 @@
   --color-faint: #7d6b62;
   --color-line: #e6d9ca;
   --color-line-strong: #cdb9a5;
-  --color-accent: #8f2a3e;
-  --color-gold: #a67a2c;
+  --color-accent: #b3141f;
+  --color-gold: #a06c25;
   --font-sans: var(--font-geist), system-ui, sans-serif;
   --font-serif: var(--font-cormorant), Georgia, serif;
 }
@@ -93,12 +93,12 @@ body {
 .visuel {
   background: linear-gradient(150deg, var(--v1), var(--v2));
 }
-.visuel-djongue { --v1: #8f2a3e; --v2: #4a1621; }
-.visuel-bine-bine { --v1: #c9973f; --v2: #8f2a3e; }
+.visuel-djongue { --v1: #b3141f; --v2: #5a0a10; }
+.visuel-bine-bine { --v1: #c9973f; --v2: #b3141f; }
 .visuel-thiouraye-encens { --v1: #7a5a3a; --v2: #3b2a1e; }
 .visuel-encensoirs { --v1: #a0603a; --v2: #4f2c1b; }
 .visuel-karite-soins { --v1: #c8a46a; --v2: #8a6a3a; }
-.visuel-tenues-de-nuit { --v1: #3d4f7a; --v2: #8f2a3e; }
+.visuel-tenues-de-nuit { --v1: #3d4f7a; --v2: #b3141f; }
 .visuel-coffrets-cadeaux { --v1: #a67a2c; --v2: #5b3a14; }
 
 /* Visiteurs qui ont demandé moins d'animations : transitions et animations coupées. */

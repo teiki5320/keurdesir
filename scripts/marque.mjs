@@ -1,30 +1,81 @@
 /**
- * Images de marque provisoires (en attendant le logo définitif), créées à la main :
+ * Images de marque, à partir du logo de Jean (docs/logos/keurdesir-logo-fond-blanc.png), à relancer à la main :
  *   node scripts/marque.mjs
- * → public/brand/keurdesir-partage.jpg (1200 × 630), public/brand/keurdesir-logo.png (512 px),
+ * Le fond blanc est rendu transparent (remplissage depuis les bords, les dents blanches restent opaques).
+ * → public/brand/keurdesir-logo.webp (logo complet, pied de page), public/brand/keurdesir-embleme.webp (lèvres, en-tête),
+ *   public/brand/keurdesir-logo.png (données structurées), public/brand/keurdesir-partage.jpg (1200 × 630),
  *   src/app/icon.png (512 px) et src/app/apple-icon.png (180 px).
  */
 import sharp from "sharp";
 
+const SOURCE = "docs/logos/keurdesir-logo-fond-blanc.png";
 const CREME = "#f7f0e6";
-const GRENAT = "#8f2a3e";
-const ENCRE = "#2b1d1a";
-const OR = "#a67a2c";
 
-const partage = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
-  <rect width="1200" height="630" fill="${CREME}"/>
-  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="${OR}" stroke-width="2"/>
-  <text x="600" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="130" fill="${ENCRE}">Keur <tspan fill="${GRENAT}" font-style="italic">Désir</tspan></text>
-  <text x="600" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="${ENCRE}" font-style="italic">Le guide du djongué</text>
-</svg>`;
+/** Logo sur fond transparent : les pixels clairs reliés au bord deviennent transparents (fondu sur les contours). */
+async function detourer() {
+  const { data, info } = await sharp(SOURCE).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  const clair = (i) => Math.min(data[i * 4], data[i * 4 + 1], data[i * 4 + 2]);
+  const vu = new Uint8Array(w * h);
+  const pile = [];
+  for (let x = 0; x < w; x++) pile.push(x, (h - 1) * w + x);
+  for (let y = 0; y < h; y++) pile.push(y * w, y * w + w - 1);
+  while (pile.length) {
+    const i = pile.pop();
+    if (vu[i] || clair(i) < 200) continue;
+    vu[i] = 1;
+    // Presque blanc : transparent ; gris clair des contours : à demi transparent.
+    data[i * 4 + 3] = Math.round(Math.max(0, Math.min(255, ((245 - clair(i)) / 45) * 255)));
+    const x = i % w;
+    if (x > 0) pile.push(i - 1);
+    if (x < w - 1) pile.push(i + 1);
+    if (i >= w) pile.push(i - w);
+    if (i < w * (h - 1)) pile.push(i + w);
+  }
+  return sharp(data, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer();
+}
 
-const embleme = (taille) => `<svg xmlns="http://www.w3.org/2000/svg" width="${taille}" height="${taille}" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="96" fill="${GRENAT}"/>
-  <text x="256" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="250" fill="${CREME}">K<tspan font-style="italic">d</tspan></text>
-</svg>`;
+/** Garde seulement la tache qui part du centre de l'image (les lèvres) : les morceaux de lettres coupés disparaissent. */
+async function garderLePlusGrand(png) {
+  const { data, info } = await sharp(png).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  const garde = new Uint8Array(w * h);
+  const pile = [Math.floor(h / 2) * w + Math.floor(w / 2)];
+  while (pile.length) {
+    const i = pile.pop();
+    if (garde[i] || data[i * 4 + 3] < 200) continue;
+    garde[i] = 1;
+    const x = i % w;
+    if (x > 0) pile.push(i - 1);
+    if (x < w - 1) pile.push(i + 1);
+    if (i >= w) pile.push(i - w);
+    if (i < w * (h - 1)) pile.push(i + w);
+  }
+  for (let i = 0; i < w * h; i++) if (!garde[i]) data[i * 4 + 3] = 0;
+  return sharp(data, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer();
+}
 
-await sharp(Buffer.from(partage)).jpeg({ quality: 88 }).toFile("public/brand/keurdesir-partage.jpg");
-await sharp(Buffer.from(embleme(512))).png().toFile("public/brand/keurdesir-logo.png");
-await sharp(Buffer.from(embleme(512))).png().toFile("src/app/icon.png");
-await sharp(Buffer.from(embleme(512))).resize(180).png().toFile("src/app/apple-icon.png");
+const logo = await detourer();
+const { width, height } = await sharp(logo).metadata();
+// Lèvres seules : la partie haute du logo, coupée juste sous la lèvre inférieure (68 % de la hauteur, mesuré sur le logo).
+const coupe = Math.round(height * 0.676);
+const haut = await sharp(logo).extract({ left: 0, top: 0, width, height: coupe }).png().toBuffer();
+const levres = await sharp(await garderLePlusGrand(haut)).trim({ threshold: 1 }).png().toBuffer();
+
+await sharp(logo).trim({ threshold: 1 }).resize({ width: 480 }).webp({ quality: 88 }).toFile("public/brand/keurdesir-logo.webp");
+await sharp(logo).trim({ threshold: 1 }).resize({ width: 512 }).png().toFile("public/brand/keurdesir-logo.png");
+await sharp(levres).resize({ height: 96 }).webp({ quality: 88 }).toFile("public/brand/keurdesir-embleme.webp");
+
+const carre = async (taille, marge) => {
+  const l = await sharp(levres).resize({ width: taille - 2 * marge }).png().toBuffer();
+  return sharp({ create: { width: taille, height: taille, channels: 4, background: CREME } }).composite([{ input: l, gravity: "center" }]).png();
+};
+await (await carre(512, 40)).toFile("src/app/icon.png");
+await (await carre(180, 14)).toFile("src/app/apple-icon.png");
+
+const pourPartage = await sharp(logo).trim({ threshold: 1 }).resize({ height: 540 }).png().toBuffer();
+await sharp({ create: { width: 1200, height: 630, channels: 4, background: CREME } })
+  .composite([{ input: pourPartage, gravity: "center" }])
+  .jpeg({ quality: 88 })
+  .toFile("public/brand/keurdesir-partage.jpg");
 console.log("Images de marque créées.");

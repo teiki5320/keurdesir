@@ -23,15 +23,16 @@ Détail de chaque page : docs/CONTENU.md. Plan validé : docs/PLAN.md.
 
 ## Logo
 
-Provisoire, en lettres (« Keur *Désir* ») : `src/components/layout/Logo.tsx` ; images de partage et icônes créées par `node scripts/marque.mjs`.
+Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux dans `docs/logos/`. `node scripts/marque.mjs` en tire le logo détouré, l'emblème de l'en-tête, l'icône et l'image de partage ; composant `src/components/layout/Logo.tsx`.
 
 ## Où sont les contenus
 
 - Rubriques : `src/lib/rubriques.ts`
-- Produits : `src/lib/catalogue/produits.ts` (aucun au 29 octobre 2026)
-- Top 10 : `src/lib/top10/sujets.ts` (aucun au 29 octobre 2026)
-- Articles : `content/conseils/<slug>.md` (aucun au 29 octobre 2026)
-- Lexique : `src/lib/lexique.ts` (vide au 29 octobre 2026)
+- Produits : `src/lib/catalogue/<rubrique>.ts`, réunis par `produits.ts` (106 au 29 octobre 2026)
+- Top 10 : `src/lib/top10/*.ts`, réunis par `sujets.ts` (10 au 29 octobre 2026)
+- Articles : `content/conseils/<slug>.md` (5 programmés du 30 octobre au 9 novembre 2026)
+- Guides des rubriques : `content/rubriques/<slug>.md` (7)
+- Lexique : `src/lib/lexique.ts` (18 mots)
 
 ## Liens partenaires
 
@@ -78,6 +79,7 @@ la liste d'envies et les pages légales. Consentement par le bandeau de Google.
 
 ## État de la mise en route (29 octobre 2026)
 
-- ✅ Plan validé, base technique prête, contrôles au vert (30 tests, 14 vérifications du site construit).
-- ⬜ Dépôt GitHub, projet Cloudflare Pages et domaine : à faire.
-- ⬜ Contenus de lancement : à écrire.
+- ✅ Plan validé, base technique prête, contrôles au vert (33 tests, 14 vérifications du site construit).
+- ✅ Contenus de lancement écrits (106 produits, 10 Top 10, 7 guides, lexique, 5 articles programmés).
+- ✅ Dépôt GitHub public teiki5320/keurdesir (29 octobre 2026).
+- ⬜ Projet Cloudflare Pages, secrets GitHub et domaine : à faire.

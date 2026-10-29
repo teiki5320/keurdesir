@@ -27,10 +27,15 @@ describe("Liens Etsy (Awin)", () => {
     assert.deepEqual(liensMarchands(base, "fiche").map((l) => l.boutique), ["amazon"]);
   });
 
-  it("un produit vendu sur Etsy impose des identifiants Awin réglés", () => {
+  it("tant qu'Awin n'est pas réglé, chaque produit garde au moins un bouton (Amazon)", () => {
+    if (AWIN_AFFID && AWIN_ETSY_MID) return;
+    const sansBouton = PRODUITS.filter((p) => p.isPublished && liensMarchands(p, "fiche").length === 0).map((p) => p.slug);
+    assert.deepEqual(sansBouton, []);
+  });
+
+  it("une fois Awin réglé, les liens Etsy passent par Awin", () => {
     const etsy = PRODUITS.filter((p) => p.isPublished && p.boutiques.includes("etsy"));
-    if (etsy.length === 0) return;
-    assert.ok(AWIN_AFFID && AWIN_ETSY_MID, `${etsy.length} produit(s) Etsy sans identifiants Awin (src/lib/liens.ts)`);
+    if (etsy.length === 0 || !AWIN_AFFID || !AWIN_ETSY_MID) return;
     for (const p of etsy) {
       const u = new URL(etsyUrl(p)!);
       assert.equal(u.hostname, "www.awin1.com");

@@ -14,9 +14,9 @@ uniquement des noms de variables et de consoles.
 
 ## Parcours
 
-- 🌐 **Web** : 🐙 GitHub — dépôt teiki5320/keurdesir [à faire] → ⚙️ GitHub Actions — lint, types, tests, build, contrôle du site construit [ok] → ☁️ Cloudflare Pages — projet keurdesir [à faire] → 🌍 keurdesir.com — domaine sur Cloudflare, pas encore relié [à faire]
-- 📝 **Contenu** : ✍️ Articles — 0 publié [pas encore] → ⚙️ GitHub Actions — publiera lundi, mercredi, vendredi [ok] → 📡 IndexNow — clé prête [ok] → 🔍 Google — Search Console à ouvrir [pas encore]
-- 🛒 **Affiliation** : 🛍️ Fiche produit — boutons « Voir sur Amazon » et « Voir sur Etsy » [ok] → 🛒 Amazon Partenaires — tag keurdesir-21 [ok] → 🧵 Etsy via Awin — identifiants Awin à régler [à faire] → 🔗 Produits — 0 au catalogue [pas encore]
+- 🌐 **Web** : 🐙 GitHub — dépôt public teiki5320/keurdesir, main [ok] → ⚙️ GitHub Actions — lint, types, tests, build, contrôle du site construit au vert ; publication arrêtée faute de secrets Cloudflare [à faire] → ☁️ Cloudflare Pages — projet keurdesir [à faire] → 🌍 keurdesir.com — domaine sur Cloudflare, pas encore relié [à faire]
+- 📝 **Contenu** : ✍️ Articles — 5 programmés (30 octobre au 9 novembre 2026), 7 guides de rubrique, lexique de 18 mots [ok] → ⚙️ GitHub Actions — publiera lundi, mercredi, vendredi [ok] → 📡 IndexNow — clé prête [ok] → 🔍 Google — Search Console à ouvrir [pas encore]
+- 🛒 **Affiliation** : 🛍️ Fiche produit — boutons « Voir sur Amazon » et « Voir sur Etsy » [ok] → 🛒 Amazon Partenaires — tag keurdesir-21 [ok] → 🧵 Etsy via Awin — identifiants Awin à régler [à faire] → 🔗 Produits — 106 au catalogue, 10 Top 10 ; aucun ASIN vérifié encore (liens de recherche) [en cours]
 - 📰 **Publicité** : 📰 AdSense — script en place (même compte que les autres sites), 3 blocs à créer [à faire] → ✅ Validation du site [pas encore] → 💶 Revenus [pas encore]
 
 ## Vue d'ensemble
@@ -25,7 +25,7 @@ uniquement des noms de variables et de consoles.
 - **Stack** : Next.js 16 (export statique) + React 19 + Tailwind CSS 4, TypeScript, Marked pour les articles Markdown. Base technique reprise de Keurbook (structure et code seulement, aucun contenu).
 - **Données** : rubriques dans `src/lib/rubriques.ts` (7), produits dans `src/lib/catalogue/produits.ts`, Top 10 dans `src/lib/top10/sujets.ts`, lexique dans `src/lib/lexique.ts`, articles dans `content/conseils/`.
 - **Backend** : aucun. La liste d'envies reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense, après accord.
-- **Taille** : 15 pages construites au 29 octobre 2026 (accueil, 7 rubriques, Top 10, articles, lexique, à propos, mes envies, 3 pages légales) ; aucun produit, article ni Top 10 encore.
+- **Taille** : 134 pages construites au 29 octobre 2026, dont 130 dans le sitemap (accueil, 7 rubriques avec leur guide, 10 Top 10, 106 fiches produits, lexique de 18 mots, à propos, 3 pages légales) ; 5 articles programmés du 30 octobre au 9 novembre 2026. Le matin du 29 octobre, avant les contenus : 15 pages.
 - **Particularités** : interrupteur de maintenance (`content/maintenance.json`, désactivé) ; test des mots interdits (`tests/mots-interdits.test.ts`) ; contrôle du site construit (`tests/sortie/`) ; listes vides en noindex et hors sitemap.
 
 ## GitHub
@@ -34,8 +34,8 @@ uniquement des noms de variables et de consoles.
   - `deploy.yml` (« Publier le site ») : lint, types, tests, build, contrôle du site construit, puis publication sur Cloudflare Pages à chaque push sur `main`, chaque lundi, mercredi et vendredi à 23 h 15 UTC la veille (articles programmés) et à la main ; vérifie ensuite que `https://keurdesir.com/version.txt` sert la nouvelle version ;
   - `indexnow.yml` : signale le sitemap à IndexNow après chaque publication réussie et chaque lundi ;
   - `maintenance.yml` : met le site en pause ou le rouvre, puis republie.
-- **Console** : https://github.com/teiki5320/keurdesir (dépôt pas encore créé au 29 octobre 2026)
-- **Secrets** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`, à régler dans les secrets Actions du dépôt.
+- **Console** : https://github.com/teiki5320/keurdesir (dépôt public créé le 29 octobre 2026). Première publication du 29 octobre 2026 : tous les contrôles au vert, arrêt à l'étape des secrets Cloudflare (absents).
+- **Secrets** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`, à régler dans les secrets Actions du dépôt (pas encore réglés au 29 octobre 2026).
 
 ## Hébergement web (Cloudflare Pages)
 

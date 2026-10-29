@@ -23,7 +23,7 @@ Base technique reprise de Keurbook : Next.js 16 en export statique (`out/`), Tai
 | 15 | `/mentions-legales`, `/confidentialite`, `/conditions` | Pages légales | oui |
 | 16 | `sitemap.xml`, `robots.txt`, 404 | Technique | — |
 
-Pas de rubrique « Actus » au départ (la veille de Keurbook est propre aux livres) ; elle pourra venir plus tard.
+Pas de rubrique « Actus » ni de veille d'actualités (la veille de Keurbook est propre aux livres) : écartée par Jean le 29/10/2026, ne pas la reproposer.
 
 ## 2. Modèles de pages
 

@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/*
+ * Habillage provisoire « Keur Désir » : fond crème chaud, encre brun profond, accent grenat et touche d'or.
+ * Grande serif (Cormorant Garamond) pour les titres, Geist pour le texte. Visuels sobres : matières et couleurs.
+ */
+@theme {
+  --color-paper: #f7f0e6;
+  --color-surface: #fdf9f3;
+  --color-ink: #2b1d1a;
+  --color-muted: #6c5a52;
+  --color-faint: #7d6b62;
+  --color-line: #e6d9ca;
+  --color-line-strong: #cdb9a5;
+  --color-accent: #8f2a3e;
+  --color-gold: #a67a2c;
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+.font-serif {
+  font-weight: 500;
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+@utility btn-primary {
+  @apply btn bg-accent text-paper hover:bg-ink;
+}
+@utility btn-secondary {
+  @apply btn border border-line-strong bg-transparent font-medium text-ink hover:border-ink;
+}
+@utility tag {
+  @apply inline-flex min-h-11 items-center rounded-full border border-line-strong px-4 text-[13px] text-ink/85 hover:border-ink hover:text-ink;
+}
+@utility section-title {
+  @apply font-serif text-[32px] leading-none sm:text-4xl;
+}
+@utility eyebrow {
+  @apply text-[11px] tracking-[0.14em] text-accent uppercase;
+}
+
+@utility prose-text {
+  @apply max-w-3xl text-[17px] leading-[1.75] text-ink/85;
+  & h2 {
+    @apply mt-10 mb-3 scroll-mt-24 font-serif text-[32px] leading-tight text-ink;
+  }
+  & h3 {
+    @apply mt-8 mb-2 font-serif text-2xl leading-tight text-ink;
+  }
+  & p,
+  & ul,
+  & ol {
+    @apply mb-4;
+  }
+  & ul {
+    @apply list-disc pl-6;
+  }
+  & ol {
+    @apply list-decimal pl-6;
+  }
+  & a {
+    @apply text-accent underline underline-offset-2 hover:text-ink;
+  }
+  & strong {
+    @apply font-semibold text-ink;
+  }
+  & blockquote {
+    @apply my-6 border-l-2 border-gold pl-5 font-serif text-xl text-ink italic;
+  }
+}
+
+/* Tuiles des produits sans illustration : une couleur par rubrique (matières, pas de corps). */
+.visuel {
+  background: linear-gradient(150deg, var(--v1), var(--v2));
+}
+.visuel-djongue { --v1: #8f2a3e; --v2: #4a1621; }
+.visuel-bine-bine { --v1: #c9973f; --v2: #8f2a3e; }
+.visuel-thiouraye-encens { --v1: #7a5a3a; --v2: #3b2a1e; }
+.visuel-encensoirs { --v1: #a0603a; --v2: #4f2c1b; }
+.visuel-karite-soins { --v1: #c8a46a; --v2: #8a6a3a; }
+.visuel-tenues-de-nuit { --v1: #3d4f7a; --v2: #8f2a3e; }
+.visuel-coffrets-cadeaux { --v1: #a67a2c; --v2: #5b3a14; }
+
+/* Visiteurs qui ont demandé moins d'animations : transitions et animations coupées. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Emplacements d'annonces AdSense (composant AdSlot) : cadre neutre, mention « Publicité » toujours visible,
+   affiché seulement quand Google a placé une annonce. Différent des boutons marchands (pas de fond, pas de bouton). */
+.ad-slot {
+  margin-block: 3rem;
+  border-block: 1px solid var(--color-line);
+  padding-block: 0.75rem;
+}
+.ad-slot-label {
+  margin-bottom: 0.5rem;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+/* Replié tant que Google n'a pas placé d'annonce : jamais de case vide.
+   Pas de display: none, sinon Google ne peut pas mesurer la largeur disponible et ne place rien. */
+.ad-slot:not(:has(ins.adsbygoogle[data-ad-status="filled"])) {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}

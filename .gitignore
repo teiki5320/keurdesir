@@ -1,7 +1,29 @@
-node_modules/
-.next/
-out/
-.env
-.env.local
+# dépendances
+/node_modules
+
+# next.js
+/.next/
+/out/
+/build
+
+# divers
 .DS_Store
+*.pem
+npm-debug.log*
+
+# variables d'environnement (seul l'exemple est suivi)
+.env*
+!.env.example
+
+# typescript
 *.tsbuildinfo
+next-env.d.ts
+
+# dossiers de travail locaux
+/.claude/
+
+# vignettes d'images, générées avant le build (scripts/vignettes.mjs)
+/public/produits/w300/
+/public/produits/w600/
+/public/conseils/w400/
+/public/conseils/w800/

@@ -1,0 +1,106 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { EmailLink } from "@/components/layout/EmailLink";
+import { LegalPage } from "@/components/layout/LegalPage";
+import { legalConfig, siteConfig } from "@/lib/config";
+import { AMAZON_DISCLOSURE, ETSY_DISCLOSURE } from "@/lib/liens";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Mentions légales",
+  description: "Éditeur et hébergeur du site Keur Désir, données personnelles, publicité, liens Amazon et Etsy, illustrations et limites de responsabilité.",
+  path: "/mentions-legales",
+});
+
+export default function LegalNoticePage() {
+  const l = legalConfig;
+  return (
+    <LegalPage title="Mentions légales" updated="29 octobre 2026">
+      <p>
+        Informations sur l&apos;éditeur et l&apos;hébergeur du site, l&apos;usage de vos données et les limites des
+        informations publiées (loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique).
+      </p>
+
+      <h2>Éditeur du site</h2>
+      <ul>
+        <li>
+          Éditeur : {l.companyName}, {l.legalForm}, exerçant sous le nom commercial {l.tradeName}, qui publie le site {siteConfig.name}.
+        </li>
+        <li>Siège social : {l.address}.</li>
+        <li>Immatriculation : {l.rcs} (SIRET {l.siret}).</li>
+        <li>N° de TVA intracommunautaire : {l.vat}.</li>
+        <li>Directeur de la publication : {l.director}.</li>
+        {l.phone && <li>Téléphone : {l.phone}.</li>}
+        <li>
+          Contact : <EmailLink email={siteConfig.contactEmail} />.
+        </li>
+      </ul>
+
+      <h2>Hébergeur</h2>
+      <p>{l.host}.</p>
+
+      <h2>Données personnelles et cookies</h2>
+      <ul>
+        <li>
+          Aucun compte n&apos;est nécessaire. Le site ne dépose lui-même aucun cookie ; seuls les cookies de la publicité
+          Google sont déposés, et uniquement si vous les acceptez dans le bandeau de consentement (lien « Gérer mes cookies »
+          en bas de chaque page pour changer d&apos;avis).
+        </li>
+        <li>
+          Votre liste d&apos;envies est mémorisée dans le stockage local de votre navigateur, uniquement sur votre appareil.
+          Elle n&apos;est transmise à personne. Vous pouvez l&apos;effacer en vidant les données du site dans votre navigateur.
+        </li>
+        <li>
+          Le partage de la liste place les produits choisis dans l&apos;adresse de la page : ils ne sont transmis qu&apos;aux
+          personnes à qui vous envoyez ce lien.
+        </li>
+        <li>L&apos;hébergeur peut enregistrer des journaux techniques (adresse IP, date, page demandée) pour la sécurité du service.</li>
+        <li>
+          Conformément au RGPD, vous pouvez exercer vos droits d&apos;accès, de rectification et d&apos;effacement auprès de
+          l&apos;éditeur, à l&apos;adresse de contact ci-dessus. Le détail figure dans la{" "}
+          <Link href="/confidentialite">politique de confidentialité</Link>.
+        </li>
+      </ul>
+
+      <h2>Publicité</h2>
+      <p>
+        Pour financer le site, certaines pages affichent des annonces fournies par Google AdSense. Elles sont toujours
+        signalées par la mention « Publicité » et séparées des contenus et des liens partenaires. L&apos;éditeur ne choisit
+        pas les annonces une à une : leur présence ne vaut pas recommandation. Les catégories d&apos;annonces inadaptées à un
+        site tout public sont bloquées. Le détail figure dans la <Link href="/confidentialite#publicite">politique de confidentialité</Link>.
+      </p>
+
+      <h2>Liens partenaires (Amazon et Etsy)</h2>
+      <p>
+        Les boutons « Voir sur Amazon » sont des liens d&apos;affiliation du programme Partenaires d&apos;Amazon.fr.{" "}
+        {AMAZON_DISCLOSURE} Les boutons « Voir sur Etsy » passent par la plateforme d&apos;affiliation Awin. {ETSY_DISCLOSURE}
+      </p>
+      <p>
+        Le prix payé est le même pour l&apos;acheteur. Le site ne vend aucun produit : la vente, la livraison et le service
+        client relèvent d&apos;Amazon, d&apos;Etsy ou du vendeur. Aucun prix n&apos;est affiché ni garanti : seul le prix
+        indiqué sur la boutique au moment de l&apos;achat fait foi. Le choix des produits repose sur leur qualité et leur
+        intérêt, pas sur le montant des commissions.
+      </p>
+
+      <h2>Propriété intellectuelle et images</h2>
+      <ul>
+        <li>
+          Les textes du site (présentations, fiches, articles, lexique) sont rédigés par l&apos;éditeur et lui
+          appartiennent, sauf mention contraire. Toute reproduction sans autorisation est interdite.
+        </li>
+        <li>
+          Les visuels sont des <strong>illustrations créées par intelligence artificielle</strong> pour {siteConfig.name} :
+          ils montrent des matières, des couleurs et des ambiances, et non les produits exacts vendus par les boutiques.
+        </li>
+        <li>Pour toute demande de retrait ou de correction, écrivez à l&apos;adresse de contact.</li>
+      </ul>
+
+      <h2>Limites de responsabilité</h2>
+      <p>
+        Les informations sur les produits et les traditions sont vérifiées avec soin, mais peuvent comporter des erreurs ou
+        évoluer. Les produits présentés sont des produits de beauté, de décoration et de confort : ils ne remplacent aucun
+        avis médical. N&apos;hésitez pas à nous signaler une erreur à l&apos;adresse de contact.
+      </p>
+    </LegalPage>
+  );
+}

@@ -8,13 +8,13 @@ uniquement des noms de variables et de consoles.
 - **Plateforme** : site web éditorial, en français, sur ordinateur et mobile
 - **Stack** : Next.js 16 en export statique, React 19, Tailwind CSS 4
 - **Backend** : aucun — site statique, sans base ni compte
-- **Distribution** : Cloudflare Pages, publié par GitHub Actions (pas encore branché)
-- **Site** : keurdesir.com — pas encore en ligne
+- **Distribution** : Cloudflare Pages, publié par GitHub Actions (branché le 29 octobre 2026)
+- **Site** : https://keurdesir.com — en ligne depuis le 29 octobre 2026
 - **IA et outils** : IndexNow (prêt), contrôle des mots interdits avant chaque publication
 
 ## Parcours
 
-- 🌐 **Web** : 🐙 GitHub — dépôt public teiki5320/keurdesir, main [ok] → ⚙️ GitHub Actions — lint, types, tests, build, contrôle du site construit au vert ; publication arrêtée faute de secrets Cloudflare [à faire] → ☁️ Cloudflare Pages — projet keurdesir [à faire] → 🌍 keurdesir.com — domaine sur Cloudflare, pas encore relié [à faire]
+- 🌐 **Web** : 🐙 GitHub — dépôt public teiki5320/keurdesir, main [ok] → ⚙️ GitHub Actions — lint, types, tests, build, contrôle du site construit au vert, publication [ok] → ☁️ Cloudflare Pages — projet keurdesir [ok] → 🌍 keurdesir.com — relié le 29 octobre 2026 [ok] ; www en cours d'activation
 - 📝 **Contenu** : ✍️ Articles — 5 programmés (30 octobre au 9 novembre 2026), 7 guides de rubrique, lexique de 18 mots [ok] → ⚙️ GitHub Actions — publiera lundi, mercredi, vendredi [ok] → 📡 IndexNow — clé prête [ok] → 🔍 Google — Search Console à ouvrir [pas encore]
 - 🛒 **Affiliation** : 🛍️ Fiche produit — boutons « Voir sur Amazon » et « Voir sur Etsy » [ok] → 🛒 Amazon Partenaires — tag keurdesir-21 [ok] → 🧵 Etsy via Awin — identifiants Awin à régler [à faire] → 🔗 Produits — 106 au catalogue, 10 Top 10 ; 49 liens directs amazon.fr/dp (ASIN relevés le 29 octobre 2026 dans `src/lib/catalogue/asins.json`), 57 liens de recherche [en cours]
 - 📰 **Publicité** : 📰 AdSense — script en place (même compte que les autres sites), 3 blocs à créer [à faire] → ✅ Validation du site [pas encore] → 💶 Revenus [pas encore]
@@ -34,18 +34,18 @@ uniquement des noms de variables et de consoles.
   - `deploy.yml` (« Publier le site ») : lint, types, tests, build, contrôle du site construit, puis publication sur Cloudflare Pages à chaque push sur `main`, chaque lundi, mercredi et vendredi à 23 h 15 UTC la veille (articles programmés) et à la main ; vérifie ensuite que `https://keurdesir.com/version.txt` sert la nouvelle version ;
   - `indexnow.yml` : signale le sitemap à IndexNow après chaque publication réussie et chaque lundi ;
   - `maintenance.yml` : met le site en pause ou le rouvre, puis republie.
-- **Console** : https://github.com/teiki5320/keurdesir (dépôt public créé le 29 octobre 2026). Première publication du 29 octobre 2026 : tous les contrôles au vert, arrêt à l'étape des secrets Cloudflare (absents).
-- **Secrets** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`, à régler dans les secrets Actions du dépôt (pas encore réglés au 29 octobre 2026).
+- **Console** : https://github.com/teiki5320/keurdesir (dépôt public créé le 29 octobre 2026). Le 29 octobre 2026, les premières publications se sont arrêtées faute de secrets Cloudflare ; une fois les secrets réglés, le site a été publié le même jour.
+- **Secrets** : `CLOUDFLARE_API_TOKEN` (jeton « GitHub keurdesir », Cloudflare Pages · Modifier) et `CLOUDFLARE_ACCOUNT_ID`, réglés dans les secrets Actions du dépôt le 29 octobre 2026.
 
 ## Hébergement web (Cloudflare Pages)
 
-- **Fournisseur** : Cloudflare Pages, projet `keurdesir` (à créer), publié par `wrangler` depuis `deploy.yml`.
+- **Fournisseur** : Cloudflare Pages, projet `keurdesir` (créé le 29 octobre 2026), publié par `wrangler` depuis `deploy.yml`.
 - **En-têtes** : `public/_headers` (politique de sécurité limitée au site et à Google AdSense, HSTS, noindex sur `*.pages.dev` et sur les `.txt` internes).
 - **Redirections** : `public/_redirects`.
 
 ## Nom de domaine
 
-- **keurdesir.com**, géré sur le Cloudflare de Jean. À relier au projet Pages (domaine personnalisé + www redirigé).
+- **keurdesir.com**, géré sur le Cloudflare de Jean. Relié au projet Pages le 29 octobre 2026 : `keurdesir.com` et `www.keurdesir.com` en domaines personnalisés (CNAME vers `keurdesir.pages.dev`).
 
 ## Amazon Partenaires
 

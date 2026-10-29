@@ -70,7 +70,7 @@ npm run dev
 ## Publication
 
 GitHub Actions (`.github/workflows/deploy.yml`) : à chaque push sur `main` et chaque lundi, mercredi, vendredi (articles programmés),
-puis IndexNow. Secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` à régler dans GitHub.
+puis IndexNow. Secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` réglés dans GitHub (29 octobre 2026).
 
 ## Publicité
 
@@ -82,4 +82,4 @@ la liste d'envies et les pages légales. Consentement par le bandeau de Google.
 - ✅ Plan validé, base technique prête, contrôles au vert (33 tests, 14 vérifications du site construit).
 - ✅ Contenus de lancement écrits (106 produits, 10 Top 10, 7 guides, lexique, 5 articles programmés).
 - ✅ Dépôt GitHub public teiki5320/keurdesir (29 octobre 2026).
-- ⬜ Projet Cloudflare Pages, secrets GitHub et domaine : à faire.
+- ✅ Projet Cloudflare Pages, secrets GitHub et domaine : site en ligne sur https://keurdesir.com depuis le 29 octobre 2026.

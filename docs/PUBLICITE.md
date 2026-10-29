@@ -23,6 +23,6 @@ Mis à jour le 29 octobre 2026. Modèle : Keurbook (docs/PUBLICITE.md).
   Sans identifiant, l'emplacement n'affiche rien.
 - Habillage : classes `.ad-slot` et `.ad-slot-label` dans `src/app/globals.css`. Mention « Publicité » toujours visible ;
   l'emplacement se replie si Google n'a pas d'annonce.
-- Validation du site : pas encore demandée au 29 octobre 2026. Les visuels produits sont en ligne depuis le 29 octobre 2026 ;
-  la demande est à faire quand les premiers articles seront parus (Keurbook a été refusé le 21 octobre 2026 pour « contenu à faible valeur informative »).
+- Validation du site : examen demandé le 29 octobre 2026 à la demande de Jean (site ajouté dans AdSense et propriété validée le même jour), en cours. Site « En préparation » dans AdSense. Au moment de la demande, les 106 visuels
+  produits étaient en ligne et le premier article paraissait le 30 octobre (Keurbook a été refusé le 21 octobre 2026 pour « contenu à faible valeur informative »).
   Tant que le site n'est pas validé, aucune annonce ne s'affiche.

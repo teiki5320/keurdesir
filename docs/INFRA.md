@@ -45,7 +45,7 @@ uniquement des noms de variables et de consoles.
 
 ## Nom de domaine
 
-- **keurdesir.com**, géré sur le Cloudflare de Jean. Relié au projet Pages le 29 octobre 2026 : `keurdesir.com` et `www.keurdesir.com` en domaines personnalisés (CNAME vers `keurdesir.pages.dev`). Règles Cloudflare du 29 octobre 2026 : redirection 301 de www vers keurdesir.com ; pages HTML gardées 10 min en cache (« Pages HTML en cache 10 min »).
+- **keurdesir.com**, géré sur le Cloudflare de Jean. Relié au projet Pages le 29 octobre 2026 : `keurdesir.com` et `www.keurdesir.com` en domaines personnalisés (CNAME vers `keurdesir.pages.dev`). Règles Cloudflare du 29 octobre 2026 : redirection 301 de www vers keurdesir.com ; pages HTML gardées 10 min en cache (« Pages HTML en cache 10 min »). Cache du navigateur : « Respecter les en-têtes existants » (réglé le 29 octobre 2026 ; avant, 4 h par défaut), donc les pages suivent `public/_headers` et les navigateurs revérifient à chaque visite.
 
 ## Amazon Partenaires
 

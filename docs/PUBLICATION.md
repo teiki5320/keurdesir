@@ -46,7 +46,7 @@
 
 ## Domaine & SSL
 
-- keurdesir.com, zone DNS sur Cloudflare : CNAME `keurdesir.com` et `www` vers `keurdesir.pages.dev`, reliés au projet Pages le 29 octobre 2026. Règles Cloudflare du même jour : redirection 301 de www vers keurdesir.com, et pages HTML en cache 10 min.
+- keurdesir.com, zone DNS sur Cloudflare : CNAME `keurdesir.com` et `www` vers `keurdesir.pages.dev`, reliés au projet Pages le 29 octobre 2026. Règles Cloudflare du même jour : redirection 301 de www vers keurdesir.com, et pages HTML en cache 10 min. Cache du navigateur : « Respecter les en-têtes existants » (réglé le 29 octobre 2026 ; avant, 4 h par défaut), donc les pages suivent `public/_headers` et les navigateurs revérifient à chaque visite.
 
 ## Visibilité
 

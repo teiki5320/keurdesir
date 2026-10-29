@@ -29,10 +29,10 @@
 3. ✅ **Dépôt GitHub** : teiki5320/keurdesir, public, créé le 29 octobre 2026 ; `main` poussé. La première publication automatique a passé tous les contrôles et s'est arrêtée faute de secrets Cloudflare.
 4. ✅ **Cloudflare** : projet Pages `keurdesir` créé, secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` réglés, keurdesir.com et www.keurdesir.com reliés, le 29 octobre 2026. Site en ligne le même jour.
 5. ✅ **Contenus de lancement** (29 octobre 2026) : 106 produits, 10 Top 10, 7 guides de rubrique, lexique de 18 mots et 5 articles du djongué programmés du 30 octobre au 9 novembre.
-6. **Produits Amazon** : 49 liens directs le 29 octobre 2026 (ASIN relevés sur amazon.fr), 57 liens de recherche ; reste à contrôler le bouton d'achat (`npm run verifier-produits`) et à compléter les autres.
-7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps).
+6. **Produits Amazon** : 49 liens directs le 29 octobre 2026 (ASIN relevés sur amazon.fr), 57 liens de recherche ; contrôle du bouton d'achat dans la routine du matin depuis le 29 octobre 2026 (signalement seulement) ; reste à compléter les autres.
+7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps). 3 visuels produits sur 106 le 29 octobre 2026 (essais OpenArt, Seedream 4.5).
 8. **Awin** : régler les identifiants du programme Etsy FR.
-9. **AdSense** : créer les 3 blocs Keur Désir, puis demander l'examen du site une fois les contenus publiés.
+9. **AdSense** : ✅ 3 blocs Keur Désir créés le 29 octobre 2026 ; reste à demander l'examen du site une fois les visuels et les contenus publiés.
 10. **Visibilité** : ✅ Search Console et sitemap, ✅ Bing Webmaster Tools et sitemap, ✅ Cloudflare Web Analytics (29 octobre 2026) ; IndexNow à chaque publication ; reste le compte Pinterest et les épingles verticales.
 11. ✅ **Logo** : logo de Jean intégré le 29 octobre 2026 (en-tête, pied de page, icône, image de partage).
 

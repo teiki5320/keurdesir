@@ -22,7 +22,7 @@ export const bineBine: Produit[] = [
     amazon: null,
     etsy: null,
     recherche: "perles de taille rouge or",
-    image: null,
+    image: "/produits/bine-bine-rocaille-rouge-or.webp",
     ajoute_le: "2026-10-29",
     isPublished: true,
   },

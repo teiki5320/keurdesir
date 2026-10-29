@@ -13,7 +13,7 @@ publications réelles, ou routine qui publie).
 
 - [prêt] **Amazon Partenaires** : tag `keurdesir-21` en place (29 octobre 2026) ; 106 produits au catalogue, dont 49 avec lien direct vers leur fiche Amazon (29 octobre 2026) ; les autres mènent à une recherche Amazon avec le tag.
 - [à faire] **Etsy via Awin** : programme Etsy FR pour les produits artisanaux (thiouraye, baya faites main, petits pagnes) ; identifiants Awin à régler.
-- [à faire] **AdSense** : script en place ; blocs à créer et examen à demander après les premiers contenus.
+- [prêt] **AdSense** : script en place, 3 blocs créés le 29 octobre 2026 ; examen du site à demander quand les visuels et les premiers articles seront en ligne.
 
 ## Points forts
 
@@ -35,6 +35,6 @@ publications réelles, ou routine qui publie).
 
 ## Les 3 priorités
 
-1. Vérifier les produits (ASIN) et créer les illustrations des Top 10.
+1. Créer les visuels des produits (3 sur 106 au 29 octobre 2026, OpenArt) et vérifier les produits (ASIN).
 2. Ouvrir Pinterest et publier les premières épingles des Top 10.
-3. Créer les 3 blocs AdSense et demander l'examen du site.
+3. Demander l'examen AdSense du site (blocs créés le 29 octobre 2026).

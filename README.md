@@ -55,7 +55,7 @@ Aucun contenu sexuel, aucun produit « pour adultes », aucune image de corps d�
 ## À compléter à la main
 
 - ASIN (`amazon: { asin, verifie_le }`) et annonces Etsy (`etsy: { url, boutique, verifie_le }`), après ouverture de la page.
-- Identifiants Awin et blocs AdSense (variables dans `.env.example`).
+- Identifiants Awin (variables dans `.env.example`). Blocs AdSense créés le 29 octobre 2026 (docs/PUBLICITE.md).
 
 ## Démarrage
 
@@ -81,7 +81,7 @@ puis IndexNow. Secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` réglé
 
 ## Publicité
 
-AdSense (compte TOA KEUR) : 1 bloc en fin de fiche produit, 1 sur les rubriques, 2 dans les articles ; aucun sur l'accueil, les Top 10,
+AdSense (compte TOA KEUR, 3 blocs créés le 29 octobre 2026, détail dans docs/PUBLICITE.md) : 1 bloc en fin de fiche produit, 1 sur les rubriques, 2 dans les articles ; aucun sur l'accueil, les Top 10,
 la liste d'envies et les pages légales. Consentement par le bandeau de Google.
 
 ## État de la mise en route (29 octobre 2026)

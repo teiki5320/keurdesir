@@ -31,16 +31,16 @@ export const siteConfig = {
 export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-2680784147246798";
 
 /**
- * Identifiants des blocs d'annonces AdSense (blocs « Keur Désir - … », à créer dans AdSense), publics eux aussi.
+ * Identifiants des blocs d'annonces AdSense (blocs « Keur Désir - … » créés dans AdSense le 29 octobre 2026), publics eux aussi.
  * Un emplacement sans identifiant n'affiche rien. Pages sans annonce : accueil, Top 10, liste d'envies, pages légales, 404.
  * - fiche : 1 annonce en fin de fiche produit, loin des boutons marchands ;
  * - rubrique : 1 annonce sur une page rubrique, après le guide ;
  * - article : 2 annonces dans un conseil (au milieu du texte, puis en fin de page).
  */
 export const ADSENSE_SLOTS = {
-  fiche: process.env.NEXT_PUBLIC_ADSENSE_SLOT_FICHE ?? "",
-  rubrique: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE ?? "",
-  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "",
+  fiche: process.env.NEXT_PUBLIC_ADSENSE_SLOT_FICHE ?? "8833272514",
+  rubrique: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE ?? "1678717553",
+  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "9030593962",
 };
 export type AdPlacement = keyof typeof ADSENSE_SLOTS;
 

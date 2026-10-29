@@ -17,14 +17,14 @@ uniquement des noms de variables et de consoles.
 - 🌐 **Web** : 🐙 GitHub — dépôt public teiki5320/keurdesir, main [ok] → ⚙️ GitHub Actions — lint, types, tests, build, contrôle du site construit au vert, publication [ok] → ☁️ Cloudflare Pages — projet keurdesir [ok] → 🌍 keurdesir.com — relié le 29 octobre 2026 [ok] ; www en cours d'activation
 - 📝 **Contenu** : ✍️ Articles — 5 programmés (30 octobre au 9 novembre 2026), 7 guides de rubrique, lexique de 18 mots [ok] → ⚙️ GitHub Actions — publiera lundi, mercredi, vendredi [ok] → 📡 IndexNow — clé prête [ok] → 🔍 Google et Bing — Search Console et Bing Webmaster Tools ouverts, sitemap envoyé le 29 octobre 2026 [ok]
 - 🛒 **Affiliation** : 🛍️ Fiche produit — boutons « Voir sur Amazon » et « Voir sur Etsy » [ok] → 🛒 Amazon Partenaires — tag keurdesir-21 [ok] → 🧵 Etsy via Awin — identifiants Awin à régler [à faire] → 🔗 Produits — 106 au catalogue, 10 Top 10 ; 49 liens directs amazon.fr/dp (ASIN relevés le 29 octobre 2026 dans `src/lib/catalogue/asins.json`), 57 liens de recherche [en cours]
-- 📰 **Publicité** : 📰 AdSense — script en place (même compte que les autres sites), 3 blocs à créer [à faire] → ✅ Validation du site [pas encore] → 💶 Revenus [pas encore]
+- 📰 **Publicité** : 📰 AdSense — script en place (même compte que les autres sites), 3 blocs créés le 29 octobre 2026 [ok] → ✅ Validation du site [pas encore] → 💶 Revenus [pas encore]
 
 ## Vue d'ensemble
 
 - **Plateforme** : site éditorial en français, guide du djongué (art sénégalais et ouest-africain de la séduction), avec des sélections de produits.
 - **Stack** : Next.js 16 (export statique) + React 19 + Tailwind CSS 4, TypeScript, Marked pour les articles Markdown. Base technique reprise de Keurbook (structure et code seulement, aucun contenu).
 - **Données** : rubriques dans `src/lib/rubriques.ts` (7), produits dans `src/lib/catalogue/produits.ts`, Top 10 dans `src/lib/top10/sujets.ts`, lexique dans `src/lib/lexique.ts`, articles dans `content/conseils/`.
-- **Backend** : aucun. La liste d'envies reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense, après accord.
+- **Backend** : aucun. La liste d'envies reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense, après accord. Mesure d'audience sans cookie (Cloudflare Web Analytics), décrite dans la page Confidentialité depuis le 29 octobre 2026.
 - **Taille** : 134 pages construites au 29 octobre 2026, dont 130 dans le sitemap (accueil, 7 rubriques avec leur guide, 10 Top 10, 106 fiches produits, lexique de 18 mots, à propos, 3 pages légales) ; 5 articles programmés du 30 octobre au 9 novembre 2026. Le matin du 29 octobre, avant les contenus : 15 pages.
 - **Particularités** : interrupteur de maintenance (`content/maintenance.json`, désactivé) ; test des mots interdits (`tests/mots-interdits.test.ts`) ; contrôle du site construit (`tests/sortie/`) ; listes vides en noindex et hors sitemap.
 
@@ -50,7 +50,7 @@ uniquement des noms de variables et de consoles.
 ## Amazon Partenaires
 
 - **Tag** : `keurdesir-21` (depuis le 29 octobre 2026), table unique `AMAZON_TAGS` dans `src/lib/liens.ts`.
-- Liens directs `amazon.fr/dp/<ASIN>` : 49 produits sur 106 au 29 octobre 2026, ASIN relevés sur les pages de recherche d'amazon.fr (fichier `src/lib/catalogue/asins.json`, modèle Keur Kado). Les autres (thiouraye, béthio, pièces en wax précises…) gardent une recherche Amazon avec le tag. Contrôle du bouton d'achat à faire : `npm run verifier-produits` (sur le Mac).
+- Liens directs `amazon.fr/dp/<ASIN>` : 49 produits sur 106 au 29 octobre 2026, ASIN relevés sur les pages de recherche d'amazon.fr (fichier `src/lib/catalogue/asins.json`, modèle Keur Kado). Les autres (thiouraye, béthio, pièces en wax précises…) gardent une recherche Amazon avec le tag. Contrôle du bouton d'achat : `npm run verifier-produits` (sur le Mac) ; depuis le 29 octobre 2026, Keur Désir est aussi dans la routine du matin « Sites du jour » (partie Amazon, signalement seulement : produits indisponibles déposés dans « À faire » du Studio).
 
 ## Etsy (Awin)
 
@@ -60,7 +60,7 @@ uniquement des noms de variables et de consoles.
 ## AdSense
 
 - Script et meta `google-adsense-account` dans `src/app/layout.tsx` (compte `ca-pub-2680784147246798`, comme les autres sites TOA KEUR), `public/ads.txt` publié.
-- Blocs `fiche`, `rubrique`, `article` : identifiants à créer (variables `NEXT_PUBLIC_ADSENSE_SLOT_*`) ; un bloc sans identifiant n'affiche rien.
+- Blocs `fiche` (« Keur Désir - Fiche produit », `8833272514`), `rubrique` (« Keur Désir - Page rubrique », `1678717553`) et `article` (« Keur Désir - Article conseil », `9030593962`), créés le 29 octobre 2026, dans `ADSENSE_SLOTS` (`src/lib/config.ts`, réglables par `NEXT_PUBLIC_ADSENSE_SLOT_*`). Validation du site pas encore demandée : aucune annonce ne s'affiche. Détail : docs/PUBLICITE.md.
 
 ## Référencement
 

@@ -29,6 +29,7 @@ export const tenuesDeNuit: Produit[] = [
       "Il se noue simplement, comme un paréo, et se porte pour être à l'aise chez soi. Lavez-le à la main ou en cycle délicat à l'eau froide, sur l'envers pour protéger la broderie. Repassez-le encore légèrement humide pour retrouver le tombé du wax.",
     boutiques: ["etsy", "amazon"],
     recherche: "petit pagne wax brodé",
+    image: "/produits/petit-pagne-wax-brode.webp",
   },
   {
     ...base,

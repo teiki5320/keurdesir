@@ -22,7 +22,7 @@ export const thiourayeEncens: Produit[] = [
     amazon: null,
     etsy: null,
     recherche: "thiouraye encens sénégalais",
-    image: null,
+    image: "/produits/thiouraye-artisanal-sachet.webp",
     ajoute_le: "2026-10-29",
     isPublished: true,
   },

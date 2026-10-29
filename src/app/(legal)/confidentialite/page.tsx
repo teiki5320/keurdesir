@@ -24,7 +24,11 @@ export default function PrivacyPage() {
       </p>
 
       <h2>Données collectées et finalités</h2>
-      <p>Le site ne comporte ni compte, ni formulaire. Des données personnelles sont traitées dans les cas suivants.</p>
+      <p>
+        Le site ne comporte ni compte, ni formulaire. La fréquentation est mesurée par Cloudflare Web Analytics, sans cookie
+        et sans suivre une personne d&apos;un site à l&apos;autre : seuls des chiffres globaux (pages vues, pays, type
+        d&apos;appareil) sont conservés. Des données personnelles sont traitées dans les cas suivants.
+      </p>
       <ul>
         <li>
           <strong>Messages envoyés à l&apos;adresse de contact</strong> : votre adresse e-mail et le contenu de votre
@@ -52,7 +56,7 @@ export default function PrivacyPage() {
       <h2>Destinataires et sous-traitants</h2>
       <p>
         Vos données sont destinées à nos services internes et à nos sous-traitants techniques (hébergement :{" "}
-        {legalConfig.hostName} ; messagerie : IONOS). Pour la publicité, Google et ses partenaires reçoivent directement les
+        {legalConfig.hostName} ; mesure d&apos;audience : Cloudflare Web Analytics ; messagerie : IONOS). Pour la publicité, Google et ses partenaires reçoivent directement les
         données décrites plus bas. Les transferts hors de l&apos;Union européenne (Cloudflare et Google, États-Unis) sont
         encadrés par le cadre de protection des données UE–États-Unis et par des clauses contractuelles types.
       </p>

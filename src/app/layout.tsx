@@ -1,11 +1,32 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Geist } from "next/font/google";
+import localFont from "next/font/local";
 import { ADSENSE_CLIENT, siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
-const geist = Geist({ variable: "--font-geist", subsets: ["latin"], display: "swap" });
-const cormorant = Cormorant_Garamond({ variable: "--font-cormorant", subsets: ["latin"], weight: ["500", "600"], style: ["normal", "italic"], display: "swap" });
+/*
+ * Polices du design « Néon Dakar · Rubis », hébergées avec le site (src/fonts, licence SIL OFL) :
+ * Unbounded pour les titres, DM Sans pour le texte, Space Mono pour les petites étiquettes,
+ * Mr Dafoe pour l'écriture néon (« Désir » et les mots en italique des titres).
+ */
+const unbounded = localFont({ src: "../fonts/unbounded-latin-wght-normal.woff2", weight: "200 900", variable: "--font-unbounded", display: "swap" });
+const dmSans = localFont({
+  src: [
+    { path: "../fonts/dm-sans-latin-wght-normal.woff2", weight: "100 1000", style: "normal" },
+    { path: "../fonts/dm-sans-latin-wght-italic.woff2", weight: "100 1000", style: "italic" },
+  ],
+  variable: "--font-dmsans",
+  display: "swap",
+});
+const spaceMono = localFont({
+  src: [
+    { path: "../fonts/space-mono-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/space-mono-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-spacemono",
+  display: "swap",
+});
+const mrDafoe = localFont({ src: "../fonts/mr-dafoe-latin-400-normal.woff2", weight: "400", variable: "--font-mrdafoe", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -31,15 +52,15 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f7f0e6",
-  colorScheme: "light",
+  themeColor: "#0c0409",
+  colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${geist.variable} ${cormorant.variable} antialiased`} suppressHydrationWarning>
+    <html lang="fr" className={`${unbounded.variable} ${dmSans.variable} ${spaceMono.variable} ${mrDafoe.variable} antialiased`} suppressHydrationWarning>
       {ADSENSE_CLIENT && (
         <head>
           {/* Code AdSense : charge les annonces et le bandeau de consentement de Google (réglé dans AdSense). */}

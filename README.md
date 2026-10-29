@@ -21,6 +21,13 @@ Base technique reprise de Keurbook (structure et code seulement : aucun contenu 
 
 Détail de chaque page : docs/CONTENU.md. Plan validé : docs/PLAN.md.
 
+## Design
+
+Design « Néon Dakar · Rubis », validé par Jean le 29 octobre 2026 : nuit bordeaux presque noire, néons rouge rubis et or,
+écriture néon « Désir », motif de wax en cercles qui tourne dans le haut de l'accueil, bandeaux qui défilent, lueurs animées.
+Couleurs et animations dans `src/app/globals.css` (coupées pour les visiteurs qui demandent moins d'animations).
+Polices Unbounded, DM Sans, Space Mono et Mr Dafoe, hébergées avec le site dans `src/fonts/` (licences : `src/fonts/LICENCES.md`).
+
 ## Logo
 
 Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux dans `docs/logos/`. `node scripts/marque.mjs` en tire le logo détouré, l'emblème de l'en-tête, l'icône et l'image de partage ; composant `src/components/layout/Logo.tsx`.

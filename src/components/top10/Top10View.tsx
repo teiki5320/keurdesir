@@ -29,17 +29,17 @@ export function Top10View({ tops, top, produits }: { tops: Top10[]; top: Top10; 
           <Link href="/top-10" className="hover:text-ink">Nos sélections</Link>
           <span className="text-muted">10 produits · {monthYear.format(new Date(`${top.updated}T12:00:00Z`))}</span>
         </p>
-        <h1 className="mt-3 font-serif text-[42px] leading-[0.98] text-balance sm:text-6xl">{top.title}</h1>
+        <h1 className="kd-in mt-3 font-serif text-[30px] leading-[1.05] text-balance uppercase [text-shadow:0_0_24px_rgba(255,43,68,0.55)] sm:text-5xl">{top.title}</h1>
         <p className="mt-6 text-[17px] leading-relaxed text-ink/85">{top.intro}</p>
       </header>
 
       <ol className="mt-10 space-y-5">
         {produits.map((p) => (
           <li key={p.slug}>
-            <section aria-labelledby={`produit-${p.rank}`} className="rounded-xl border border-line bg-surface p-5 sm:p-7">
+            <section aria-labelledby={`produit-${p.rank}`} className="kd-reveal rounded-xl border border-line bg-surface p-5 transition-colors hover:border-accent sm:p-7">
               <div className="sm:grid sm:grid-cols-[200px_1fr] sm:gap-8">
                 <div className="relative">
-                  <span aria-label={`Numéro ${p.rank}`} className="absolute top-2 left-2 z-10 flex size-12 items-center justify-center rounded-lg bg-paper font-serif text-3xl text-accent">
+                  <span aria-label={`Numéro ${p.rank}`} className="absolute top-2 left-2 z-10 flex size-12 items-center justify-center rounded-lg border border-accent bg-paper font-serif text-2xl text-accent shadow-[0_0_16px_rgba(255,43,68,0.6)]">
                     {p.rank}
                   </span>
                   <Link href={p.path} tabIndex={-1} aria-hidden>
@@ -48,7 +48,7 @@ export function Top10View({ tops, top, produits }: { tops: Top10[]; top: Top10; 
                 </div>
                 <div className="mt-5 min-w-0 sm:mt-0">
                   <p className="eyebrow">{p.type}</p>
-                  <h2 id={`produit-${p.rank}`} className="mt-2 font-serif text-[30px] leading-[1.05] text-balance">
+                  <h2 id={`produit-${p.rank}`} className="mt-2 font-serif text-[22px] leading-[1.15] text-balance sm:text-[26px]">
                     <Link href={p.path} className="hover:text-accent">
                       {p.nom}
                     </Link>
@@ -107,10 +107,10 @@ export function Top10Pastilles({ tops }: { tops: Top10[] }) {
     <ul className="mt-5 grid gap-3 sm:grid-cols-3">
       {tops.map((t) => (
         <li key={t.slug}>
-          <Link href={`/top-10/${t.slug}`} className="flex h-full flex-col rounded-xl border border-line bg-surface p-4 transition hover:border-line-strong">
-            <span className="eyebrow">Top 10</span>
-            <span className="mt-1.5 font-serif text-2xl leading-[1.05] text-balance">{subjectOf(t)}</span>
-            <span className="mt-auto pt-3 text-sm text-accent">Voir la sélection →</span>
+          <Link href={`/top-10/${t.slug}`} className="kd-card flex h-full flex-col border border-line bg-surface p-5 transition-colors hover:border-accent">
+            <span className="eyebrow">[ Top 10 ]</span>
+            <span className="mt-2 font-serif text-[19px] leading-[1.15] text-balance">{subjectOf(t)}</span>
+            <span className="mt-auto pt-4 font-mono text-[13px] text-accent uppercase">Voir la sélection →</span>
           </Link>
         </li>
       ))}

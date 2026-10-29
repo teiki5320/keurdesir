@@ -23,7 +23,7 @@ export function Visuel({ image, nom, type, rubrique, sizes = "(min-width: 640px)
     );
   return (
     <div aria-hidden className={`visuel visuel-${rubrique} flex aspect-square w-full items-end rounded-lg p-4 ${className}`}>
-      <span className="font-serif text-xl leading-tight text-paper italic">{type}</span>
+      <span className="font-mono text-[13px] leading-tight tracking-[0.06em] text-ink uppercase [text-shadow:0_0_10px_var(--v1)]">{type}</span>
     </div>
   );
 }

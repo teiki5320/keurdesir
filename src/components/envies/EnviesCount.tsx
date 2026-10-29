@@ -6,5 +6,5 @@ import { useEnvies } from "@/lib/envies";
 export function EnviesCount() {
   const { slugs } = useEnvies();
   if (slugs.length === 0) return null;
-  return <span className="ml-2 rounded-full bg-accent px-2.5 py-0.5 font-sans text-xs font-semibold text-paper not-italic">{slugs.length}</span>;
+  return <span className="ml-2 rounded-full bg-accent px-2.5 py-0.5 font-sans text-xs font-semibold tracking-normal text-paper not-italic [animation:kd-beat_0.6s_ease-out]">{slugs.length}</span>;
 }

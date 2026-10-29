@@ -27,20 +27,23 @@ export function Header() {
   }, [open]);
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
-        <div className="container-page flex h-16 items-center gap-8">
+      <header className="sticky top-0 z-50 border-b border-line bg-paper/85 backdrop-blur">
+        <div className="container-page flex h-[72px] items-center gap-8">
           <Link href="/" onClick={close} aria-label={`${siteConfig.name}, accueil`}>
-            <Logo className="text-[28px]" />
+            <Logo />
           </Link>
-          <nav aria-label="Menu principal" className="hidden gap-6 text-sm text-ink/80 lg:flex">
+          <nav aria-label="Menu principal" className="hidden gap-6 font-mono text-[12px] tracking-[0.08em] text-muted uppercase lg:flex">
             {NAV.map((n) => (
-              <Link key={n.href} href={n.href} className="hover:text-accent">
+              <Link key={n.href} href={n.href} className="py-3 transition hover:text-gold hover:[text-shadow:0_0_10px_var(--neon-2)]">
                 {n.label}
               </Link>
             ))}
           </nav>
-          <Link href="/mes-envies" className="ml-auto hidden items-center font-serif text-xl hover:text-accent lg:inline-flex">
-            Mes <i className="ml-1.5">envies</i>
+          <Link
+            href="/mes-envies"
+            className="ml-auto hidden min-h-11 items-center rounded-full border border-accent px-4 font-mono text-[12px] tracking-[0.08em] text-accent uppercase shadow-[0_0_14px_rgba(255,43,68,0.45),inset_0_0_10px_rgba(255,43,68,0.25)] transition hover:bg-accent hover:text-paper lg:inline-flex"
+          >
+            Mes envies
             <EnviesCount />
           </Link>
           <button
@@ -48,7 +51,7 @@ export function Header() {
             onClick={() => setOpen((o) => !o)}
             aria-expanded={open}
             aria-controls="menu-mobile"
-            className={`ml-auto min-h-11 rounded-full border px-4 text-[13px] lg:hidden ${open ? "border-accent text-accent" : "border-ink/40"}`}
+            className={`ml-auto min-h-11 rounded-full border px-4 font-mono text-[12px] uppercase lg:hidden ${open ? "border-accent text-accent" : "border-gold/70 text-ink"}`}
           >
             {open ? "Fermer" : "Menu"}
           </button>
@@ -58,15 +61,15 @@ export function Header() {
         <div id="menu-mobile" className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-paper px-5 pt-20 pb-6 lg:hidden">
           <nav aria-label="Menu mobile" className="flex flex-col">
             {RUBRIQUES_NAV.map((n) => (
-              <Link key={n.href} href={n.href} onClick={close} className="border-b border-line py-3 font-serif text-[30px] leading-none hover:text-accent">
+              <Link key={n.href} href={n.href} onClick={close} className="border-b border-line py-3.5 font-serif text-[20px] leading-tight uppercase hover:text-accent">
                 {n.label}
               </Link>
             ))}
-            <Link href="/top-10" onClick={close} className="border-b border-line py-3 font-serif text-[30px] leading-none hover:text-accent">
+            <Link href="/top-10" onClick={close} className="border-b border-line py-3.5 font-serif text-[20px] leading-tight uppercase hover:text-accent">
               Top 10
             </Link>
           </nav>
-          <Link href="/mes-envies" onClick={close} className="mt-6 flex items-center justify-between rounded-xl bg-surface px-5 py-4 font-serif text-2xl">
+          <Link href="/mes-envies" onClick={close} className="mt-6 flex items-center justify-between rounded-xl border border-accent bg-surface px-5 py-4 font-serif text-xl shadow-[0_0_18px_rgba(255,43,68,0.35)]">
             <span>
               Mes <i>envies</i>
             </span>

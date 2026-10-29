@@ -8,7 +8,7 @@ import { getRubrique } from "@/lib/rubriques";
 
 export function ConseilCard({ conseil }: { conseil: Conseil }) {
   return (
-    <article className="border-t border-line">
+    <article className="kd-sweep border-t border-line [background-position:-40%_100%]">
       <Link href={`/conseils/${conseil.slug}`} className="group grid grid-cols-[auto_1fr_auto] items-center gap-4 py-5 sm:gap-6">
         {conseil.image ? (
           <img
@@ -26,7 +26,7 @@ export function ConseilCard({ conseil }: { conseil: Conseil }) {
           <span className="eyebrow block">
             {getRubrique(conseil.rubrique)?.nom} <span className="text-faint">· {formatDate(conseil.date)}</span>
           </span>
-          <span className="mt-2 block font-serif text-2xl leading-[1.1] group-hover:text-accent sm:text-[28px]">{conseil.title}</span>
+          <span className="mt-2 block font-serif text-[18px] leading-[1.2] group-hover:text-accent sm:text-[22px]">{conseil.title}</span>
           <span className="mt-2 line-clamp-2 block max-w-2xl text-sm text-muted">{conseil.resume}</span>
         </span>
         <span aria-hidden className="text-accent">→</span>

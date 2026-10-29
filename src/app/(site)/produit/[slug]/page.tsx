@@ -54,13 +54,15 @@ export default async function ProduitPage({ params }: PageProps<"/produit/[slug]
           ← {rubrique.nom}
         </Link>
         <div className="mt-6 grid gap-8 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12">
-          <div>
-            <Visuel image={p.image} nom={p.nom} type={p.type} rubrique={p.rubrique} sizes="(min-width: 768px) 440px, 100vw" priority />
+          <div className="kd-in">
+            <div className="kd-card overflow-hidden border border-accent/60 p-2">
+              <Visuel image={p.image} nom={p.nom} type={p.type} rubrique={p.rubrique} sizes="(min-width: 768px) 440px, 100vw" priority />
+            </div>
             {p.image && <p className="mt-2 text-[11px] text-faint">Illustration Keur Désir (créée par intelligence artificielle) : le produit vendu peut différer.</p>}
           </div>
           <div className="min-w-0">
             <p className="eyebrow">{p.type}</p>
-            <h1 className="mt-2 font-serif text-[44px] leading-[0.98] text-balance sm:text-6xl">{p.nom}</h1>
+            <h1 className="kd-in mt-3 font-serif text-[28px] leading-[1.08] text-balance uppercase [text-shadow:0_0_24px_rgba(255,43,68,0.5)] sm:text-[42px]">{p.nom}</h1>
             <p className="mt-5 text-[17px] leading-relaxed text-ink/85">{p.resume}</p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <BoutonsMarchands liens={liens} nom={p.nom} />

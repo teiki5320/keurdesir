@@ -6,13 +6,15 @@ import { Visuel } from "./Visuel";
 /** Carte d'un produit dans une liste : visuel, nom, accroche, lien vers la fiche (pas de bouton marchand). */
 export function ProduitCarte({ produit }: { produit: Carte }) {
   return (
-    <article className="group relative">
+    <article className="kd-card group relative h-full border border-line bg-surface p-2.5 transition-colors hover:border-accent">
       <Link href={produit.path} className="block">
-        <Visuel image={produit.image} nom={produit.nom} type={produit.type} rubrique={produit.rubrique} className="transition duration-500 group-hover:opacity-90" />
-        <h3 className="mt-3 font-serif text-xl leading-tight group-hover:text-accent">{produit.nom}</h3>
-        {produit.accroche && <p className="mt-1 line-clamp-2 text-sm text-muted">{produit.accroche}</p>}
+        <div className="overflow-hidden rounded-lg">
+          <Visuel image={produit.image} nom={produit.nom} type={produit.type} rubrique={produit.rubrique} className="transition duration-700 group-hover:scale-110" />
+        </div>
+        <h3 className="mt-3 px-1 font-serif text-[13px] leading-snug font-semibold sm:text-[15px] group-hover:text-accent">{produit.nom}</h3>
+        {produit.accroche && <p className="mt-1 line-clamp-2 px-1 pb-1 text-sm text-muted">{produit.accroche}</p>}
       </Link>
-      <EnviesButton slug={produit.slug} compact className="absolute top-2 right-2" />
+      <EnviesButton slug={produit.slug} compact className="absolute top-4 right-4" />
     </article>
   );
 }

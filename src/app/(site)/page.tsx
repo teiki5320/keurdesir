@@ -82,8 +82,7 @@ export default function HomePage() {
         ))}
         <div className="container-page flex flex-wrap items-center gap-12 pt-14 pb-20 sm:pt-20">
           <div className="min-w-0 flex-[1_1_480px]">
-            <p className="eyebrow kd-in text-accent">{"// After dark · Keur, la maison en wolof"}</p>
-            <p aria-hidden className="kd-in mt-3 [animation-delay:0.1s]">
+            <p aria-hidden className="kd-in [animation-delay:0.1s]">
               <span className="kd-neon inline-block origin-left -rotate-[5deg] pr-4 text-[clamp(96px,15vw,200px)] leading-[0.95]">Désir</span>
             </p>
             <h1 className="kd-in mt-2 font-serif text-[clamp(26px,3.6vw,46px)] leading-[1.05] font-black text-transparent uppercase [-webkit-text-stroke:1.5px_var(--neon-2)] [animation-delay:0.2s] [text-shadow:0_0_18px_var(--neon-2-soft)]">

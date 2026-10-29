@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/config";
 import { EnviesCount } from "../envies/EnviesCount";
 import { EmailLink } from "./EmailLink";
 import { Logo } from "./Logo";
-import { NAV, RUBRIQUES_NAV, SECONDARY_NAV } from "./nav";
+import { NAV, SECONDARY_NAV } from "./nav";
 
 /** En-tête : liens en ligne sur grand écran, bouton « Menu » plein écran sur mobile. */
 export function Header() {
@@ -60,14 +60,11 @@ export function Header() {
       {open && (
         <div id="menu-mobile" className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-paper px-5 pt-20 pb-6 lg:hidden">
           <nav aria-label="Menu mobile" className="flex flex-col">
-            {RUBRIQUES_NAV.map((n) => (
+            {NAV.map((n) => (
               <Link key={n.href} href={n.href} onClick={close} className="border-b border-line py-3.5 font-serif text-[20px] leading-tight uppercase hover:text-accent">
                 {n.label}
               </Link>
             ))}
-            <Link href="/top-10" onClick={close} className="border-b border-line py-3.5 font-serif text-[20px] leading-tight uppercase hover:text-accent">
-              Top 10
-            </Link>
           </nav>
           <Link href="/mes-envies" onClick={close} className="mt-6 flex items-center justify-between rounded-xl border border-accent bg-surface px-5 py-4 font-serif text-xl shadow-[0_0_18px_rgba(255,43,68,0.35)]">
             <span>

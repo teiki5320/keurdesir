@@ -41,7 +41,7 @@
 | | |
 |---|---|
 | Adresse | **En ligne** : https://keurdesir.com (depuis le 29 octobre 2026) |
-| Construction | `npm run build` → `out/` (134 pages au 29 octobre 2026) |
+| Construction | `npm run build` → `out/` (135 pages au 29 octobre 2026, dont la boutique) |
 | Contrôles | lint, types, 33 tests, contrôle du site construit (14 vérifications) : au vert le 29 octobre 2026, en local et sur GitHub Actions |
 
 ## Domaine & SSL

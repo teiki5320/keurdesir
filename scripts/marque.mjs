@@ -32,6 +32,12 @@ async function detourer() {
     if (i >= w) pile.push(i - w);
     if (i < w * (h - 1)) pile.push(i + w);
   }
+  // Sous les lèvres (le nom « Keur Désir ») : le blanc enfermé dans les lettres (creux du D, du é, du R…) devient
+  // transparent lui aussi ; sinon il ressort en taches blanches sur fond sombre. Les dents, plus haut, restent opaques.
+  for (let i = Math.round(h * 0.676) * w; i < w * h; i++) {
+    if (vu[i] || clair(i) < 200) continue;
+    data[i * 4 + 3] = Math.round(Math.max(0, Math.min(255, ((245 - clair(i)) / 45) * 255)));
+  }
   return sharp(data, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer();
 }
 

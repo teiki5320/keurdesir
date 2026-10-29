@@ -25,7 +25,7 @@ uniquement des noms de variables et de consoles.
 - **Stack** : Next.js 16 (export statique) + React 19 + Tailwind CSS 4, TypeScript, Marked pour les articles Markdown. Base technique reprise de Keurbook (structure et code seulement, aucun contenu).
 - **Données** : rubriques dans `src/lib/rubriques.ts` (7), produits dans `src/lib/catalogue/produits.ts`, Top 10 dans `src/lib/top10/sujets.ts`, lexique dans `src/lib/lexique.ts`, articles dans `content/conseils/`.
 - **Backend** : aucun. La liste d'envies reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense, après accord. Mesure d'audience sans cookie (Cloudflare Web Analytics), décrite dans la page Confidentialité depuis le 29 octobre 2026.
-- **Taille** : 134 pages construites au 29 octobre 2026, dont 130 dans le sitemap (accueil, 7 rubriques avec leur guide, 10 Top 10, 106 fiches produits, lexique de 18 mots, à propos, 3 pages légales) ; 5 articles programmés du 30 octobre au 9 novembre 2026. Le matin du 29 octobre, avant les contenus : 15 pages.
+- **Taille** : 135 pages construites au 29 octobre 2026, dont 131 dans le sitemap (accueil, boutique, 7 rubriques avec leur guide, 10 Top 10, 106 fiches produits, lexique de 18 mots, à propos, 3 pages légales) ; 5 articles programmés du 30 octobre au 9 novembre 2026. Le matin du 29 octobre, avant les contenus : 15 pages.
 - **Particularités** : interrupteur de maintenance (`content/maintenance.json`, désactivé) ; test des mots interdits (`tests/mots-interdits.test.ts`) ; contrôle du site construit (`tests/sortie/`) ; listes vides en noindex et hors sitemap.
 
 ## GitHub

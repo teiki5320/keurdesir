@@ -1,12 +1,8 @@
 import { RUBRIQUES } from "@/lib/rubriques";
 
-/** Menu principal (en-tête) : les rubriques les plus visitées, puis les Top 10. */
+/** Menu principal (en-tête et menu mobile) : la boutique (tous les produits, par rubrique) et les Top 10. Choix de Jean du 29/10/2026. */
 export const NAV = [
-  { href: "/djongue", label: "Le djongué" },
-  { href: "/bine-bine", label: "Bine-bine" },
-  { href: "/thiouraye-encens", label: "Encens" },
-  { href: "/karite-soins", label: "Soins" },
-  { href: "/coffrets-cadeaux", label: "Cadeaux" },
+  { href: "/boutique", label: "Boutique" },
   { href: "/top-10", label: "Top 10" },
 ] as const;
 

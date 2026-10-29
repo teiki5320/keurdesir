@@ -3,6 +3,7 @@ import { BoutonsMarchands, NoteMarchande } from "@/components/produit/BoutonsMar
 import { Visuel } from "@/components/produit/Visuel";
 import { EnviesButton } from "@/components/envies/EnviesButton";
 import type { Top10Produit } from "@/lib/data/top10";
+import { premierePhrase } from "@/lib/format";
 import type { Top10 } from "@/lib/top10/types";
 import { RichText } from "./RichText";
 
@@ -20,8 +21,9 @@ export function subjectOf(top: Top10): string {
   return s[0].toUpperCase() + s.slice(1);
 }
 
-/** Page d'une sélection « Top 10 » (même gabarit pour toutes). Pas de publicité sur ces pages. */
+/** Page d'une sélection « Top 10 » (même gabarit pour toutes) : une phrase, la liste, puis les explications. Pas de publicité. */
 export function Top10View({ tops, top, produits }: { tops: Top10[]; top: Top10; produits: Top10Produit[] }) {
+  const [accroche, suite] = premierePhrase(top.intro);
   return (
     <article className="container-page max-w-4xl">
       <header className="pt-10">
@@ -30,7 +32,7 @@ export function Top10View({ tops, top, produits }: { tops: Top10[]; top: Top10; 
           <span className="text-muted">10 produits · {monthYear.format(new Date(`${top.updated}T12:00:00Z`))}</span>
         </p>
         <h1 className="kd-in mt-3 font-serif text-[30px] leading-[1.05] text-balance uppercase [text-shadow:0_0_24px_rgba(255,43,68,0.55)] sm:text-5xl">{top.title}</h1>
-        <p className="mt-6 text-[17px] leading-relaxed text-ink/85">{top.intro}</p>
+        <p className="mt-6 text-[17px] leading-relaxed text-ink/85">{accroche}</p>
       </header>
 
       <ol className="mt-10 space-y-5">
@@ -66,6 +68,13 @@ export function Top10View({ tops, top, produits }: { tops: Top10[]; top: Top10; 
           </li>
         ))}
       </ol>
+
+      {suite && (
+        <section aria-labelledby="choix" className="mt-14">
+          <h2 id="choix" className="section-title">Comment nous les avons choisis</h2>
+          <p className="mt-4 text-[16px] leading-relaxed text-ink/85">{suite}</p>
+        </section>
+      )}
 
       <section aria-labelledby="commencer" className="mt-14">
         <h2 id="commencer" className="section-title">Par où commencer</h2>

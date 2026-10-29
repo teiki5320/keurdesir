@@ -51,6 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     page("", latest([lastConseil, lastTop, ...produitDay.values()]), "weekly", 1),
+    page("/boutique", latest([...produitDay.values()]), "weekly", 0.9),
     ...RUBRIQUES.map((r) => page(`/${r.slug}`, latest([changed(r.slug, DEBUT), ...conseils.filter((c) => c.rubrique === r.slug).map((c) => conseilDay.get(c.slug)!)]), "weekly", 0.9)),
     // Listes encore vides : en noindex, donc absentes du plan du site.
     ...(conseils.length ? [page("/conseils", lastConseil, "weekly", 0.8)] : []),

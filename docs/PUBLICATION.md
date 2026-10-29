@@ -8,7 +8,7 @@
 
 - **Production** : en ligne sur https://keurdesir.com depuis le 29 octobre 2026
 - **Domaine & SSL** : keurdesir.com relié au projet Pages le 29 octobre 2026, certificat Cloudflare ; www.keurdesir.com relié, en cours d'activation
-- **Visibilité** : site en ligne ; Search Console et Cloudflare Web Analytics ouverts le 29 octobre 2026 ; Pinterest pas encore ouvert
+- **Visibilité** : site en ligne ; Search Console, Bing Webmaster Tools et Cloudflare Web Analytics ouverts le 29 octobre 2026 ; Pinterest pas encore ouvert
 - **Contact** : keurdesir@toakeur.com
 
 ## Boutiques
@@ -19,7 +19,7 @@
 | Hébergement | [ok] Cloudflare Pages, projet keurdesir, publié par GitHub Actions |
 | Domaine | [ok] keurdesir.com relié ; www.keurdesir.com relié, en cours d'activation |
 | SSL | [ok] Certificat Cloudflare |
-| Indexation | [ok] Search Console (propriété Domaine keurdesir.com, validée par TXT), sitemap envoyé le 29 octobre 2026 |
+| Indexation | [ok] Search Console (propriété Domaine keurdesir.com, validée par TXT) et Bing Webmaster Tools (validé par `BingSiteAuth.xml`), sitemap envoyé aux deux le 29 octobre 2026 |
 | Mesure d'audience | [ok] Cloudflare Web Analytics activé le 29 octobre 2026 |
 
 ## Ce qui reste, dans l'ordre
@@ -33,7 +33,7 @@
 7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps).
 8. **Awin** : régler les identifiants du programme Etsy FR.
 9. **AdSense** : créer les 3 blocs Keur Désir, puis demander l'examen du site une fois les contenus publiés.
-10. **Visibilité** : ✅ Search Console et sitemap, ✅ Cloudflare Web Analytics (29 octobre 2026) ; IndexNow à chaque publication ; reste le compte Pinterest et les épingles verticales.
+10. **Visibilité** : ✅ Search Console et sitemap, ✅ Bing Webmaster Tools et sitemap, ✅ Cloudflare Web Analytics (29 octobre 2026) ; IndexNow à chaque publication ; reste le compte Pinterest et les épingles verticales.
 11. ✅ **Logo** : logo de Jean intégré le 29 octobre 2026 (en-tête, pied de page, icône, image de partage).
 
 ## Web · Production
@@ -52,5 +52,6 @@
 
 - Site en ligne depuis le 29 octobre 2026.
 - Search Console : propriété Domaine keurdesir.com validée par un enregistrement TXT, sitemap `https://keurdesir.com/sitemap.xml` envoyé le 29 octobre 2026.
+- Bing Webmaster Tools : site https://keurdesir.com/ validé par le fichier `public/BingSiteAuth.xml`, sitemap envoyé le 29 octobre 2026.
 - Cloudflare Web Analytics activé sur le projet Pages le 29 octobre 2026.
 - Pinterest : pas encore ouvert.

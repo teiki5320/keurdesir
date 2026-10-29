@@ -25,13 +25,13 @@ publications réelles, ou routine qui publie).
 ## Canaux
 
 - ✅ Site : en ligne sur https://keurdesir.com depuis le 29 octobre 2026.
-- ✅ Référencement naturel : 10 Top 10, 7 guides et 5 articles programmés (30 octobre au 9 novembre 2026), en ligne depuis le 29 octobre 2026 (articles au fil de leur date) ; Search Console ouverte et sitemap envoyé le 29 octobre 2026.
+- ✅ Référencement naturel : 10 Top 10, 7 guides et 5 articles programmés (30 octobre au 9 novembre 2026), en ligne depuis le 29 octobre 2026 (articles au fil de leur date) ; Search Console et Bing Webmaster Tools ouverts, sitemap envoyé aux deux le 29 octobre 2026.
 - ⬜ Pinterest : épingles verticales 1000 × 1500 prévues pour les Top 10 (visuels sobres : produits, matières, couleurs).
 - ⬜ Réseaux sociaux : aucun compte.
 
 ## Mesures
 
-- Cloudflare Web Analytics et Search Console branchés le 29 octobre 2026 ; pas encore de chiffres. Rapports Amazon et Awin à suivre.
+- Cloudflare Web Analytics, Search Console et Bing Webmaster Tools branchés le 29 octobre 2026 ; pas encore de chiffres. Rapports Amazon et Awin à suivre.
 
 ## Les 3 priorités
 

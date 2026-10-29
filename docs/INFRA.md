@@ -15,7 +15,7 @@ uniquement des noms de variables et de consoles.
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — dépôt public teiki5320/keurdesir, main [ok] → ⚙️ GitHub Actions — lint, types, tests, build, contrôle du site construit au vert, publication [ok] → ☁️ Cloudflare Pages — projet keurdesir [ok] → 🌍 keurdesir.com — relié le 29 octobre 2026 [ok] ; www en cours d'activation
-- 📝 **Contenu** : ✍️ Articles — 5 programmés (30 octobre au 9 novembre 2026), 7 guides de rubrique, lexique de 18 mots [ok] → ⚙️ GitHub Actions — publiera lundi, mercredi, vendredi [ok] → 📡 IndexNow — clé prête [ok] → 🔍 Google — Search Console ouverte, sitemap envoyé le 29 octobre 2026 [ok]
+- 📝 **Contenu** : ✍️ Articles — 5 programmés (30 octobre au 9 novembre 2026), 7 guides de rubrique, lexique de 18 mots [ok] → ⚙️ GitHub Actions — publiera lundi, mercredi, vendredi [ok] → 📡 IndexNow — clé prête [ok] → 🔍 Google et Bing — Search Console et Bing Webmaster Tools ouverts, sitemap envoyé le 29 octobre 2026 [ok]
 - 🛒 **Affiliation** : 🛍️ Fiche produit — boutons « Voir sur Amazon » et « Voir sur Etsy » [ok] → 🛒 Amazon Partenaires — tag keurdesir-21 [ok] → 🧵 Etsy via Awin — identifiants Awin à régler [à faire] → 🔗 Produits — 106 au catalogue, 10 Top 10 ; 49 liens directs amazon.fr/dp (ASIN relevés le 29 octobre 2026 dans `src/lib/catalogue/asins.json`), 57 liens de recherche [en cours]
 - 📰 **Publicité** : 📰 AdSense — script en place (même compte que les autres sites), 3 blocs à créer [à faire] → ✅ Validation du site [pas encore] → 💶 Revenus [pas encore]
 
@@ -67,5 +67,6 @@ uniquement des noms de variables et de consoles.
 - Sitemap `/sitemap.xml` avec dates réelles (`src/lib/lastmod.json`), `robots.txt`, JSON-LD (WebSite, Organization, BreadcrumbList, Article, ItemList, DefinedTermSet).
 - IndexNow : clé `d594b7cccbd54ab33111237c115501e5` publiée à la racine.
 - Search Console : propriété Domaine keurdesir.com (compte Google de Jean), validée par un enregistrement TXT `google-site-verification` dans le DNS Cloudflare ; sitemap envoyé le 29 octobre 2026.
+- Bing Webmaster Tools : site https://keurdesir.com/ (compte Microsoft de Jean), validé par le fichier `public/BingSiteAuth.xml` ; sitemap envoyé le 29 octobre 2026.
 - Mesure d'audience : Cloudflare Web Analytics activé sur le projet Pages le 29 octobre 2026 (script `static.cloudflareinsights.com`, autorisé par `public/_headers`).
 - Pinterest : épingles verticales 1000 × 1500 prévues (modèle Keur Déco), pas encore construites.

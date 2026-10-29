@@ -62,3 +62,16 @@ describe("Catalogue des produits", () => {
     for (const p of PRODUITS) if (p.image) assert.match(p.image, new RegExp(`^/produits/${p.slug}\\.webp$`), p.slug);
   });
 });
+
+describe("Relevé des ASIN (src/lib/catalogue/asins.json)", () => {
+  it("chaque ASIN relevé vise un produit du catalogue, avec sa date et le titre lu sur Amazon", async () => {
+    const asins = (await import("../src/lib/catalogue/asins.json", { with: { type: "json" } })).default as Record<string, { asin: string; verifie_le: string; titre: string }>;
+    const slugs = new Set(PRODUITS.map((p) => p.slug));
+    for (const [slug, a] of Object.entries(asins)) {
+      assert.ok(slugs.has(slug), `${slug} : produit inconnu`);
+      assert.match(a.asin, /^[0-9A-Z]{10}$/, slug);
+      assert.match(a.verifie_le, DATE, slug);
+      assert.ok(a.titre.trim(), `${slug} : titre Amazon manquant`);
+    }
+  });
+});

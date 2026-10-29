@@ -11,7 +11,7 @@ publications réelles, ou routine qui publie).
 
 ## Rémunération par phases
 
-- [prêt] **Amazon Partenaires** : tag `keurdesir-21` en place (29 octobre 2026) ; 106 produits au catalogue, encore sans ASIN vérifié (boutons vers une recherche Amazon avec le tag).
+- [prêt] **Amazon Partenaires** : tag `keurdesir-21` en place (29 octobre 2026) ; 106 produits au catalogue, dont 49 avec lien direct vers leur fiche Amazon (29 octobre 2026) ; les autres mènent à une recherche Amazon avec le tag.
 - [à faire] **Etsy via Awin** : programme Etsy FR pour les produits artisanaux (thiouraye, baya faites main, petits pagnes) ; identifiants Awin à régler.
 - [à faire] **AdSense** : script en place ; blocs à créer et examen à demander après les premiers contenus.
 

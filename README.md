@@ -38,7 +38,7 @@ Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux 
 
 - **Amazon** : tag `keurdesir-21` (`src/lib/liens.ts`). Mention « En tant que Partenaire Amazon… » dans le pied de page et les pages légales.
 - **Etsy via Awin** : liens profonds Awin, actifs dès que `NEXT_PUBLIC_AWIN_AFFID` et `NEXT_PUBLIC_AWIN_ETSY_MID` sont réglés.
-- Chaque produit choisit ses boutiques (`boutiques: ["amazon", "etsy"]`) ; sans fiche vérifiée, le bouton mène à une recherche.
+- Chaque produit choisit ses boutiques (`boutiques: ["amazon", "etsy"]`). ASIN relevés dans `src/lib/catalogue/asins.json` (49 sur 106 au 29 octobre 2026) ; sans ASIN, le bouton mène à une recherche Amazon.
 
 ## Règle absolue de contenu
 

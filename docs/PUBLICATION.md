@@ -29,7 +29,7 @@
 3. ✅ **Dépôt GitHub** : teiki5320/keurdesir, public, créé le 29 octobre 2026 ; `main` poussé. La première publication automatique a passé tous les contrôles et s'est arrêtée faute de secrets Cloudflare.
 4. **Cloudflare** : créer le projet Pages `keurdesir`, régler les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`, relier keurdesir.com.
 5. ✅ **Contenus de lancement** (29 octobre 2026) : 106 produits, 10 Top 10, 7 guides de rubrique, lexique de 18 mots et 5 articles du djongué programmés du 30 octobre au 9 novembre.
-6. **Vérification des produits** : ouvrir chaque fiche Amazon (et Etsy) et saisir les ASIN vérifiés ; d'ici là, les boutons mènent à une recherche Amazon avec le tag.
+6. **Produits Amazon** : 49 liens directs le 29 octobre 2026 (ASIN relevés sur amazon.fr), 57 liens de recherche ; reste à contrôler le bouton d'achat (`npm run verifier-produits`) et à compléter les autres.
 7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps).
 8. **Awin** : régler les identifiants du programme Etsy FR.
 9. **AdSense** : créer les 3 blocs Keur Désir, puis demander l'examen du site une fois les contenus publiés.

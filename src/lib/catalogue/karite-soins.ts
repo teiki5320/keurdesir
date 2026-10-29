@@ -30,6 +30,7 @@ export const kariteSoins: Produit[] = [
       "Prélevez une noisette de beurre avec une spatule propre et réchauffez-la entre vos paumes jusqu'à ce qu'elle devienne huileuse. Appliquez-la sur la peau encore légèrement humide après la douche, ou sur les pointes des cheveux. Conservez le pot fermé, à l'abri de la chaleur et de la lumière.",
     boutiques: ["amazon"],
     recherche: "beurre de karité brut non raffiné Burkina Faso",
+    image: "/produits/beurre-karite-brut-burkina.webp",
   },
   {
     ...commun,
@@ -48,6 +49,7 @@ export const kariteSoins: Produit[] = [
       "Faites fondre une petite quantité entre vos mains avant de l'appliquer sur les zones sèches comme les coudes, les genoux et les talons. Sur les cheveux, utilisez-le en très petite quantité sur les longueurs pour sceller l'hydratation après un soin.",
     boutiques: ["amazon"],
     recherche: "raw shea butter Ghana beurre de karité brut",
+    image: "/produits/beurre-karite-brut-ghana.webp",
   },
   {
     ...commun,
@@ -67,6 +69,7 @@ export const kariteSoins: Produit[] = [
       "Utilisez-le pur, chaque jour, sur le corps et les mains. Il peut aussi servir de base à vos préparations maison, fondu au bain-marie avec quelques gouttes d'huile végétale.",
     boutiques: ["amazon"],
     recherche: "beurre de karité bio non raffiné",
+    image: "/produits/beurre-karite-bio-non-raffine.webp",
   },
   {
     ...commun,
@@ -85,6 +88,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez-le sur le corps en petite quantité, en le faisant bien pénétrer pour éviter les traces de couleur sur les vêtements clairs. Réservez-le de préférence aux soins du soir.",
     boutiques: ["amazon"],
     recherche: "beurre de karité jaune non raffiné",
+    image: "/produits/beurre-karite-jaune.webp",
   },
   {
     ...commun,
@@ -104,6 +108,7 @@ export const kariteSoins: Produit[] = [
       "Utilisez-le comme tout beurre brut, en réchauffant une noisette entre vos mains avant de l'appliquer. Gardez-le au frais en été, car un beurre artisanal peut ramollir et changer de texture à la chaleur.",
     boutiques: ["etsy", "amazon"],
     recherche: "beurre de karité artisanal coopérative femmes",
+    image: "/produits/beurre-karite-cooperative-femmes.webp",
   },
   {
     ...commun,
@@ -122,6 +127,7 @@ export const kariteSoins: Produit[] = [
       "Grattez une petite quantité du bloc avec une cuillère, puis faites-la fondre entre vos mains. Appliquez-la le soir sur le corps, ou sur les pointes des cheveux avant une coiffure protectrice.",
     boutiques: ["amazon"],
     recherche: "beurre de karité brut Mali",
+    image: "/produits/beurre-karite-brut-mali.webp",
   },
   {
     ...commun,
@@ -140,6 +146,7 @@ export const kariteSoins: Produit[] = [
       "Dès réception, répartissez le beurre dans des pots propres et bien fermés, en n'en gardant qu'un seul ouvert. Rangez le reste à l'abri de la chaleur et de la lumière. Prélevez toujours avec une spatule propre.",
     boutiques: ["amazon"],
     recherche: "beurre de karité brut 1 kg",
+    image: "/produits/beurre-karite-brut-grand-format.webp",
   },
   {
     ...commun,
@@ -158,6 +165,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez directement une petite quantité sur la peau, sans la réchauffer. Gardez le pot au frais : à la chaleur, le beurre fouetté peut retomber, sans perdre ses qualités.",
     boutiques: ["etsy", "amazon"],
     recherche: "beurre de karité fouetté sans parfum",
+    image: "/produits/beurre-karite-fouette-nature.webp",
   },
   {
     ...commun,
@@ -177,6 +185,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez-le après la douche sur une peau sèche, en lissant doucement. Si votre peau est sensible aux parfums, essayez-le d'abord sur une petite zone, au creux du coude.",
     boutiques: ["etsy", "amazon"],
     recherche: "beurre de karité fouetté parfumé",
+    image: "/produits/beurre-karite-fouette-parfume.webp",
   },
   {
     ...commun,
@@ -195,6 +204,7 @@ export const kariteSoins: Produit[] = [
       "Prenez une petite quantité, laissez-la fondre au creux de la main et appliquez-la sur le corps encore tiède après la douche. Par temps chaud, il devient presque liquide : refermez bien le pot.",
     boutiques: ["etsy", "amazon"],
     recherche: "baume karité coco corps",
+    image: "/produits/baume-karite-coco.webp",
   },
 
   // --- Huiles végétales ---
@@ -216,6 +226,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez quelques gouttes sur la peau après la douche, ou mélangez-la à votre crème pour le corps. Sur les cheveux, utilisez-en une petite quantité sur les pointes. Conservez le flacon à l'abri de la lumière.",
     boutiques: ["amazon"],
     recherche: "huile de baobab vierge pressée à froid",
+    image: "/produits/huile-baobab-vierge.webp",
   },
   {
     ...commun,
@@ -234,6 +245,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez-la en petite quantité sur le cuir chevelu et les longueurs, en bain d'huile avant le shampooing. Comme elle est très épaisse, vous pouvez la mélanger avec une huile plus légère, comme la coco ou le baobab.",
     boutiques: ["amazon"],
     recherche: "huile de ricin noire jamaïcaine",
+    image: "/produits/huile-ricin-noire.webp",
   },
   {
     ...commun,
@@ -252,6 +264,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez quelques gouttes sur les longueurs et les pointes, de préférence mélangées à une huile plus fluide. Le soir, déposez-en une très petite quantité sur les sourcils à l'aide d'une brosse propre.",
     boutiques: ["amazon"],
     recherche: "huile de ricin vierge pressée à froid",
+    image: "/produits/huile-ricin-vierge.webp",
   },
   {
     ...commun,
@@ -270,6 +283,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez quelques gouttes sur le visage ou le corps, seule ou mélangée à votre crème. Elle peut aussi servir de base pour diluer un parfum ou une huile plus épaisse.",
     boutiques: ["amazon"],
     recherche: "huile de moringa vierge bio",
+    image: "/produits/huile-moringa-vierge.webp",
   },
   {
     ...commun,
@@ -289,6 +303,7 @@ export const kariteSoins: Produit[] = [
       "Prélevez une petite quantité et laissez-la fondre dans vos mains avant de l'appliquer. En bain d'huile, posez-la sur les longueurs une heure avant le shampooing. Choisissez la mention « vierge » ou « pressée à froid » sur l'étiquette.",
     boutiques: ["amazon"],
     recherche: "huile de coco vierge bio pressée à froid",
+    image: "/produits/huile-coco-vierge.webp",
   },
   {
     ...commun,
@@ -307,6 +322,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez-la sur la peau après la douche, en flacon pompe pour plus de confort. Ajoutez-y quelques gouttes de votre parfum préféré pour une huile de corps personnalisée.",
     boutiques: ["amazon"],
     recherche: "huile de coco fractionnée",
+    image: "/produits/huile-coco-fractionnee.webp",
   },
   {
     ...commun,
@@ -325,6 +341,7 @@ export const kariteSoins: Produit[] = [
       "Utilisez-la sur le corps comme une huile sèche, ou sur les cheveux pour les faire briller. Elle se mélange facilement avec d'autres huiles végétales.",
     boutiques: ["amazon"],
     recherche: "huile de karité liquide",
+    image: "/produits/huile-karite.webp",
   },
   {
     ...commun,
@@ -343,6 +360,7 @@ export const kariteSoins: Produit[] = [
       "Mélangez quelques gouttes d'huile de nigelle à une huile plus douce, comme la coco ou le baobab, avant de l'appliquer. Testez d'abord le mélange sur une petite zone de peau.",
     boutiques: ["amazon"],
     recherche: "huile de nigelle vierge pressée à froid",
+    image: "/produits/huile-nigelle-vierge.webp",
   },
   {
     ...commun,
@@ -361,6 +379,7 @@ export const kariteSoins: Produit[] = [
       "Appliquez-la sur le corps encore humide, ou mélangez-la à du karité fondu pour un baume maison. Sur les cheveux, utilisez-la en bain d'huile avant le shampooing.",
     boutiques: ["amazon"],
     recherche: "huile d'avocat vierge bio",
+    image: "/produits/huile-avocat-vierge.webp",
   },
   {
     ...commun,
@@ -379,5 +398,6 @@ export const kariteSoins: Produit[] = [
       "Tiédissez le flacon entre vos mains, puis appliquez l'huile sur la peau après la douche. Elle peut aussi servir de base pour diluer des huiles plus épaisses comme la ricin.",
     boutiques: ["amazon"],
     recherche: "huile de sésame vierge cosmétique corps",
+    image: "/produits/huile-sesame-vierge.webp",
   },
 ];

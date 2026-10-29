@@ -49,6 +49,11 @@
     "verifie_le": "2026-10-29",
     "titre": "1KG Beurre de karité BIO et Equitable du Burkina Faso - beurre brut, cru - 100% vierge"
   },
+  "beurre-karite-brut-ghana": {
+    "asin": "B004WC7BT0",
+    "verifie_le": "2026-10-29",
+    "titre": "Fushi Organic Virgin Shea Butter 250g, RAW Unrefined Ghanaian"
+  },
   "beurre-karite-brut-grand-format": {
     "asin": "B00MY7O91S",
     "verifie_le": "2026-10-29",
@@ -83,6 +88,11 @@
     "asin": "B0GWRRTJ7T",
     "verifie_le": "2026-10-29",
     "titre": "Trousse Pochette carrée Fait Main en Wax Rouge et Vert"
+  },
+  "bonnet-satin-wax": {
+    "asin": "B09SY62DYX",
+    "verifie_le": "2026-10-29",
+    "titre": "KALAVY Bonnet de nuit en satin et Wax"
   },
   "brule-encens-electrique-rechargeable": {
     "asin": "B0F28JR5VC",
@@ -174,6 +184,11 @@
     "verifie_le": "2026-10-29",
     "titre": "Jio nature – Gowé/Guéni – Cyperus rotundus – 100 g – Sachet kraft refermable"
   },
+  "huile-avocat-vierge": {
+    "asin": "B011U2NQGG",
+    "verifie_le": "2026-10-29",
+    "titre": "Huile d'Avocat Bio - Persea gratissima oil - Huile vierge - 100% Pure & naturelle - 100ml"
+  },
   "huile-baobab-vierge": {
     "asin": "B086R1642L",
     "verifie_le": "2026-10-29",
@@ -224,6 +239,11 @@
     "verifie_le": "2026-10-29",
     "titre": "Incensera Résine Encens Oliban Boswellia Papyrifera 50g"
   },
+  "pagne-wax-6-yards": {
+    "asin": "B0HJB8X8H1",
+    "verifie_le": "2026-10-29",
+    "titre": "Coton Véritable pour Wax Hollandais (6 yards)"
+  },
   "pastilles-charbon-encens": {
     "asin": "B0D11WWFSS",
     "verifie_le": "2026-10-29",
@@ -243,5 +263,10 @@
     "asin": "B0HNDJ5PW7",
     "verifie_le": "2026-10-29",
     "titre": "Tote bag en wax doublé – Sac cabas en tissu africain coloré"
+  },
+  "trousse-toilette-wax": {
+    "asin": "B0GWRRTJ7T",
+    "verifie_le": "2026-10-29",
+    "titre": "Trousse Pochette carrée Fait Main en Wax Rouge et Vert"
   }
 }

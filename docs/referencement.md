@@ -1,7 +1,7 @@
 # Journal du référencement
 
 Modèle : Keurbook (docs/referencement.md). Une page travaillée n'est pas retouchée avant 28 jours : Google a besoin de ce
-temps pour réagir. Keur Désir n'est pas encore dans la routine « Référencement du jour » (29 octobre 2026).
+temps pour réagir. Keur Désir est dans la routine « Référencement du jour » depuis le 29 octobre 2026 : le samedi des semaines paires (en alternance avec Keur Foot).
 
 ## 29/10/2026 — mise en ligne
 
@@ -16,7 +16,7 @@ temps pour réagir. Keur Désir n'est pas encore dans la routine « Référencem
 - IndexNow : clé publique `/d594b7cccbd54ab33111237c115501e5.txt`, signalement après chaque publication réussie (`indexnow.yml`).
 - Fiches enrichies (JSON-LD) : WebSite, Organization, BreadcrumbList, Article, ItemList, DefinedTermSet (lexique).
 - Google Discover : `max-image-preview:large` sur toutes les pages ; image de partage `public/brand/keurdesir-partage.jpg`.
-- Visuels produits : 3 produits sur 106 ont leur image le 29 octobre 2026 (essais OpenArt) ; les autres affichent un visuel de repli.
+- Visuels : les 106 produits et les 5 articles ont leur image depuis le 29 octobre 2026 (OpenArt ; 3 essais d'abord, puis tous les autres le même jour).
 
 ### Reste à faire
 

@@ -49,6 +49,7 @@ export const tenuesDeNuit: Produit[] = [
       "Le bethio se noue autour de la taille et se porte à la maison. Lavez-le à la main, à l'eau tiède, sans le tordre, pour ne pas abîmer les jours. Faites-le sécher à plat, à l'abri du soleil direct.",
     boutiques: ["etsy", "amazon"],
     recherche: "bethio pagne sénégalais",
+    image: "/produits/bethio-coton-ajoure.webp",
   },
   {
     ...base,
@@ -67,6 +68,7 @@ export const tenuesDeNuit: Produit[] = [
       "Nouez-le comme un pagne classique et réservez-le aux moments où vous recevez ou célébrez. Lavez-le à la main, à l'eau froide, car le bazin teint peut dégorger les premières fois. Repassez-le sur l'envers pour garder son éclat.",
     boutiques: ["etsy", "amazon"],
     recherche: "pagne bazin brodé femme",
+    image: "/produits/petit-pagne-bazin-brode.webp",
   },
   {
     ...base,
@@ -86,6 +88,7 @@ export const tenuesDeNuit: Produit[] = [
       "Choisissez la taille d'après le guide de la créatrice, car les coupes varient d'un atelier à l'autre. Lavez-la à 30 °C sur l'envers, avec des couleurs proches. Faites-la sécher à l'ombre pour garder l'éclat du wax.",
     boutiques: ["etsy", "amazon"],
     recherche: "nuisette wax africaine coton",
+    image: "/produits/nuisette-coton-wax.webp",
   },
   {
     ...base,
@@ -104,6 +107,7 @@ export const tenuesDeNuit: Produit[] = [
       "Portez-la pour dormir ou pour traîner le dimanche matin. Lavez-la à 30 °C en cycle délicat, puis repassez-la sur l'envers. Le wax s'assouplit au fil des lavages.",
     boutiques: ["etsy", "amazon"],
     recherche: "chemise de nuit wax africain",
+    image: "/produits/chemise-de-nuit-longue-wax.webp",
   },
   {
     ...base,
@@ -123,6 +127,7 @@ export const tenuesDeNuit: Produit[] = [
       "Enfilez-le ouvert le matin ou noué avec sa ceinture pour recevoir chez vous. Lavez-le à 30 °C sur l'envers et repassez-le légèrement humide.",
     boutiques: ["etsy", "amazon"],
     recherche: "kimono wax femme",
+    image: "/produits/kimono-interieur-wax.webp",
   },
   {
     ...base,
@@ -141,6 +146,7 @@ export const tenuesDeNuit: Produit[] = [
       "Portez-le au sortir de la douche ou pour vos moments de détente. Lavez-le à la main ou en cycle délicat à l'eau froide, car le satin est fragile. Évitez le sèche-linge et repassez à basse température côté satin.",
     boutiques: ["etsy", "amazon"],
     recherche: "peignoir wax satin africain",
+    image: "/produits/peignoir-wax-double-satin.webp",
   },
   {
     ...base,
@@ -159,6 +165,7 @@ export const tenuesDeNuit: Produit[] = [
       "Il se porte pour dormir comme pour les matinées à la maison. Lavez-le à 30 °C sur l'envers, avec des couleurs proches. Le wax perd sa raideur après quelques lavages et devient très souple.",
     boutiques: ["etsy", "amazon"],
     recherche: "pyjama wax africain femme",
+    image: "/produits/pyjama-wax-short-chemise.webp",
   },
   {
     ...base,
@@ -177,6 +184,7 @@ export const tenuesDeNuit: Produit[] = [
       "Associez-le à un haut uni pour laisser parler le motif. Lavez-le à 30 °C sur l'envers et faites-le sécher à l'ombre.",
     boutiques: ["etsy", "amazon"],
     recherche: "pantalon wax femme coton",
+    image: "/produits/pantalon-detente-wax.webp",
   },
   {
     ...base,
@@ -196,6 +204,7 @@ export const tenuesDeNuit: Produit[] = [
       "Portez-le seul, à la maison, ou avec un foulard assorti pour recevoir. Lavez-le à 30 °C, sur l'envers pour protéger la broderie. Les cotons teints à la main se lavent séparément les premières fois.",
     boutiques: ["etsy", "amazon"],
     recherche: "boubou coton brodé femme",
+    image: "/produits/boubou-interieur-coton-brode.webp",
   },
   {
     ...base,
@@ -214,6 +223,7 @@ export const tenuesDeNuit: Produit[] = [
       "Réservez-le aux moments où vous recevez ou aux fêtes de famille. Lavez-le à la main à l'eau froide et repassez-le sur l'envers.",
     boutiques: ["etsy", "amazon"],
     recherche: "caftan bazin femme",
+    image: "/produits/caftan-interieur-bazin.webp",
   },
   {
     ...base,
@@ -232,6 +242,7 @@ export const tenuesDeNuit: Produit[] = [
       "Portez-la seule ou avec un kimono en wax par-dessus. Lavez-la à 30 °C dans un filet pour protéger la broderie. Repassez-la à température moyenne, sur l'envers.",
     boutiques: ["amazon", "etsy"],
     recherche: "chemise de nuit coton brodé",
+    image: "/produits/chemise-de-nuit-coton-brode.webp",
   },
   {
     ...base,
@@ -250,6 +261,7 @@ export const tenuesDeNuit: Produit[] = [
       "Lavez-la à la main ou dans un filet à 30 °C, pour préserver la dentelle. Faites-la sécher à plat et évitez le sèche-linge.",
     boutiques: ["amazon", "etsy"],
     recherche: "chemise de nuit coton dentelle femme",
+    image: "/produits/chemise-de-nuit-coton-dentelle.webp",
   },
   {
     ...base,
@@ -269,6 +281,7 @@ export const tenuesDeNuit: Produit[] = [
       "Choisissez une taille large si vous portez des tresses ou des locks. Lavez-le à la main à l'eau froide, puis laissez-le sécher à l'air.",
     boutiques: ["etsy", "amazon"],
     recherche: "bonnet satin wax africain",
+    image: "/produits/bonnet-satin-wax.webp",
   },
   {
     ...base,
@@ -287,5 +300,6 @@ export const tenuesDeNuit: Produit[] = [
       "Nouez-le à la taille comme un pagne ou posez-le sur les épaules les soirs frais. Lavez-le à 30 °C et repassez-le légèrement humide.",
     boutiques: ["etsy", "amazon"],
     recherche: "paréo wax africain",
+    image: "/produits/pareo-wax.webp",
   },
 ];

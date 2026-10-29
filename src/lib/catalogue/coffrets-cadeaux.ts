@@ -29,6 +29,7 @@ export const coffretsCadeaux: Produit[] = [
       "Allumez un charbon, posez-le dans l'encensoir et attendez qu'il blanchisse. Déposez alors une petite pincée de thiouraye et laissez la fumée parfumer la pièce. Ne laissez jamais un charbon allumé sans surveillance et posez l'encensoir sur un support qui ne craint pas la chaleur.",
     boutiques: ["etsy", "amazon"],
     recherche: "coffret thiouraye encensoir",
+    image: "/produits/coffret-thiouraye-encensoir.webp",
   },
   {
     ...base,
@@ -47,6 +48,7 @@ export const coffretsCadeaux: Produit[] = [
       "Demandez à la créatrice les couleurs de perles et le parfum de thiouraye disponibles. Prévoyez un délai de fabrication pour les coffrets composés à la main.",
     boutiques: ["etsy", "amazon"],
     recherche: "coffret thiouraye bine bine",
+    image: "/produits/coffret-thiouraye-bine-bine.webp",
   },
   {
     ...base,
@@ -66,6 +68,7 @@ export const coffretsCadeaux: Produit[] = [
       "Lisez la liste des ingrédients pour vérifier la part de karité et la présence de parfum. Le beurre pur se réchauffe entre les mains avant de l'appliquer. Conservez les pots à l'abri de la chaleur.",
     boutiques: ["amazon", "etsy"],
     recherche: "coffret cadeau beurre de karité",
+    image: "/produits/coffret-soins-karite.webp",
   },
   {
     ...base,
@@ -84,6 +87,7 @@ export const coffretsCadeaux: Produit[] = [
       "Vérifiez la longueur proposée et si le fil se noue ou se ferme par un fermoir. Rangez les rangs à plat dans leur écrin pour éviter qu'ils s'emmêlent.",
     boutiques: ["etsy", "amazon"],
     recherche: "bine bine perles de taille coffret",
+    image: "/produits/ecrin-bine-bine.webp",
   },
   {
     ...base,
@@ -102,6 +106,7 @@ export const coffretsCadeaux: Produit[] = [
       "Laissez-la brûler la première fois jusqu'à ce que toute la surface de cire soit fondue. Coupez la mèche à environ 5 mm avant chaque allumage. Ne la laissez jamais brûler sans surveillance.",
     boutiques: ["amazon", "etsy"],
     recherche: "bougie parfumée oud ambre",
+    image: "/produits/bougie-parfumee-oud-ambre.webp",
   },
   {
     ...base,
@@ -120,6 +125,7 @@ export const coffretsCadeaux: Produit[] = [
       "Allumez une bougie différente selon le moment, une senteur fraîche le matin, une senteur boisée le soir. Éloignez-les des rideaux et ne les laissez pas brûler plus de quelques heures d'affilée.",
     boutiques: ["amazon", "etsy"],
     recherche: "coffret bougies parfumées santal",
+    image: "/produits/coffret-bougies-parfumees.webp",
   },
   {
     ...base,
@@ -139,6 +145,7 @@ export const coffretsCadeaux: Produit[] = [
       "Glissez-y quelques soins pour en faire un cadeau complet. Lavez-la à l'eau froide, à la main ou en cycle délicat, et laissez-la sécher ouverte.",
     boutiques: ["etsy", "amazon"],
     recherche: "trousse de toilette wax",
+    image: "/produits/trousse-toilette-wax.webp",
   },
   {
     ...base,
@@ -157,6 +164,7 @@ export const coffretsCadeaux: Produit[] = [
       "Garnissez-le de pagnes pliés, d'encens et de soins pour composer un panier cadeau. Dépoussiérez-le avec un chiffon sec et évitez de le laisser en plein soleil.",
     boutiques: ["etsy", "amazon"],
     recherche: "panier sénégalais tressé main",
+    image: "/produits/panier-senegalais-tresse.webp",
   },
   {
     ...base,
@@ -175,6 +183,7 @@ export const coffretsCadeaux: Produit[] = [
       "Pliez-le avec soin et présentez-le dans un panier ou noué d'un ruban. Lavez le tissu avant la couture pour éviter les surprises au premier lavage.",
     boutiques: ["amazon", "etsy"],
     recherche: "pagne wax 6 yards coton",
+    image: "/produits/pagne-wax-6-yards.webp",
   },
   {
     ...base,
@@ -193,6 +202,7 @@ export const coffretsCadeaux: Produit[] = [
       "Offrez-le assez tôt, car les couturiers sont très demandés avant les fêtes. Lavez le bazin à l'eau froide, à la main, pour préserver sa couleur.",
     boutiques: ["amazon", "etsy"],
     recherche: "tissu bazin riche coupon",
+    image: "/produits/coupon-bazin-riche.webp",
   },
   {
     ...base,
@@ -211,6 +221,7 @@ export const coffretsCadeaux: Produit[] = [
       "Repassez-le avant de le nouer pour obtenir des plis nets. Lavez-le à 30 °C et faites-le sécher à l'ombre.",
     boutiques: ["etsy", "amazon"],
     recherche: "foulard tête wax africain",
+    image: "/produits/foulard-tete-wax.webp",
   },
   {
     ...base,
@@ -229,6 +240,7 @@ export const coffretsCadeaux: Produit[] = [
       "Glissez-y le reste de votre cadeau, encens ou soins, pour une double surprise. Lavez-le à la main à l'eau froide si les anses sont en cuir.",
     boutiques: ["etsy", "amazon"],
     recherche: "sac cabas wax africain",
+    image: "/produits/sac-cabas-wax.webp",
   },
   {
     ...base,
@@ -247,6 +259,7 @@ export const coffretsCadeaux: Produit[] = [
       "Appliquez quelques gouttes sur une peau encore humide après la douche. Conservez les flacons à l'abri de la chaleur et de la lumière, bien refermés.",
     boutiques: ["amazon", "etsy"],
     recherche: "coffret huiles végétales corps",
+    image: "/produits/coffret-huiles-vegetales.webp",
   },
   {
     ...base,
@@ -265,6 +278,7 @@ export const coffretsCadeaux: Produit[] = [
       "Faites mousser le savon entre vos mains plutôt que directement sur la peau. Laissez-le sécher sur un porte-savon bien égoutté entre deux utilisations.",
     boutiques: ["amazon", "etsy"],
     recherche: "coffret savon noir africain karité",
+    image: "/produits/coffret-savon-noir-karite.webp",
   },
   {
     ...base,
@@ -283,6 +297,7 @@ export const coffretsCadeaux: Produit[] = [
       "Utilisez-la comme vide-poche, corbeille à fruits secs ou simple objet décoratif. Évitez de la laver à grande eau : un chiffon sec suffit.",
     boutiques: ["etsy", "amazon"],
     recherche: "calebasse décorative africaine",
+    image: "/produits/calebasse-decorative-gravee.webp",
   },
   {
     ...base,
@@ -301,6 +316,7 @@ export const coffretsCadeaux: Produit[] = [
       "Vérifiez les dimensions avant de commander pour qu'elles correspondent à votre garnissage. Lavez-la à 30 °C sur l'envers, fermeture fermée.",
     boutiques: ["etsy", "amazon"],
     recherche: "housse coussin wax",
+    image: "/produits/housse-coussin-wax.webp",
   },
   {
     ...base,
@@ -319,6 +335,7 @@ export const coffretsCadeaux: Produit[] = [
       "Écrivez quelques mots sur la première page avant de l'offrir. Conservez-le à l'abri de l'humidité pour protéger le tissu.",
     boutiques: ["etsy", "amazon"],
     recherche: "carnet couverture tissu wax",
+    image: "/produits/carnet-couverture-wax.webp",
   },
   {
     ...base,
@@ -337,6 +354,7 @@ export const coffretsCadeaux: Produit[] = [
       "Portez-le seul ou associé à d'autres bracelets de perles. Retirez-le avant la douche pour préserver le fil élastique.",
     boutiques: ["etsy", "amazon"],
     recherche: "bracelet perles krobo",
+    image: "/produits/bracelet-perles-krobo.webp",
   },
   {
     ...base,
@@ -355,6 +373,7 @@ export const coffretsCadeaux: Produit[] = [
       "Choisissez un wax assorti aux couleurs de la cérémonie si vous en commandez plusieurs. Rangez-le plié, à l'abri de l'humidité.",
     boutiques: ["etsy", "amazon"],
     recherche: "éventail wax africain",
+    image: "/produits/eventail-wax.webp",
   },
   {
     ...base,
@@ -373,5 +392,6 @@ export const coffretsCadeaux: Produit[] = [
       "Déposez quelques copeaux sur la plaque ou le charbon et laissez la fumée se diffuser. Vérifiez sur la notice que l'appareil convient au bakhour, car certains ne supportent pas les résines.",
     boutiques: ["amazon", "etsy"],
     recherche: "coffret bakhour brûle encens",
+    image: "/produits/coffret-bakhour-brule-parfum.webp",
   },
 ];

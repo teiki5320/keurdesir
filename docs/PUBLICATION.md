@@ -7,7 +7,7 @@
 ## En bref
 
 - **Production** : en ligne sur https://keurdesir.com depuis le 29 octobre 2026
-- **Domaine & SSL** : keurdesir.com relié au projet Pages le 29 octobre 2026, certificat Cloudflare ; www.keurdesir.com relié, en cours d'activation
+- **Domaine & SSL** : keurdesir.com relié au projet Pages le 29 octobre 2026, certificat Cloudflare ; www.keurdesir.com redirigé vers keurdesir.com (301, règle Cloudflare du 29 octobre 2026) ; pages HTML gardées 10 min en cache par Cloudflare (règle du même jour)
 - **Visibilité** : site en ligne ; Search Console, Bing Webmaster Tools et Cloudflare Web Analytics ouverts le 29 octobre 2026 ; Pinterest pas encore ouvert
 - **Contact** : keurdesir@toakeur.com
 
@@ -17,7 +17,7 @@
 |---|---|
 | État | [ok] En ligne depuis le 29 octobre 2026 |
 | Hébergement | [ok] Cloudflare Pages, projet keurdesir, publié par GitHub Actions |
-| Domaine | [ok] keurdesir.com relié ; www.keurdesir.com relié, en cours d'activation |
+| Domaine | [ok] keurdesir.com relié ; www.keurdesir.com redirigé vers keurdesir.com (301, règle Cloudflare du 29 octobre 2026) |
 | SSL | [ok] Certificat Cloudflare |
 | Indexation | [ok] Search Console (propriété Domaine keurdesir.com, validée par TXT) et Bing Webmaster Tools (validé par `BingSiteAuth.xml`), sitemap envoyé aux deux le 29 octobre 2026 |
 | Mesure d'audience | [ok] Cloudflare Web Analytics activé le 29 octobre 2026 |
@@ -46,7 +46,7 @@
 
 ## Domaine & SSL
 
-- keurdesir.com, zone DNS sur Cloudflare : CNAME `keurdesir.com` et `www` vers `keurdesir.pages.dev`, reliés au projet Pages le 29 octobre 2026.
+- keurdesir.com, zone DNS sur Cloudflare : CNAME `keurdesir.com` et `www` vers `keurdesir.pages.dev`, reliés au projet Pages le 29 octobre 2026. Règles Cloudflare du même jour : redirection 301 de www vers keurdesir.com, et pages HTML en cache 10 min.
 
 ## Visibilité
 

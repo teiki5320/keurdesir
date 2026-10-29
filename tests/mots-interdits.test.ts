@@ -16,8 +16,10 @@ import { racine } from "./aide";
 /** Tous les textes publiés ou programmés, avec leur origine. */
 function textesDuSite(): Array<{ source: string; texte: string }> {
   const dir = join(racine, "content", "conseils");
+  const guides = join(racine, "content", "rubriques");
   return [
     ...readdirSync(dir).filter((f) => f.endsWith(".md")).map((f) => ({ source: `content/conseils/${f}`, texte: readFileSync(join(dir, f), "utf8") })),
+    ...readdirSync(guides).filter((f) => f.endsWith(".md")).map((f) => ({ source: `content/rubriques/${f}`, texte: readFileSync(join(guides, f), "utf8") })),
     ...PRODUITS.map((p) => ({ source: `produit ${p.slug}`, texte: JSON.stringify(p) })),
     ...TOP10S.map((t) => ({ source: `top 10 ${t.slug}`, texte: JSON.stringify(t) })),
     ...RUBRIQUES.map((r) => ({ source: `rubrique ${r.slug}`, texte: JSON.stringify(r) })),

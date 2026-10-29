@@ -38,7 +38,7 @@ function hashesAt(commit) {
 }
 
 /** Dossiers et fichiers d'où viennent les pages datées par le registre. */
-const SOURCES = ["src/lib/catalogue", "src/lib/top10", "src/lib/rubriques.ts", "src/lib/types.ts", "content/conseils"];
+const SOURCES = ["src/lib/catalogue", "src/lib/top10", "src/lib/rubriques.ts", "src/lib/types.ts", "content/conseils", "content/rubriques"];
 
 /** Jour du dernier commit qui touche ces chemins (AAAA-MM-JJ), ou null (pas de git, historique absent). */
 function jourCommit(...chemins) {

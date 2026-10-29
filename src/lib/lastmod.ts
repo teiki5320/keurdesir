@@ -16,21 +16,21 @@ export type Ledger = Record<string, { h: string; d: string }>;
 const hash = (value: unknown) => createHash("sha1").update(JSON.stringify(value)).digest("hex").slice(0, 16);
 
 /**
- * Empreinte de chaque page : « produit/<slug> », « <rubrique> » (rubrique et ses produits),
+ * Empreinte de chaque page : « produit/<slug> », « <rubrique> » (rubrique, son guide et ses produits),
  * « conseils/<slug> » (fichier de l'article), « top-10/<slug> » (sélection et ses produits).
  */
-export function pageHashes(produits: Produit[], conseils: Record<string, string>, tops: Array<{ slug: string; items: Array<{ slug: string }> }> = []): Record<string, string> {
+export function pageHashes(produits: Produit[], conseils: Record<string, string>, tops: Array<{ slug: string; items: Array<{ slug: string }> }> = [], guides: Record<string, string> = {}): Record<string, string> {
   const out: Record<string, string> = {};
   const publies = produits.filter((p) => p.isPublished);
   const h = new Map(publies.map((p) => [p.slug, hash(p)]));
   for (const p of publies) out[`produit/${p.slug}`] = h.get(p.slug)!;
-  for (const r of RUBRIQUES) out[r.slug] = hash([r, publies.filter((p) => p.rubrique === r.slug).map((p) => h.get(p.slug))]);
+  for (const r of RUBRIQUES) out[r.slug] = hash([r, guides[r.slug] ?? null, publies.filter((p) => p.rubrique === r.slug).map((p) => h.get(p.slug))]);
   for (const [slug, text] of Object.entries(conseils)) out[`conseils/${slug}`] = hash(text);
   for (const t of tops) out[`top-10/${t.slug}`] = hash([t, t.items.map((i) => h.get(i.slug) ?? null)]);
   return out;
 }
 
-/** Fichiers des articles Conseils (texte brut, par adresse). */
+/** Fichiers Markdown d'un dossier de content/ (articles, guides des rubriques), texte brut par adresse. */
 export function readConseils(dir = join(process.cwd(), "content", "conseils")): Record<string, string> {
   return Object.fromEntries(
     readdirSync(dir)
@@ -42,7 +42,7 @@ export function readConseils(dir = join(process.cwd(), "content", "conseils")): 
 /** Empreintes du contenu actuel. */
 export async function currentHashes(): Promise<Record<string, string>> {
   const { TOP10S } = await import("./top10/sujets");
-  return pageHashes(PRODUITS, readConseils(), TOP10S);
+  return pageHashes(PRODUITS, readConseils(), TOP10S, readConseils(join(process.cwd(), "content", "rubriques")));
 }
 
 /** Registre des dates (src/lib/lastmod.json). */

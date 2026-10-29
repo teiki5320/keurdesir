@@ -10,6 +10,7 @@ import { suivantsEnBoucle } from "@/lib/boucle";
 import { siteConfig } from "@/lib/config";
 import { getConseilsDeRubrique } from "@/lib/data/conseils";
 import { getProduitsDeRubrique, toCarte } from "@/lib/data/produits";
+import { getGuideRubrique } from "@/lib/data/rubriques";
 import { getMaintenance } from "@/lib/data/settings";
 import { getTop10sDeRubrique } from "@/lib/data/top10";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
@@ -37,6 +38,7 @@ export default async function RubriquePage({ params }: PageProps<"/[rubrique]">)
   const tops = getTop10sDeRubrique(r.slug);
   const conseils = getConseilsDeRubrique(r.slug);
   const autres = suivantsEnBoucle(RUBRIQUES, (x) => x.slug === r.slug, 3);
+  const guide = getGuideRubrique(r.slug);
   const vide = produits.length === 0 && tops.length === 0 && conseils.length === 0;
   return (
     <>
@@ -47,6 +49,7 @@ export default async function RubriquePage({ params }: PageProps<"/[rubrique]">)
         }}
       />
       <PageHeader eyebrow="Rubrique" title={r.nom} intro={r.chapo} />
+      {guide && <div className="container-page prose-text mt-4" dangerouslySetInnerHTML={{ __html: guide }} />}
       {vide && <Bientot>Nos premiers articles et nos sélections de cette rubrique arrivent très bientôt.</Bientot>}
 
       {conseils.length > 0 && (
@@ -67,7 +70,7 @@ export default async function RubriquePage({ params }: PageProps<"/[rubrique]">)
         </Section>
       )}
 
-      {!vide && (
+      {(!vide || guide) && (
         <div className="container-page">
           <AdSlot placement="rubrique" />
         </div>

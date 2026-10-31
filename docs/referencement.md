@@ -22,3 +22,28 @@ temps pour réagir. Keur Désir est dans la routine « Référencement du jour �
 
 - Relire l'état du plan du site dans Search Console et Bing.
 - Une fois le site connu de Google : suivre les pages indexées, comme pour Keurbook.
+
+## 31/10/2026 — premier passage de la routine (samedi, semaine 44)
+
+### Gains rapides et page nouvelle
+
+- Aucune donnée encore : le Studio ne renvoie ni page en 2e page de Google ni recherche pour keurdesir.com
+  (période du 1er au 29 octobre, site en ligne depuis le 29). Rien à améliorer ni à créer ; à reprendre au prochain passage
+  (samedi 14 novembre).
+- Page « Nos articles » (/conseils) : signalée « bloquée par noindex » par Search Console ; c'était voulu tant qu'aucun
+  article n'était paru. Depuis le premier article (30 octobre), elle est ouverte à Google et dans le plan du site (vérifié en ligne).
+
+### Fiches enrichies vérifiées le 31/10/2026
+
+- Accueil : WebSite + Organization ; articles : Article (titre, description, image 1200 px, dates, auteur, éditeur) + BreadcrumbList ;
+  Top 10 : ItemList + BreadcrumbList ; rubriques et fiches produit : BreadcrumbList. JSON valide sur les pages construites
+  (accueil, un article, un Top 10, une rubrique, une fiche produit). Pas de FAQ visible, donc pas de FAQPage. Rien à corriger.
+
+### Socle vérifié le 31/10/2026
+
+- IndexNow : clé publique `/d594b7cccbd54ab33111237c115501e5.txt` servie, script `scripts/indexnow.mjs` et signalement après publication. OK.
+- Google Discover : `max-image-preview:large` sur toutes les pages vérifiées ; image de partage 1200 px (accueil, rubriques, Top 10),
+  image de l'article (1200 × 800) sur les articles, photo produit (1000 × 1000, la plus grande disponible) sur les fiches. OK.
+- Vitesse sur téléphone : PageSpeed Insights hors service (quota du jour atteint) pour l'accueil, une fiche produit et un article :
+  à refaire au prochain passage. Contrôle local : images avec taille et chargement différé sous la ligne de flottaison,
+  images produit de 200 Ko au plus, aucune police externe bloquante.

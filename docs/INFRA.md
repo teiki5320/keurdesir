@@ -50,6 +50,7 @@ uniquement des noms de variables et de consoles.
 ## Amazon Partenaires
 
 - **Tag** : `keurdesir-21` (depuis le 29 octobre 2026), table unique `AMAZON_TAGS` dans `src/lib/liens.ts`.
+- **Liens actifs en ligne** (vérifié le 1er novembre 2026) : 20 liens `tag=keurdesir-21` sur https://keurdesir.com/top-10/bine-bine-debuter et 2 sur la fiche https://keurdesir.com/produit/bine-bine-rocaille-rouge-or. L'accueil, la liste /top-10 et la page /boutique n'ont pas de bouton d'achat : c'est normal, ce sont des pages de liste.
 - Liens directs `amazon.fr/dp/<ASIN>` : 54 produits sur 106 au 29 octobre 2026 (49 au premier relevé, 5 au second), ASIN relevés sur les pages de recherche d'amazon.fr (fichier `src/lib/catalogue/asins.json`, modèle Keur Kado). Les autres (thiouraye, béthio, pièces en wax précises…) gardent une recherche Amazon avec le tag. Contrôle du bouton d'achat : `npm run verifier-produits` (sur le Mac) ; depuis le 29 octobre 2026, Keur Désir est aussi dans la routine du matin « Sites du jour » (partie Amazon, signalement seulement : produits indisponibles déposés dans « À faire » du Studio).
 
 ## Etsy (Awin)
@@ -62,11 +63,20 @@ uniquement des noms de variables et de consoles.
 - Script et meta `google-adsense-account` dans `src/app/layout.tsx` (compte `ca-pub-2680784147246798`, comme les autres sites TOA KEUR), `public/ads.txt` publié.
 - Blocs `fiche` (« Keur Désir - Fiche produit », `8833272514`), `rubrique` (« Keur Désir - Page rubrique », `1678717553`) et `article` (« Keur Désir - Article conseil », `9030593962`), créés le 29 octobre 2026, dans `ADSENSE_SLOTS` (`src/lib/config.ts`, réglables par `NEXT_PUBLIC_ADSENSE_SLOT_*`). Validation du site : examen demandé le 29 octobre 2026 à la demande de Jean (site ajouté dans AdSense et propriété validée le même jour), en cours ; aucune annonce ne s'affiche tant qu'elle n'est pas acceptée. Détail : docs/PUBLICITE.md.
 
+## Analytics (mesure d'audience)
+
+- **Service** : Cloudflare Web Analytics, activé sur le projet Cloudflare Pages `keurdesir` le 29 octobre 2026. Cloudflare ajoute lui-même son script (`static.cloudflareinsights.com/beacon.min.js`) aux pages servies : il n'est pas dans le code du dépôt, mais il est bien présent sur https://keurdesir.com (vérifié le 1er novembre 2026).
+- **Autorisation** : `public/_headers` permet le script `https://static.cloudflareinsights.com` et l'envoi des mesures vers `https://cloudflareinsights.com`.
+- **Vie privée** : mesure sans cookie, décrite dans la page Confidentialité depuis le 29 octobre 2026.
+- **Console** : tableau de bord Cloudflare de Jean, rubrique Web Analytics. Chiffres de visite : à vérifier dans la console.
+
 ## Référencement
 
+Services réellement utilisés (outils gratuits des moteurs de recherche, pas de compte payant) : Google Search Console, Bing Webmaster Tools, IndexNow, plus le sitemap et le JSON-LD du site.
+
 - Sitemap `/sitemap.xml` avec dates réelles (`src/lib/lastmod.json`), `robots.txt`, JSON-LD (WebSite, Organization, BreadcrumbList, Article, ItemList, DefinedTermSet).
-- IndexNow : clé `d594b7cccbd54ab33111237c115501e5` publiée à la racine.
+- IndexNow : clé `d594b7cccbd54ab33111237c115501e5` publiée à la racine (`public/d594b7cccbd54ab33111237c115501e5.txt`, en ligne) ; `scripts/indexnow.mjs` signale les pages du sitemap à api.indexnow.org.
 - Search Console : propriété Domaine keurdesir.com (compte Google de Jean), validée par un enregistrement TXT `google-site-verification` dans le DNS Cloudflare ; sitemap envoyé le 29 octobre 2026.
 - Bing Webmaster Tools : site https://keurdesir.com/ (compte Microsoft de Jean), validé par le fichier `public/BingSiteAuth.xml` ; sitemap envoyé le 29 octobre 2026.
-- Mesure d'audience : Cloudflare Web Analytics activé sur le projet Pages le 29 octobre 2026 (script `static.cloudflareinsights.com`, autorisé par `public/_headers`).
+- Mesure d'audience : voir la section « Analytics (mesure d'audience) » ci-dessus.
 - Pinterest : épingles verticales 1000 × 1500 prévues (modèle Keur Déco), pas encore construites.

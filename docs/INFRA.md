@@ -65,8 +65,8 @@ uniquement des noms de variables et de consoles.
 
 ## Analytics (mesure d'audience)
 
-- **Service** : Cloudflare Web Analytics, activé sur le projet Cloudflare Pages `keurdesir` le 29 octobre 2026. Cloudflare ajoute lui-même son script (`static.cloudflareinsights.com/beacon.min.js`) aux pages servies : il n'est pas dans le code du dépôt, mais il est bien présent sur https://keurdesir.com (vérifié le 1er novembre 2026).
-- **Autorisation** : `public/_headers` permet le script `https://static.cloudflareinsights.com` et l'envoi des mesures vers `https://cloudflareinsights.com`.
+- **Service** : Cloudflare Web Analytics, activé sur le projet Cloudflare Pages `keurdesir` le 29 octobre 2026. Cloudflare ajoute lui-même son script (https://static.cloudflareinsights.com/beacon.min.js) aux pages servies : il n'est pas dans le code du dépôt, mais il est bien présent sur https://keurdesir.com et se charge (vérifié le 2 novembre 2026).
+- **Autorisation** : `public/_headers` permet le script de statistiques (adresse exacte : https://static.cloudflareinsights.com/beacon.min.js ; le domaine seul ne sert pas de page) et l'envoi des mesures vers `https://cloudflareinsights.com`.
 - **Vie privée** : mesure sans cookie, décrite dans la page Confidentialité depuis le 29 octobre 2026.
 - **Console** : tableau de bord Cloudflare de Jean, rubrique Web Analytics. Chiffres de visite : à vérifier dans la console.
 

@@ -15,6 +15,8 @@ export function BoutonsMarchands({ liens, nom, small = false, className = "" }: 
           target="_blank"
           rel="sponsored nofollow noopener"
           aria-label={`${l.libelle} : ${nom}, lien partenaire (nouvel onglet)`}
+          data-umami-event={l.boutique === "amazon" ? "Clic Amazon" : undefined}
+          data-umami-event-produit={l.boutique === "amazon" ? nom : undefined}
           className={`${i === 0 ? "btn-primary" : "btn-secondary"} min-h-11 ${small ? "px-4 py-2 text-[13px]" : ""}`}
         >
           {l.libelle}

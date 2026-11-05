@@ -69,6 +69,7 @@ uniquement des noms de variables et de consoles.
 - **Autorisation** : `public/_headers` permet le script de statistiques (adresse exacte : https://static.cloudflareinsights.com/beacon.min.js ; le domaine seul ne sert pas de page) et l'envoi des mesures vers `https://cloudflareinsights.com`.
 - **Vie privée** : mesure sans cookie, décrite dans la page Confidentialité depuis le 29 octobre 2026.
 - **Console** : tableau de bord Cloudflare de Jean, rubrique Web Analytics. Chiffres de visite : à vérifier dans la console.
+- **Umami (essai depuis le 5 novembre 2026)** : Umami Cloud, offre gratuite (1 site, 100 000 événements par mois, pas d'accès API), région UE, sans cookie, en plus de Cloudflare. Un seul « site » Umami partagé par tous les sites Keur : filtrer par nom de domaine (hostname) dans la console. Balise dans `src/app/layout.tsx` (identifiant public `UMAMI_WEBSITE_ID` dans `src/lib/config.ts`, limitée à `keurdesir.com`) ; `public/_headers` autorise `cloud.umami.is` (script) et `gateway.umami.is` (envoi). Clic compté : « Clic Amazon » (avec le nom du produit ; pas de menu des sites Keur sur Keur Désir). Console : https://cloud.umami.is.
 
 ## Référencement
 

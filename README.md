@@ -37,7 +37,7 @@ Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux 
 - Rubriques : `src/lib/rubriques.ts`
 - Produits : `src/lib/catalogue/<rubrique>.ts`, réunis par `produits.ts` (106 au 29 octobre 2026)
 - Top 10 : `src/lib/top10/*.ts`, réunis par `sujets.ts` (10 au 29 octobre 2026)
-- Articles : `content/conseils/<slug>.md` (5 programmés du 30 octobre au 9 novembre 2026)
+- Articles : `content/conseils/<slug>.md` (14 programmés du 30 octobre au 30 novembre 2026 : 5 de lancement, puis 9 ajoutés le 7 novembre 2026, sans illustration pour l'instant)
 - Guides des rubriques : `content/rubriques/<slug>.md` (7)
 - Lexique : `src/lib/lexique.ts` (18 mots)
 
@@ -87,6 +87,6 @@ la liste d'envies et les pages légales. Consentement par le bandeau de Google.
 ## État de la mise en route (29 octobre 2026)
 
 - ✅ Plan validé, base technique prête, contrôles au vert (33 tests, 14 vérifications du site construit).
-- ✅ Contenus de lancement écrits (106 produits, 10 Top 10, 7 guides, lexique, 5 articles programmés).
+- ✅ Contenus de lancement écrits (106 produits, 10 Top 10, 7 guides, lexique, 5 articles programmés ; 9 de plus ajoutés le 7 novembre 2026, soit 14 jusqu'au 30 novembre).
 - ✅ Dépôt GitHub public teiki5320/keurdesir (29 octobre 2026).
 - ✅ Projet Cloudflare Pages, secrets GitHub et domaine : site en ligne sur https://keurdesir.com depuis le 29 octobre 2026.

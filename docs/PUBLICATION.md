@@ -1,6 +1,6 @@
 # PUBLICATION — état de la mise en ligne
 
-> Mis à jour le 29 octobre 2026, d'après le dépôt local.
+> Mis à jour le 7 novembre 2026, d'après le dépôt local.
 >
 > Aucun secret ici — uniquement des références.
 
@@ -28,7 +28,7 @@
 2. ✅ **Base technique** : pages, liens Amazon (keurdesir-21) et Etsy (Awin), contrôles qualité et test des mots interdits, le 29 octobre 2026.
 3. ✅ **Dépôt GitHub** : teiki5320/keurdesir, public, créé le 29 octobre 2026 ; `main` poussé. La première publication automatique a passé tous les contrôles et s'est arrêtée faute de secrets Cloudflare.
 4. ✅ **Cloudflare** : projet Pages `keurdesir` créé, secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` réglés, keurdesir.com et www.keurdesir.com reliés, le 29 octobre 2026. Site en ligne le même jour.
-5. ✅ **Contenus de lancement** (29 octobre 2026) : 106 produits, 10 Top 10, 7 guides de rubrique, lexique de 18 mots et 5 articles du djongué programmés du 30 octobre au 9 novembre.
+5. ✅ **Contenus de lancement** (29 octobre 2026) : 106 produits, 10 Top 10, 7 guides de rubrique, lexique de 18 mots et 5 articles du djongué programmés du 30 octobre au 9 novembre ; 9 articles de plus (lundi, mercredi, vendredi) programmés du 11 au 30 novembre 2026, ajoutés le 7 novembre 2026, soit 14 au total.
 6. **Produits Amazon** : 54 liens directs le 29 octobre 2026 (ASIN relevés sur amazon.fr ; 49 au premier relevé, 5 de plus au second le même jour), 52 liens de recherche ; contrôle du bouton d'achat dans la routine du matin depuis le 29 octobre 2026 (signalement seulement) ; reste à compléter les autres.
 7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps). ✅ 106 visuels produits sur 106 et 5 visuels d'articles le 29 octobre 2026 (OpenArt, Seedream 4.5), tous relus : objets seuls, sans personne ni texte.
 8. **Awin** : régler les identifiants du programme Etsy FR.

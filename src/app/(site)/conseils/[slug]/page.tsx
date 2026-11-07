@@ -101,7 +101,23 @@ export default async function ConseilPage({ params }: PageProps<"/conseils/[slug
               fetchPriority="high"
               className="aspect-[3/2] w-full rounded-md object-cover"
             />
-            <figcaption className="mt-2 text-[11px] text-faint">Illustration Keur Désir (créée par intelligence artificielle).</figcaption>
+            <figcaption className="mt-2 text-[11px] text-faint">
+              {conseil.credit ? (
+                <>
+                  Photo : {conseil.credit.auteur},{" "}
+                  <a href={conseil.credit.source} target="_blank" rel="noopener noreferrer" className="underline">
+                    Wikimedia Commons
+                  </a>
+                  ,{" "}
+                  <a href={conseil.credit.licenceUrl} target="_blank" rel="noopener noreferrer license" className="underline">
+                    {conseil.credit.licence}
+                  </a>
+                  . Image recadrée.
+                </>
+              ) : (
+                "Illustration Keur Désir (créée par intelligence artificielle)."
+              )}
+            </figcaption>
           </figure>
         )}
         <p className="mt-8 border-l-2 border-gold pl-5 text-[18px] leading-relaxed">

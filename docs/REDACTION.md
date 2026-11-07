@@ -41,3 +41,4 @@ Trois articles par semaine : **lundi, mercredi et vendredi**, publiés tout seul
 - Illustrations d'ambiance créées par IA : perles posées sur un tissu, encens qui fume, pots de karité, pagnes pliés.
 - **Jamais de corps, de peau dénudée ni de silhouette suggestive**, pas de visage reconnaissable, pas de texte dans l'image.
 - Légende : « Illustration Keur Désir (créée par intelligence artificielle) ». Pas de photo de produit Amazon.
+- Articles du 11 au 30 novembre 2026 : photos libres de droits (Wikimedia Commons, CC0, CC BY ou CC BY-SA), jamais d'image payante ni créée par IA. Auteur, licence et page d'origine sont relevés sur la page source et notés dans `src/lib/conseils/credits.ts` ; la légende affiche ce crédit.

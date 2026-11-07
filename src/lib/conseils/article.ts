@@ -1,4 +1,5 @@
 import { suivantsEnBoucle } from "../boucle";
+import type { CreditImage } from "./credits";
 import { isRubrique, type RubriqueSlug } from "../rubriques";
 
 /** Article de la rubrique Conseils : un fichier Markdown de content/conseils/, une question. */
@@ -20,6 +21,8 @@ export interface Conseil {
   body: string;
   /** Illustration Keur Désir : public/conseils/<slug>.webp, si elle existe. */
   image?: string | null;
+  /** Crédit de la photo libre de droits ; absent pour les illustrations Keur Désir créées par IA. */
+  credit?: CreditImage | null;
 }
 
 export const DESCRIPTION_MIN = 70;

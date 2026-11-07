@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { cache } from "react";
 import { marked } from "marked";
 import { withBase } from "@/lib/config";
+import { CREDITS_IMAGES } from "@/lib/conseils/credits";
 import { anchorId, isPublished, parseConseil, relatedConseils, todayInParis, type Conseil } from "@/lib/conseils/article";
 
 const DIR = join(process.cwd(), "content", "conseils");
@@ -16,7 +17,7 @@ export const getAllConseils = cache((): Conseil[] =>
     .map((f) => {
       const slug = f.replace(/\.md$/, "");
       const image = existsSync(join(IMAGES, `${slug}.webp`)) ? `/conseils/${slug}.webp` : null;
-      return { ...parseConseil(slug, readFileSync(join(DIR, f), "utf8")), image };
+      return { ...parseConseil(slug, readFileSync(join(DIR, f), "utf8")), image, credit: image ? (CREDITS_IMAGES[slug] ?? null) : null };
     })
     .sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title, "fr")),
 );

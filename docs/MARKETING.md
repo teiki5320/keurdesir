@@ -1,6 +1,6 @@
 # MARKETING — plan marketing & rémunération
 
-Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
+Mis à jour le 9 novembre 2026. Un canal n'est coché que s'il est prouvé (compte branché et
 publications réelles, ou routine qui publie).
 
 ## Positionnement
@@ -11,9 +11,9 @@ publications réelles, ou routine qui publie).
 
 ## Rémunération par phases
 
-- [prêt] **Amazon Partenaires** : tag `keurdesir-21` en place (29 octobre 2026) ; 106 produits au catalogue, dont 49 avec lien direct vers leur fiche Amazon (29 octobre 2026) ; les autres mènent à une recherche Amazon avec le tag. Vérifié en ligne le 31 octobre 2026 sur les 133 pages du plan du site : les liens Amazon avec `keurdesir-21` sont sur les 106 fiches produit, les 10 Top 10 et l'article paru ; l'accueil, les rubriques, la boutique et les pages légales n'en ont pas (normal : les boutons sont sur les fiches).
+- [prêt] **Amazon Partenaires** : tag `keurdesir-21` en place (29 octobre 2026) ; 106 produits au catalogue, dont 53 avec lien direct vers leur fiche Amazon au 9 novembre 2026 (49 le 29 octobre au premier relevé, 54 le soir même, 1 retiré le 9 novembre : produit plus vendu) ; les autres mènent à une recherche Amazon avec le tag. Vérifié en ligne le 31 octobre 2026 sur les 133 pages du plan du site : les liens Amazon avec `keurdesir-21` sont sur les 106 fiches produit, les 10 Top 10 et l'article paru ; l'accueil, les rubriques, la boutique et les pages légales n'en ont pas (normal : les boutons sont sur les fiches).
 - [à faire] **Etsy via Awin** : programme Etsy FR pour les produits artisanaux (thiouraye, baya faites main, petits pagnes) ; identifiants Awin à régler.
-- [en cours] **AdSense** : script en place, 3 blocs créés le 29 octobre 2026 ; visuels en ligne le même jour ; examen demandé le 29 octobre 2026 à la demande de Jean (site ajouté dans AdSense et propriété validée le même jour), en cours.
+- [en cours] **AdSense** : script en place, 3 blocs créés le 29 octobre 2026 ; visuels en ligne le même jour ; examen demandé le 29 octobre 2026 à la demande de Jean (site ajouté dans AdSense et propriété validée le même jour), toujours « En préparation » au 9 novembre 2026.
 
 ## Points forts
 
@@ -35,6 +35,6 @@ publications réelles, ou routine qui publie).
 
 ## Les 3 priorités
 
-1. ✅ Visuels des produits (106 sur 106) et des 5 articles de lancement faits le 29 octobre 2026 avec OpenArt (les 9 articles ajoutés le 7 novembre 2026 n'ont pas encore d'illustration) ; reste à compléter les ASIN (54 sur 106).
+1. ✅ Visuels des produits (106 sur 106) et des 5 articles de lancement faits le 29 octobre 2026 avec OpenArt (les 9 articles ajoutés le 7 novembre 2026 sont illustrés par des photos libres de droits de Wikimedia Commons, le même jour) ; reste à compléter les ASIN (53 sur 106 au 9 novembre 2026).
 2. Ouvrir Pinterest et publier les premières épingles des Top 10.
 3. ✅ Examen AdSense demandé le 29 octobre 2026 ; attendre la réponse de Google.

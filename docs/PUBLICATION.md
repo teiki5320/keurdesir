@@ -1,6 +1,6 @@
 # PUBLICATION — état de la mise en ligne
 
-> Mis à jour le 7 novembre 2026, d'après le dépôt local.
+> Mis à jour le 9 novembre 2026, d'après le dépôt local.
 >
 > Aucun secret ici — uniquement des références.
 
@@ -29,10 +29,10 @@
 3. ✅ **Dépôt GitHub** : teiki5320/keurdesir, public, créé le 29 octobre 2026 ; `main` poussé. La première publication automatique a passé tous les contrôles et s'est arrêtée faute de secrets Cloudflare.
 4. ✅ **Cloudflare** : projet Pages `keurdesir` créé, secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` réglés, keurdesir.com et www.keurdesir.com reliés, le 29 octobre 2026. Site en ligne le même jour.
 5. ✅ **Contenus de lancement** (29 octobre 2026) : 106 produits, 10 Top 10, 7 guides de rubrique, lexique de 18 mots et 5 articles du djongué programmés du 30 octobre au 9 novembre ; 9 articles de plus (lundi, mercredi, vendredi) programmés du 11 au 30 novembre 2026, ajoutés le 7 novembre 2026, soit 14 au total.
-6. **Produits Amazon** : 54 liens directs le 29 octobre 2026 (ASIN relevés sur amazon.fr ; 49 au premier relevé, 5 de plus au second le même jour), 52 liens de recherche ; contrôle du bouton d'achat dans la routine du matin depuis le 29 octobre 2026 (signalement seulement) ; reste à compléter les autres.
-7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps). ✅ 106 visuels produits sur 106 et 5 visuels d'articles le 29 octobre 2026 (OpenArt, Seedream 4.5), tous relus : objets seuls, sans personne ni texte.
+6. **Produits Amazon** : 53 liens directs et 53 liens de recherche au 9 novembre 2026 (54 ASIN relevés sur amazon.fr le 29 octobre 2026 ; l'encensoir en terre cuite « andé », plus vendu, repassé en recherche le 9 novembre) ; contrôle du bouton d'achat dans la routine du matin depuis le 29 octobre 2026 (signalement seulement) ; reste à compléter les autres.
+7. **Illustrations** : visuels d'ambiance des produits et des articles (matières, couleurs, objets ; jamais de corps). ✅ 106 visuels produits sur 106 et 5 visuels d'articles le 29 octobre 2026 (OpenArt, Seedream 4.5), tous relus : objets seuls, sans personne ni texte. ✅ 9 photos libres de droits (Wikimedia Commons, auteur et licence affichés sous l'image) pour les articles du 11 au 30 novembre, le 7 novembre 2026.
 8. **Awin** : régler les identifiants du programme Etsy FR.
-9. **AdSense** : ✅ 3 blocs Keur Désir créés le 29 octobre 2026 ; visuels en ligne le 29 octobre 2026 ; examen demandé le 29 octobre 2026 à la demande de Jean (site ajouté dans AdSense et propriété validée le même jour), en cours.
+9. **AdSense** : ✅ 3 blocs Keur Désir créés le 29 octobre 2026 ; visuels en ligne le 29 octobre 2026 ; examen demandé le 29 octobre 2026 à la demande de Jean (site ajouté dans AdSense et propriété validée le même jour), toujours « En préparation » au 9 novembre 2026.
 10. **Visibilité** : ✅ Search Console et sitemap, ✅ Bing Webmaster Tools et sitemap, ✅ Cloudflare Web Analytics (29 octobre 2026) ; IndexNow à chaque publication ; reste le compte Pinterest et les épingles verticales.
 11. ✅ **Logo** : logo de Jean intégré le 29 octobre 2026 (en-tête, pied de page, icône, image de partage).
 
@@ -41,8 +41,8 @@
 | | |
 |---|---|
 | Adresse | **En ligne** : https://keurdesir.com (depuis le 29 octobre 2026) |
-| Construction | `npm run build` → `out/` (135 pages au 29 octobre 2026, dont la boutique) |
-| Contrôles | lint, types, 33 tests, contrôle du site construit (14 vérifications) : au vert le 29 octobre 2026, en local et sur GitHub Actions |
+| Construction | `npm run build` → `out/` (139 pages en ligne au 9 novembre 2026, dont 137 dans le plan du site ; 135 au 29 octobre 2026) |
+| Contrôles | lint, types, 34 tests, contrôle du site construit (14 vérifications) : au vert le 9 novembre 2026 en local (33 tests le 29 octobre 2026), et sur GitHub Actions à chaque publication |
 
 ## Domaine & SSL
 

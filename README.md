@@ -37,7 +37,7 @@ Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux 
 - Rubriques : `src/lib/rubriques.ts`
 - Produits : `src/lib/catalogue/<rubrique>.ts`, réunis par `produits.ts` (106 au 29 octobre 2026)
 - Top 10 : `src/lib/top10/*.ts`, réunis par `sujets.ts` (10 au 29 octobre 2026)
-- Articles : `content/conseils/<slug>.md` (14 programmés du 30 octobre au 30 novembre 2026 : 5 de lancement, puis 9 ajoutés le 7 novembre 2026, sans illustration pour l'instant)
+- Articles : `content/conseils/<slug>.md` (14 programmés du 30 octobre au 30 novembre 2026 : 5 de lancement, puis 9 ajoutés le 7 novembre 2026, illustrés le même jour par des photos libres de droits de Wikimedia Commons, crédit sous l'image : `src/lib/conseils/credits.ts`)
 - Guides des rubriques : `content/rubriques/<slug>.md` (7)
 - Lexique : `src/lib/lexique.ts` (18 mots)
 
@@ -45,7 +45,7 @@ Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux 
 
 - **Amazon** : tag `keurdesir-21` (`src/lib/liens.ts`). Mention « En tant que Partenaire Amazon… » dans le pied de page et les pages légales.
 - **Etsy via Awin** : liens profonds Awin, actifs dès que `NEXT_PUBLIC_AWIN_AFFID` et `NEXT_PUBLIC_AWIN_ETSY_MID` sont réglés.
-- Chaque produit choisit ses boutiques (`boutiques: ["amazon", "etsy"]`). ASIN relevés dans `src/lib/catalogue/asins.json` (54 sur 106 au 29 octobre 2026) ; sans ASIN, le bouton mène à une recherche Amazon.
+- Chaque produit choisit ses boutiques (`boutiques: ["amazon", "etsy"]`). ASIN relevés dans `src/lib/catalogue/asins.json` (53 produits sur 106 au 9 novembre 2026 : 54 relevés le 29 octobre, l'encensoir en terre cuite « andé » retiré le 9 novembre car plus vendu) ; sans ASIN, le bouton mène à une recherche Amazon.
 
 ## Règle absolue de contenu
 

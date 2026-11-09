@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
 export default function LegalNoticePage() {
   const l = legalConfig;
   return (
-    <LegalPage title="Mentions légales" updated="29 octobre 2026">
+    <LegalPage title="Mentions légales" updated="9 novembre 2026">
       <p>
         Informations sur l&apos;éditeur et l&apos;hébergeur du site, l&apos;usage de vos données et les limites des
         informations publiées (loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique).
@@ -89,8 +89,10 @@ export default function LegalNoticePage() {
           appartiennent, sauf mention contraire. Toute reproduction sans autorisation est interdite.
         </li>
         <li>
-          Les visuels sont des <strong>illustrations créées par intelligence artificielle</strong> pour {siteConfig.name} :
-          ils montrent des matières, des couleurs et des ambiances, et non les produits exacts vendus par les boutiques.
+          Les visuels des produits et de certains articles sont des <strong>illustrations créées par intelligence artificielle</strong>{" "}
+          pour {siteConfig.name} : ils montrent des matières, des couleurs et des ambiances, et non les produits exacts vendus par
+          les boutiques. Les autres articles sont illustrés par des photos libres de droits de Wikimedia Commons, dont l&apos;auteur
+          et la licence sont indiqués sous chaque image.
         </li>
         <li>Pour toute demande de retrait ou de correction, écrivez à l&apos;adresse de contact.</li>
       </ul>

@@ -167,7 +167,7 @@ export const thiourayeEncens: Produit[] = [
   },
   {
     slug: "thiouraye-coffret-avec-encensoir",
-    nom: "Coffret thiouraye et encensoir",
+    nom: "Kit découverte thiouraye et encensoir",
     rubrique: "thiouraye-encens",
     type: "coffret de thiouraye",
     matieres: ["thiouraye", "terre cuite"],
@@ -183,7 +183,7 @@ export const thiourayeEncens: Produit[] = [
     boutiques: ["etsy", "amazon"],
     amazon: null,
     etsy: null,
-    recherche: "coffret thiouraye encensoir",
+    recherche: "kit thiouraye encensoir terre cuite",
     image: "/produits/thiouraye-coffret-avec-encensoir.webp",
     ajoute_le: "2026-10-29",
     isPublished: true,

@@ -54,6 +54,11 @@ export default function LegalNoticePage() {
           Le partage de la liste place les produits choisis dans l&apos;adresse de la page : ils ne sont transmis qu&apos;aux
           personnes à qui vous envoyez ce lien.
         </li>
+        <li>
+          La fréquentation du site est mesurée sans cookie par Cloudflare Web Analytics et Umami (données hébergées dans
+          l&apos;Union européenne) : nombre de visites et pages vues, sans identifier les visiteurs. Le détail figure dans la
+          politique de confidentialité.
+        </li>
         <li>L&apos;hébergeur peut enregistrer des journaux techniques (adresse IP, date, page demandée) pour la sécurité du service.</li>
         <li>
           Conformément au RGPD, vous pouvez exercer vos droits d&apos;accès, de rectification et d&apos;effacement auprès de

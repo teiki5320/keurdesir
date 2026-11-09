@@ -6,7 +6,7 @@ export function Section({ title, href, linkLabel = "Tout voir", children, id }: 
       <div className="mb-7 flex items-baseline justify-between gap-4">
         <h2 className="section-title kd-reveal">{title}</h2>
         {href && (
-          <Link href={href} className="font-mono text-[12px] whitespace-nowrap text-gold uppercase hover:text-accent">
+          <Link href={href} className="font-mono text-right text-[12px] text-gold uppercase hover:text-accent sm:whitespace-nowrap">
             {linkLabel} →
           </Link>
         )}

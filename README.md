@@ -43,7 +43,7 @@ Logo de Jean (lèvres rouge et or à motifs, nom « Keur Désir ») : originaux 
 
 ## Liens partenaires
 
-- **Amazon** : tag `keurdesir-21` (`src/lib/liens.ts`). Mention « En tant que Partenaire Amazon… » dans le pied de page et les pages légales.
+- **Amazon** : tag `keurdesir-21` (`src/lib/liens.ts`) ; sa présence dans le compte Amazon toakeur-21 reste à confirmer (9 novembre 2026). Mention « En tant que Partenaire Amazon… » dans le pied de page et les pages légales.
 - **Etsy via Awin** : liens profonds Awin, actifs dès que `NEXT_PUBLIC_AWIN_AFFID` et `NEXT_PUBLIC_AWIN_ETSY_MID` sont réglés.
 - Chaque produit choisit ses boutiques (`boutiques: ["amazon", "etsy"]`). ASIN relevés dans `src/lib/catalogue/asins.json` (53 produits sur 106 au 9 novembre 2026 : 54 relevés le 29 octobre, l'encensoir en terre cuite « andé » retiré le 9 novembre car plus vendu) ; sans ASIN, le bouton mène à une recherche Amazon.
 

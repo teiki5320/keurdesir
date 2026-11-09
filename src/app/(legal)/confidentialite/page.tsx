@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Politique de confidentialité" updated="29 octobre 2026">
+    <LegalPage title="Politique de confidentialité" updated="9 novembre 2026">
       <p>
         {legalConfig.companyName} (« nous ») protège vos données personnelles, traitées conformément au Règlement général
         sur la protection des données (RGPD) et à la loi Informatique et Libertés.
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
       <h2>Destinataires et sous-traitants</h2>
       <p>
         Vos données sont destinées à nos services internes et à nos sous-traitants techniques (hébergement :{" "}
-        {legalConfig.hostName} ; mesure d&apos;audience : Cloudflare Web Analytics et Umami ; messagerie : IONOS). Pour la publicité, Google et ses partenaires reçoivent directement les
+        {legalConfig.hostName} ; mesure d&apos;audience : Cloudflare Web Analytics et Umami ; acheminement des e-mails : Cloudflare Email Routing). Pour la publicité, Google et ses partenaires reçoivent directement les
         données décrites plus bas. Les transferts hors de l&apos;Union européenne (Cloudflare et Google, États-Unis) sont
         encadrés par le cadre de protection des données UE–États-Unis et par des clauses contractuelles types.
       </p>

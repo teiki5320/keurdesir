@@ -22,6 +22,8 @@ function commitDay(): string {
 
 /** Dernière mise à jour des pages légales et de la page « À propos ». */
 const LEGAL_UPDATED = "2026-10-29";
+/** Mentions légales et confidentialité revues le 9 novembre 2026. */
+const LEGAL_REVU = "2026-11-09";
 /** Premier jour du site : date minimale des pages. */
 const DEBUT = "2026-10-29";
 
@@ -58,7 +60,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...(tops.length ? [page("/top-10", lastTop, "weekly", 0.8)] : []),
     ...(LEXIQUE.length ? [page("/lexique", DEBUT, "monthly", 0.5)] : []),
     page("/a-propos", LEGAL_UPDATED, "yearly", 0.4),
-    ...["/conditions", "/mentions-legales", "/confidentialite"].map((path) => page(path, LEGAL_UPDATED, "yearly", 0.3)),
+    page("/conditions", LEGAL_UPDATED, "yearly", 0.3),
+    ...["/mentions-legales", "/confidentialite"].map((path) => page(path, LEGAL_REVU, "yearly", 0.3)),
     ...tops.map((t) => page(`/top-10/${t.slug}`, topDay.get(t.slug)!, "monthly", 0.8)),
     ...produits.map((p) => page(`/produit/${p.slug}`, produitDay.get(p.slug)!, "monthly", 0.7)),
     ...conseils.map((c) => page(`/conseils/${c.slug}`, conseilDay.get(c.slug)!, "monthly", 0.7)),

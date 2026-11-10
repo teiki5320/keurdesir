@@ -68,6 +68,7 @@ describe("Fiches détaillées", () => {
         if (chemin === `/produit/${slug}`) fautes.push(`${slug} : lien vers sa propre fiche`);
       }
       const sansLiens = texteFiche(f);
+      if (sansLiens.includes("\\")) fautes.push(`${slug} : antislash dans le texte (\\n mal écrit ?)`);
       if (/[*#_`]|^\s*[-•]\s/m.test(sansLiens)) fautes.push(`${slug} : Markdown interdit (gras, titres, listes)`);
       if (PRIX_OU_NOTE.test(sansLiens)) fautes.push(`${slug} : prix, note ou avis interdits`);
       if (/\bB0[0-9A-Z]{8}\b/.test(brut)) fautes.push(`${slug} : ASIN interdit dans le texte`);

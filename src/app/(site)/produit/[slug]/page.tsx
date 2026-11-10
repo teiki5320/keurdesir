@@ -6,6 +6,7 @@ import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { EnviesButton } from "@/components/envies/EnviesButton";
 import { Section } from "@/components/layout/Section";
 import { BoutonsMarchands, NoteMarchande } from "@/components/produit/BoutonsMarchands";
+import { FicheDetail } from "@/components/produit/FicheDetail";
 import { ProduitGrid } from "@/components/produit/ProduitCarte";
 import { Visuel } from "@/components/produit/Visuel";
 import { suivantsEnBoucle } from "@/lib/boucle";
@@ -13,6 +14,7 @@ import { siteConfig } from "@/lib/config";
 import { getConseilsDuProduit } from "@/lib/data/conseils";
 import { getProduit, getProduits, getProduitsDeRubrique, toCarte } from "@/lib/data/produits";
 import { getMaintenance } from "@/lib/data/settings";
+import { getFiche } from "@/lib/fiches";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
 import { clip, pageMetadata } from "@/lib/metadata";
 import { liensMarchands } from "@/lib/liens";
@@ -40,6 +42,7 @@ export default async function ProduitPage({ params }: PageProps<"/produit/[slug]
   const liens = liensMarchands(p, "fiche");
   const proches = suivantsEnBoucle(getProduitsDeRubrique(p.rubrique), (x) => x.slug === p.slug, 4).map((x) => toCarte(x, "rubrique"));
   const articles = getConseilsDuProduit(p.slug).slice(0, 3);
+  const fiche = getFiche(p.slug);
   const url = `${siteConfig.url}/produit/${p.slug}`;
   return (
     <>
@@ -99,6 +102,8 @@ export default async function ProduitPage({ params }: PageProps<"/produit/[slug]
           </div>
         </div>
       </article>
+
+      {fiche && <FicheDetail fiche={fiche} nom={p.nom} />}
 
       {articles.length > 0 && (
         <Section title="Nos articles">

@@ -34,3 +34,27 @@ export interface Produit {
   ajoute_le: string;
   isPublished: boolean;
 }
+
+/** Question fréquente d'une fiche détaillée (affichée, et donnée FAQPage pour Google). */
+export interface FicheQuestion {
+  question: string;
+  reponse: string;
+}
+
+/**
+ * Fiche détaillée d'un produit (section « En détail » de /produit/<slug>, règles docs/FICHES.md).
+ * Textes simples, paragraphes séparés par une ligne vide, liens internes « [texte](/chemin) » seulement.
+ * Texte propre de la page entière (présentation, raisons, usage et fiche détaillée) : 500 à 700 mots.
+ */
+export interface FicheLongue {
+  /** Origine et tradition : ce qu'est l'objet ou le produit, d'où il vient, quelle place il a dans la culture. */
+  origine: string;
+  /** Comment bien le choisir, en le comparant aux produits voisins de la boutique (liens /produit/…). */
+  choisir: string;
+  /** Entretien (objets, tissus) ou conservation (soins, encens). */
+  entretien: string;
+  /** Pour qui, pour quelle occasion : à offrir, à garder, à quel moment. */
+  pourQui: string;
+  /** 2 ou 3 questions fréquentes qui finissent par « ? ». */
+  faq: FicheQuestion[];
+}

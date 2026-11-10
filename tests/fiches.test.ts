@@ -33,40 +33,46 @@ describe("Fiches détaillées", () => {
   });
 
   it("forme : 4 parties d'au moins 40 mots, 2 ou 3 questions qui finissent par « ? »", () => {
+    const fautes: string[] = [];
     for (const slug of TOUS) {
       const f = getFiche(slug);
       if (!f) continue;
-      for (const k of ["origine", "choisir", "entretien", "pourQui"] as const) assert.ok(compterMots(f[k]) >= 40, `${slug} : partie « ${k} » trop courte (${compterMots(f[k])} mots)`);
-      assert.ok(f.faq.length >= 2 && f.faq.length <= 3, `${slug} : ${f.faq.length} question(s)`);
+      for (const k of ["origine", "choisir", "entretien", "pourQui"] as const) if (compterMots(f[k]) < 40) fautes.push(`${slug} : partie « ${k} » trop courte (${compterMots(f[k])} mots)`);
+      if (f.faq.length < 2 || f.faq.length > 3) fautes.push(`${slug} : ${f.faq.length} question(s)`);
       for (const q of f.faq) {
-        assert.ok(q.question.trim().endsWith("?"), `${slug} : question sans « ? » : ${q.question}`);
-        assert.ok(compterMots(q.reponse) >= 15, `${slug} : réponse trop courte : ${q.question}`);
+        if (!q.question.trim().endsWith("?")) fautes.push(`${slug} : question sans « ? » : ${q.question}`);
+        if (compterMots(q.reponse) < 15) fautes.push(`${slug} : réponse trop courte : ${q.question}`);
       }
     }
+    assert.deepEqual(fautes, []);
   });
 
   it("longueur : 500 à 720 mots de texte propre sur la page entière", () => {
+    const fautes: string[] = [];
     for (const slug of TOUS) {
       if (!getFiche(slug)) continue;
       const n = motsDePage(slug);
-      assert.ok(n >= 500 && n <= 720, `${slug} : ${n} mots (500 à 720 attendus)`);
+      if (n < 500 || n > 720) fautes.push(`${slug} : ${n} mots (500 à 720 attendus)`);
     }
+    assert.deepEqual(fautes, []);
   });
 
   it("liens internes : pages en ligne, pas de Markdown, ni prix ni note ni avis", () => {
+    const fautes: string[] = [];
     for (const slug of TOUS) {
       const f = getFiche(slug);
       if (!f) continue;
       const brut = [f.origine, f.choisir, f.entretien, f.pourQui, ...f.faq.flatMap((q) => [q.question, q.reponse])].join("\n\n");
       for (const chemin of cheminsDuTexte(brut)) {
-        assert.ok(pages.has(chemin), `${slug} : lien vers une page qui n'existe pas (ou pas encore publiée) : ${chemin}`);
-        assert.notEqual(chemin, `/produit/${slug}`, `${slug} : lien vers sa propre fiche`);
+        if (!pages.has(chemin)) fautes.push(`${slug} : lien vers une page qui n'existe pas (ou pas encore publiée) : ${chemin}`);
+        if (chemin === `/produit/${slug}`) fautes.push(`${slug} : lien vers sa propre fiche`);
       }
       const sansLiens = texteFiche(f);
-      assert.doesNotMatch(sansLiens, /[*#_`]|^\s*[-•]\s/m, `${slug} : Markdown interdit (gras, titres, listes)`);
-      assert.doesNotMatch(sansLiens, PRIX_OU_NOTE, `${slug} : prix, note ou avis interdits`);
-      assert.doesNotMatch(brut, /\bB0[0-9A-Z]{8}\b/, `${slug} : ASIN interdit dans le texte`);
+      if (/[*#_`]|^\s*[-•]\s/m.test(sansLiens)) fautes.push(`${slug} : Markdown interdit (gras, titres, listes)`);
+      if (PRIX_OU_NOTE.test(sansLiens)) fautes.push(`${slug} : prix, note ou avis interdits`);
+      if (/\bB0[0-9A-Z]{8}\b/.test(brut)) fautes.push(`${slug} : ASIN interdit dans le texte`);
     }
+    assert.deepEqual(fautes, []);
   });
 
   it("aucun mot bloquant (règle absolue de contenu)", () => {

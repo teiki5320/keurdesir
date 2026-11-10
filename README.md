@@ -21,6 +21,8 @@ Base technique reprise de Keurbook (structure et code seulement : aucun contenu 
 
 Détail de chaque page : docs/CONTENU.md. Plan validé : docs/PLAN.md.
 
+Fiches produits détaillées (10 novembre 2026) : les 106 fiches ont un texte long écrit par nous (500 à 700 mots au total sur la page : origine, choix, entretien, occasions, questions fréquentes en données FAQPage), dans `src/lib/fiches/` ; consignes dans docs/FICHES.md, contrôle par `tests/fiches.test.ts`. But : répondre au refus possible d'AdSense pour contenu à faible valeur, comme sur Keur Cook.
+
 ## Design
 
 Design « Néon Dakar · Rubis », validé par Jean le 29 octobre 2026 : nuit bordeaux presque noire, néons rouge rubis et or,

@@ -32,7 +32,7 @@ export function NoteMarchande({ liens, className = "" }: { liens: LienMarchand[]
   const noms = liens.map((l) => (l.boutique === "amazon" ? "Amazon" : "Etsy"));
   return (
     <p className={`mt-2 text-[11px] leading-snug text-faint ${className}`}>
-      {noms.length > 1 ? "Liens partenaires" : "Lien partenaire"} {noms.join(" et ")}. Prix, disponibilité et vendeur sont indiqués sur la boutique.
+      {noms.length > 1 ? "Liens partenaires" : "Lien partenaire"} {noms.join(" et ")}. Prix, disponibilité et vendeur sont indiqués sur {noms.join(" et ")}.
     </p>
   );
 }

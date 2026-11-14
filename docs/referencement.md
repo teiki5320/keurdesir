@@ -74,6 +74,8 @@ temps pour réagir. Keur Désir est dans la routine « Référencement du jour �
   /bine-bine (place 45), la fiche bine-bine perles dorées (place 33) et l'article sur l'origine des bine-bine (place 37) ; une page de
   plus ferait double emploi. Proposé à Jean : retravailler la rubrique /bine-bine au prochain passage (le 28/11), ou écrire un guide
   « Bine-bine : tout savoir » qui rassemble l'existant.
+  **Décision de Jean (14/11/2026) : retravailler la rubrique /bine-bine au passage du 28/11** pour mieux sortir sur « bine bine »,
+  uniquement avec ce que le site contient déjà, sans inventer d'information (pas de guide « tout savoir »).
 - « top 10 des huiles pour le corps » (15 vues, place 22,7) : la page /top-10/huiles-pour-le-corps répond déjà exactement ; à suivre.
 
 ### Fiches enrichies et socle

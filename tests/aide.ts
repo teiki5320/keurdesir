@@ -38,6 +38,7 @@ export function pagesInternes(jour = todayInParis()): Set<string> {
     ...publies.map((p) => `/produit/${p.slug}`),
     "/lexique",
     "/a-propos",
+    "/boutique",
     "/mes-envies",
     "/mentions-legales",
     "/confidentialite",

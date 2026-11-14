@@ -44,4 +44,4 @@ Vous n'avez pas besoin d'être badiène pour transmettre. Quelques idées simple
 - **Offrez avec du sens.** Un premier rang de perles, un encensoir et son thiouraye, un pot de karité : nos [coffrets et idées cadeaux](/coffrets-cadeaux) sont pensés pour accompagner ces moments.
 - **Expliquez les mots.** Notre [lexique](/lexique) réunit les termes wolof du djongué, de quoi partager la culture avec celles et ceux qui la découvrent.
 
-Pour aller plus loin, relisez [ce qu'est le djongué](/conseils/qu-est-ce-que-le-djongue) et [l'histoire des bine-bine](/conseils/origine-et-symbolique-des-bine-bine), ou explorez notre rubrique [Le djongué](/djongue).
+Pour aller plus loin, relisez [ce qu'est le djongué (ou jongué)](/conseils/qu-est-ce-que-le-djongue) et [l'histoire des bine-bine](/conseils/origine-et-symbolique-des-bine-bine), explorez notre rubrique [Le djongué](/djongue), ou parcourez tout [l'univers du djongué](/boutique) dans la boutique.

@@ -47,3 +47,41 @@ temps pour réagir. Keur Désir est dans la routine « Référencement du jour �
 - Vitesse sur téléphone : PageSpeed Insights hors service (quota du jour atteint) pour l'accueil, une fiche produit et un article :
   à refaire au prochain passage. Contrôle local : images avec taille et chargement différé sous la ligne de flottaison,
   images produit de 200 Ko au plus, aucune police externe bloquante.
+
+## 14/11/2026 — deuxième passage (samedi, semaine 46)
+
+### Gains rapides (données Search Console du 15/10 au 12/11/2026)
+
+- **/boutique** — recherche visée « l'univers des djongue » (et « l univers des djongue », « lunivers des djongue ») :
+  place 6,8, 21 vues, 0 clic. Titre « La boutique du djongué » → « L'univers du djongué : toute la boutique » ;
+  h1 « La boutique » → « La boutique : tout l'univers du djongué » ; description réécrite autour de « tout l'univers du djongué ».
+  Liens internes « l'univers du djongué » → /boutique ajoutés depuis 3 articles : Qu'est-ce que le djongué, Vivre le djongué en France,
+  Qui transmet le djongué.
+- **/conseils/qu-est-ce-que-le-djongue** — recherches visées « jongue », « jongué en français », « djongué » : place 4,7, 9 vues.
+  Titre « Qu'est-ce que le djongué, l'art sénégalais de la séduction ? » → « Qu'est-ce que le djongué (ou jongué), l'art de séduire ? »
+  (titre et h1) ; description avec « jongué » et « son sens en français » ; une phrase ajoutée : en français, on le traduit le plus
+  souvent par « l'art de la séduction » ou « l'art de plaire » (sens déjà donné dans l'article). Liens « Qu'est-ce que le djongué
+  (ou jongué) » depuis Vivre le djongué en France et Qui transmet le djongué.
+- **/tenues-de-nuit** — recherches visées « pagne de nuit », « petit pagne de nuit » : place 7, 3 vues. Titre et h1 inchangés
+  (« Petits pagnes et tenues de nuit », déjà juste) ; description « Petits pagnes, nuisettes et tenues de nuit… » → « Petit pagne
+  de nuit, nuisette ou tenue de nuit… » ; liens « petits pagnes de nuit et tenues de nuit » depuis Vivre le djongué en France et
+  Djongué et traditions du mariage.
+- **/djongue** (« l'univers des djongue », place 7, 3 vues) : laissée telle quelle pour ne pas faire concurrence à /boutique sur la même recherche.
+
+### Page nouvelle
+
+- Aucune créée. Seule recherche à 15 vues ou plus sans page bien placée : « bine bine » (24 vues), mais le site a déjà la rubrique
+  /bine-bine (place 45), la fiche bine-bine perles dorées (place 33) et l'article sur l'origine des bine-bine (place 37) ; une page de
+  plus ferait double emploi. Proposé à Jean : retravailler la rubrique /bine-bine au prochain passage (le 28/11), ou écrire un guide
+  « Bine-bine : tout savoir » qui rassemble l'existant.
+- « top 10 des huiles pour le corps » (15 vues, place 22,7) : la page /top-10/huiles-pour-le-corps répond déjà exactement ; à suivre.
+
+### Fiches enrichies et socle
+
+- Fiches enrichies et socle (IndexNow, Discover) vérifiés le 31/10/2026 : moins de 28 jours, non refaits.
+- Vitesse sur téléphone : PageSpeed Insights de nouveau hors service (quota du jour atteint) pour l'accueil, la fiche bine-bine perles
+  dorées et l'article Qu'est-ce que le djongué. À refaire au prochain passage.
+
+### Pages travaillées il y a 28 jours ou plus
+
+- Aucune (premier travail de pages ce jour). À relire à partir du 12/12/2026.

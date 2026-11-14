@@ -22,7 +22,7 @@ Les jours qui précèdent le départ sont ceux des confidences. Selon les récit
 
 Le soir du waral, la parole se fait plus solennelle. Le griot de la famille, ou parfois une grand-mère, chante les louanges de la jeune femme : c'est le *tagg*. On rappelle les noms de ses aïeules, leurs qualités et leur courage, pour qu'elle s'en inspire dans sa nouvelle vie. Ces paroles peuvent émouvoir aux larmes : la mariée quitte une maison, mais emporte avec elle toute une lignée.
 
-Parmi les présents qui accompagnent la mariée, les **béthios**, ces petits pagnes souvent tricotés ou brodés à la main, tiennent une place de choix. On les offre traditionnellement à la nouvelle épouse, et leurs noms wolof, souvent poétiques, font sourire celles qui les connaissent. Retrouvez-les dans notre rubrique [Petits pagnes et tenues de nuit](/tenues-de-nuit).
+Parmi les présents qui accompagnent la mariée, les **béthios**, ces petits pagnes souvent tricotés ou brodés à la main, tiennent une place de choix. On les offre traditionnellement à la nouvelle épouse, et leurs noms wolof, souvent poétiques, font sourire celles qui les connaissent. Retrouvez-les parmi nos [petits pagnes de nuit et tenues de nuit](/tenues-de-nuit).
 
 ## Le xaxar, un accueil en chansons
 

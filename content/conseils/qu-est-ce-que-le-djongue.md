@@ -1,6 +1,6 @@
 ---
-title: Qu'est-ce que le djongué, l'art sénégalais de la séduction ?
-description: Le djongué, art sénégalais de plaire et de prendre soin de soi : son sens, ses gestes, ses objets et les valeurs qui le portent.
+title: Qu'est-ce que le djongué (ou jongué), l'art de séduire ?
+description: Le djongué (on écrit aussi jongué), art sénégalais de plaire et de prendre soin de soi : son sens en français, ses gestes, ses objets et ses valeurs.
 date: 2026-10-30
 rubrique: djongue
 resume: Le djongué désigne, au Sénégal, l'art de plaire, d'accueillir et de prendre soin de soi comme de l'autre. Il passe par des objets (encens, perles, petits pagnes) mais surtout par une manière d'être, faite de douceur, d'attention et de discrétion. C'est un savoir de femmes, transmis de génération en génération, que chacune réinvente aujourd'hui à sa façon.
@@ -8,7 +8,7 @@ produits: thiouraye-en-bocal, encensoir-terre-cuite-ande, bine-bine-rocaille-rou
 ---
 ## Un mot, plusieurs graphies
 
-Vous l'avez peut-être entendu dans la bouche d'une tante, lu sous une photo ou croisé dans une conversation entre amies : le **djongué** (on écrit aussi *jongué*, *diongué* ou *djongé*) désigne au Sénégal l'art de séduire et de plaire. Dire d'une femme qu'elle est « djongué », c'est saluer son charme, son élégance et son sens de l'attention.
+Vous l'avez peut-être entendu dans la bouche d'une tante, lu sous une photo ou croisé dans une conversation entre amies : le **djongué** (on écrit aussi *jongué*, *diongué* ou *djongé*) désigne au Sénégal l'art de séduire et de plaire. Dire d'une femme qu'elle est « djongué », c'est saluer son charme, son élégance et son sens de l'attention. En français, on le traduit le plus souvent par « l'art de la séduction » ou « l'art de plaire ».
 
 La presse sénégalaise le présente souvent comme un savoir propre à la vie de couple : savoir accueillir, savoir parler avec douceur, savoir créer chez soi une atmosphère où l'on a envie de revenir. Le djongué ne se joue pas dans la rue, mais à la maison. C'est un art de l'ambiance et de la relation, bien plus qu'une affaire d'apparence.
 
@@ -43,4 +43,4 @@ Chez Keur Désir, nous aimons le djongué comme une culture de l'élégance et d
 
 Si vous découvrez le djongué, commencez simplement : un encens que vous aimez, un encensoir adapté à votre logement, peut-être un premier rang de perles. Prenez le temps de demander à une aînée comment elle faisait : c'est souvent la plus belle porte d'entrée.
 
-Nos sélections [Top 10](/top-10) vous aideront à choisir vos premiers objets, et notre rubrique [Karité, huiles et soins](/karite-soins) complète ce rituel de soin du corps. Pour offrir, pensez à nos [coffrets et idées cadeaux](/coffrets-cadeaux). Et si vous voulez savoir comment nous choisissons ce que nous vous présentons, tout est expliqué sur la page [À propos](/a-propos).
+Nos sélections [Top 10](/top-10) vous aideront à choisir vos premiers objets, et notre rubrique [Karité, huiles et soins](/karite-soins) complète ce rituel de soin du corps. Pour offrir, pensez à nos [coffrets et idées cadeaux](/coffrets-cadeaux), et pour tout voir d'un coup d'œil, parcourez [l'univers du djongué](/boutique) dans notre boutique. Et si vous voulez savoir comment nous choisissons ce que nous vous présentons, tout est expliqué sur la page [À propos](/a-propos).

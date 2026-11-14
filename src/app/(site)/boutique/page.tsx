@@ -8,8 +8,8 @@ import { pageMetadata } from "@/lib/metadata";
 import { RUBRIQUES } from "@/lib/rubriques";
 
 export const metadata = pageMetadata({
-  title: "La boutique du djongué",
-  description: "Tous nos produits du djongué, rangés par rubrique : bine-bine, thiouraye et encens, encensoirs, karité, petits pagnes et coffrets cadeaux.",
+  title: "L'univers du djongué : toute la boutique",
+  description: "Tout l'univers du djongué en une boutique : bine-bine, thiouraye et encens, encensoirs, karité, petits pagnes et coffrets cadeaux.",
   path: "/boutique",
 });
 
@@ -25,7 +25,7 @@ export default function BoutiquePage() {
           __html: jsonLd(breadcrumbLd([{ name: "Accueil", url: siteConfig.url }, { name: "Boutique", url: `${siteConfig.url}/boutique` }])),
         }}
       />
-      <PageHeader title="La boutique" intro="Tous nos produits du djongué, choisis un à un et rangés par rubrique.">
+      <PageHeader title="La boutique : tout l'univers du djongué" intro="Tous nos produits du djongué, choisis un à un et rangés par rubrique.">
         <nav aria-label="Rubriques" className="mt-6 flex flex-wrap gap-2">
           {rubriques.map(({ r }) => (
             <a key={r.slug} href={`#${r.slug}`} className="rounded-full border border-line px-4 py-2 font-mono text-[12px] uppercase hover:border-accent hover:text-accent">

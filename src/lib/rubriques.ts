@@ -53,7 +53,7 @@ export const RUBRIQUES = [
     nom: "Petits pagnes et tenues de nuit",
     court: "Tenues",
     description:
-      "Petits pagnes, nuisettes et tenues de nuit en wax ou brodées : une sélection élégante de pièces artisanales, souvent faites à la main.",
+      "Petit pagne de nuit, nuisette ou tenue de nuit en wax ou brodée : une sélection élégante de pièces artisanales, souvent faites à la main.",
     chapo:
       "Le petit pagne et les tenues de nuit font partie de l'élégance à la maison. Wax, coton brodé, dentelle : une sélection de pièces artisanales choisies pour leur beauté et leur confort.",
   },

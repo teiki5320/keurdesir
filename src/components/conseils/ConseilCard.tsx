@@ -16,6 +16,8 @@ export function ConseilCard({ conseil }: { conseil: Conseil }) {
             srcSet={srcSet(conseil.image)}
             sizes="(min-width: 640px) 192px, 96px"
             alt={`Illustration de l'article « ${conseil.title} »`}
+            width={1200}
+            height={800}
             loading="lazy"
             className="aspect-[3/2] w-24 rounded object-cover sm:w-48"
           />

@@ -87,3 +87,14 @@ temps pour réagir. Keur Désir est dans la routine « Référencement du jour �
 ### Pages travaillées il y a 28 jours ou plus
 
 - Aucune (premier travail de pages ce jour). À relire à partir du 12/12/2026.
+
+## 18/11/2026 — « Pages visitées mais pas retenues » (18 pages signalées par Search Console)
+
+- Pages : /djongue, /lexique, 3 Top 10 (thiouraye artisanaux, bakhour maison, encensoirs), 12 fiches produit
+  (bine-bine élastiques, cristal blanc, fil élastique, baya cauris, thiouraye santal, bakhour oud, encensoir andé, mabkhara,
+  karité du Burkina, petit pagne wax brodé, foulard de tête wax, calebasse gravée) et l'article sur le karité non raffiné.
+- Gabarit des fiches produit : description « Nom : première phrase » en phrases entières (au lieu du début de présentation
+  coupé par « … ») pour les 106 fiches ; nouveau bloc « Dans nos sélections Top 10 » (liens vers les Top 10 où figure le produit).
+- Titres : /djongue « Le djongué : histoire, traditions, transmission » ; /lexique « Lexique du djongué : le sens de chaque mot ».
+- Liens internes ajoutés depuis les guides des rubriques djongué, encens, encensoirs, karité, cadeaux et l'article sur l'origine
+  des bine-bine (sans toucher /bine-bine, prévue le 28/11, ni les pages travaillées le 14/11). À relire à partir du 16/12/2026.

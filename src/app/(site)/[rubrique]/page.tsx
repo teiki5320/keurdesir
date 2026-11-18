@@ -27,7 +27,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/[rubrique]">): Promise<Metadata> {
   const r = getRubrique((await params).rubrique);
   if (!r) return {};
-  return pageMetadata({ title: r.nom, description: r.description, path: `/${r.slug}` });
+  return pageMetadata({ title: "titre" in r ? r.titre : r.nom, description: r.description, path: `/${r.slug}` });
 }
 
 /**

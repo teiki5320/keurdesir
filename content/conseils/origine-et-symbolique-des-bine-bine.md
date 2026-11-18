@@ -35,9 +35,9 @@ Les perles ne sont d'ailleurs pas seulement à regarder ou à écouter. Les femm
 
 ## Bien les choisir aujourd'hui
 
-Les bine-bine se déclinent aujourd'hui dans toutes les matières : plastique coloré, céramique, verre, cristal, bois, parfois agrémentés de cauris. Les modèles fluorescents ont beaucoup de succès au Sénégal. Pour un premier achat, quelques repères simples :
+Les bine-bine se déclinent aujourd'hui dans toutes les matières : plastique coloré, céramique, verre, [cristal](/produit/bine-bine-cristal-blanc), bois, parfois agrémentés de [cauris](/produit/baya-cauris). Les modèles fluorescents ont beaucoup de succès au Sénégal. Pour un premier achat, quelques repères simples :
 
-- **Le fil.** Un fil élastique est plus facile à enfiler et à retirer ; un fil de coton noué se garde plus longtemps et se porte de façon plus traditionnelle.
+- **Le fil.** Un fil élastique est plus facile à enfiler et à retirer (une bobine de [fil élastique transparent](/produit/bine-bine-fil-elastique) permet aussi de réparer un rang) ; un fil de coton noué se garde plus longtemps et se porte de façon plus traditionnelle.
 - **La longueur.** Mesurez votre tour de taille à l'endroit où vous souhaitez porter les perles, sans serrer. Un rang doit tenir sans marquer la peau.
 - **Les couleurs.** Il n'existe pas de code universel : choisissez celles qui vous plaisent, ou celles que portait votre mère.
 - **Le nombre.** Un seul rang suffit pour commencer. Beaucoup de femmes en superposent plusieurs, de couleurs et de tailles différentes.

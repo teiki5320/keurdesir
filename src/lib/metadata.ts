@@ -57,6 +57,34 @@ export function clip(text: string, max = 155): string {
   return `${cut.slice(0, cut.lastIndexOf(" "))}…`;
 }
 
+/** Phrases entières d'un texte (le point, le point d'exclamation ou d'interrogation les termine). */
+function phrases(texte: string): string[] {
+  return (texte.match(/[^.!?…]+[.!?…]+(?=\s|$)/g) ?? [texte]).map((s) => s.trim()).filter(Boolean);
+}
+
+/**
+ * Description d'une fiche produit pour Google : « Nom : première phrase de la présentation », complétée par les phrases
+ * suivantes tant que l'ensemble tient en 160 caractères. Chaque description nomme ainsi son produit et finit sur une
+ * phrase entière (plus de début de présentation coupé par « … », trop proche du texte de la page).
+ */
+export function descriptionProduit(nom: string, presentation: string, max = 160): string {
+  const [entiere, ...suite] = phrases(presentation);
+  // Une phrase qui a déjà ses deux-points s'arrête avant eux (pas de « Nom : … : … ») ; elle garde son point final.
+  const premiere = entiere.includes(" : ") ? `${entiere.slice(0, entiere.indexOf(" : "))}.` : entiere;
+  // Minuscule au début de la phrase reprise après « Nom : » (« Le santal… » → « le santal… »), sauf sigle ou nom propre en capitales.
+  const reprise = /^[A-ZÀ-Ý](?:[a-zà-ÿ'’ ])/.test(premiere) ? premiere[0].toLowerCase() + premiere.slice(1) : premiere;
+  let d = `${nom} : ${reprise}`;
+  if (d.length > max) {
+    // Nom et phrase trop longs ensemble : la première phrase seule, si elle tient ; sinon coupée en fin de mot.
+    return entiere.length <= max && entiere.length >= 70 ? entiere : clip(d, max - 5);
+  }
+  for (const p of suite) {
+    if (`${d} ${p}`.length > max) break;
+    d = `${d} ${p}`;
+  }
+  return d;
+}
+
 /** Longueur maximale d'une balise title (au-delà, Google coupe le titre). */
 export const TITRE_MAX = 60;
 

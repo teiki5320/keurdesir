@@ -8,7 +8,7 @@ Le **beurre de karité brut**, dit aussi non raffiné, est simplement extrait pu
 
 Le **beurre raffiné**, lui, a été blanchi et désodorisé. Il est blanc, sans odeur et très régulier, ce qui plaît aux grandes marques, mais il a perdu une partie de son caractère. Entre les deux, les **beurres fouettés** sont battus avec un peu d'huile végétale pour obtenir une texture de chantilly, avec ou sans parfum : voyez le [karité fouetté parfumé](/produit/beurre-karite-fouette-parfume).
 
-Quelques repères pour choisir : la mention « non raffiné » ou « brut », une liste d'ingrédients courte, une origine indiquée et une couleur naturelle. Un beurre qui sent fort le rance n'est plus bon à utiliser. Le petit grain qui se forme parfois après un passage au chaud, en revanche, n'est qu'un changement de texture.
+Quelques repères pour choisir : la mention « non raffiné » ou « brut », une liste d'ingrédients courte, une origine indiquée et une couleur naturelle. Un beurre qui sent fort le rance n'est plus bon à utiliser. Le petit grain qui se forme parfois après un passage au chaud, en revanche, n'est qu'un changement de texture. Tous ces repères sont détaillés dans notre article [Comment choisir un beurre de karité non raffiné ?](/conseils/comment-choisir-un-beurre-de-karite-non-raffine)
 
 ## Les huiles végétales d'Afrique et de la diaspora
 

@@ -6,7 +6,7 @@ Le **bakhour**, lui, vient de la péninsule Arabique : ce sont surtout des copea
 
 ## Bien choisir son encens
 
-Si vous débutez, commencez petit. Un [thiouraye en sachet](/produit/thiouraye-artisanal-sachet) ou un [assortiment de petits sachets](/produit/thiouraye-assortiment-sachets) vous permet de comparer plusieurs recettes avant d'adopter un grand [bocal](/produit/thiouraye-en-bocal). Fiez-vous à votre nez plus qu'aux noms : un mélange musqué est rond et doux, un mélange au oud plus profond, un mélange au santal plus léger.
+Si vous débutez, commencez petit. Un [thiouraye en sachet](/produit/thiouraye-artisanal-sachet) ou un [assortiment de petits sachets](/produit/thiouraye-assortiment-sachets) vous permet de comparer plusieurs recettes avant d'adopter un grand [bocal](/produit/thiouraye-en-bocal). Fiez-vous à votre nez plus qu'aux noms : un [mélange musqué](/produit/thiouraye-au-musc) est rond et doux, un [mélange au oud](/produit/thiouraye-au-oud) plus profond, un [mélange au santal](/produit/thiouraye-au-santal) plus léger.
 
 Pour le bakhour, le [bakhour au oud](/produit/bakhour-oud-copeaux) reste la référence. Si vous trouvez les senteurs boisées trop fortes, tournez-vous vers la rose ou l'ambre. Les résines comme l'[oliban](/produit/oliban-en-grains) ou le [benjoin](/produit/benjoin-en-morceaux) permettent aussi de composer vos propres mélanges. Nos sélections détaillées vous attendent dans le [Top 10 des thiouraye artisanaux](/top-10/thiouraye-artisanaux) et le [Top 10 des bakhour pour parfumer la maison](/top-10/bakhour-maison).
 

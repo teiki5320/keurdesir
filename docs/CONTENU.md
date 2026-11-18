@@ -10,7 +10,7 @@ Plan validé le 29 octobre 2026 : docs/PLAN.md.
 | Articles `/conseils` | `src/app/(site)/conseils/page.tsx` | articles par rubrique (noindex tant qu'aucun n'est paru). |
 | Article `/conseils/<slug>` | `content/conseils/<slug>.md` | question, « En bref », produits de l'article (3 au plus, boutons), sommaire, 2 publicités, produits cités, « À lire aussi ». |
 | Top 10 `/top-10`, `/top-10/<slug>` | `src/lib/top10/sujets.ts` | première phrase de l'introduction, 10 produits, « Comment nous les avons choisis » (suite de l'introduction), « Par où commencer », 3 questions, « Voir aussi ». Pas de publicité. |
-| Fiche `/produit/<slug>` | `src/lib/catalogue/produits.ts` | visuel, présentation, boutons Amazon et/ou Etsy, « Pourquoi on l'aime », « Comment l'utiliser », matières, articles, produits proches, 1 publicité. |
+| Fiche `/produit/<slug>` | `src/lib/catalogue/produits.ts` | visuel, présentation, boutons Amazon et/ou Etsy, « Pourquoi on l'aime », « Comment l'utiliser », matières, articles, sélections Top 10 où il figure (avec son rang), produits proches, 1 publicité. Description pour Google : « Nom : première phrase de la présentation » (phrases entières, 160 caractères au plus). |
 | Lexique `/lexique` | `src/lib/lexique.ts` | mots wolof du djongué (noindex tant qu'il est vide). |
 | À propos `/a-propos` | `src/app/(site)/a-propos/page.tsx` | projet, charte éditoriale, choix des produits, contact. |
 | Mes envies `/mes-envies` | `src/components/envies/` | liste gardée dans le navigateur, partage par lien et WhatsApp (noindex). |

@@ -26,6 +26,14 @@ export function getTop10sDeRubrique(rubrique: string): Top10[] {
   return getTop10s().filter((t) => t.rubrique === rubrique);
 }
 
+/** Sélections où figure un produit, avec son rang (fiche produit : « Dans nos sélections Top 10 »). */
+export function getTop10sDuProduit(slug: string): Array<{ top: Top10; rang: number }> {
+  return getTop10s().flatMap((top) => {
+    const i = top.items.findIndex((item) => item.slug === slug);
+    return i >= 0 ? [{ top, rang: i + 1 }] : [];
+  });
+}
+
 export type Top10Produit = ProduitCarte & { rank: number; why: string };
 
 /** Les 10 produits d'une sélection, complétés depuis leur fiche. */

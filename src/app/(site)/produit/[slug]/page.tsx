@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { EnviesButton } from "@/components/envies/EnviesButton";
+import { ALireAussi } from "@/components/layout/ALireAussi";
 import { Section } from "@/components/layout/Section";
 import { BoutonsMarchands, NoteMarchande } from "@/components/produit/BoutonsMarchands";
 import { FicheDetail } from "@/components/produit/FicheDetail";
@@ -14,9 +15,10 @@ import { siteConfig } from "@/lib/config";
 import { getConseilsDuProduit } from "@/lib/data/conseils";
 import { getProduit, getProduits, getProduitsDeRubrique, toCarte } from "@/lib/data/produits";
 import { getMaintenance } from "@/lib/data/settings";
+import { getTop10sDuProduit } from "@/lib/data/top10";
 import { getFiche } from "@/lib/fiches";
 import { breadcrumbLd, jsonLd } from "@/lib/json-ld";
-import { clip, pageMetadata } from "@/lib/metadata";
+import { descriptionProduit, pageMetadata } from "@/lib/metadata";
 import { liensMarchands } from "@/lib/liens";
 import { getRubrique } from "@/lib/rubriques";
 import { paramsOuAucun } from "@/lib/vide";
@@ -30,7 +32,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/produit/[slug]">): Promise<Metadata> {
   const p = getProduit((await params).slug);
   if (!p) return {};
-  return pageMetadata({ title: p.nom, description: clip(p.resume), path: `/produit/${p.slug}`, image: p.image, imageAlt: `Illustration : ${p.nom}` });
+  return pageMetadata({ title: p.nom, description: descriptionProduit(p.nom, p.resume), path: `/produit/${p.slug}`, image: p.image, imageAlt: `Illustration : ${p.nom}` });
 }
 
 /** Fiche produit : texte écrit par nous, boutons Amazon et/ou Etsy, jamais de prix, de note ni d'avis. */
@@ -43,6 +45,7 @@ export default async function ProduitPage({ params }: PageProps<"/produit/[slug]
   const proches = suivantsEnBoucle(getProduitsDeRubrique(p.rubrique), (x) => x.slug === p.slug, 4).map((x) => toCarte(x, "rubrique"));
   const articles = getConseilsDuProduit(p.slug).slice(0, 3);
   const fiche = getFiche(p.slug);
+  const selections = getTop10sDuProduit(p.slug);
   const url = `${siteConfig.url}/produit/${p.slug}`;
   return (
     <>
@@ -110,6 +113,12 @@ export default async function ProduitPage({ params }: PageProps<"/produit/[slug]
           <ConseilGrid conseils={articles} />
         </Section>
       )}
+
+      {/* Sélections Top 10 où figure le produit : liens vers ces pages, avec son rang. */}
+      <ALireAussi
+        titre="Dans nos sélections Top 10"
+        liens={selections.map(({ top, rang }) => ({ href: `/top-10/${top.slug}`, nom: top.title, detail: `n° ${rang}` }))}
+      />
 
       {proches.length > 0 && (
         <Section title="Dans la même rubrique" href={`/${rubrique.slug}`} linkLabel={rubrique.nom}>

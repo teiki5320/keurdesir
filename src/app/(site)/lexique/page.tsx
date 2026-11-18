@@ -12,7 +12,7 @@ import { getRubrique } from "@/lib/rubriques";
 const mots = [...LEXIQUE].sort((a, b) => a.mot.localeCompare(b.mot, "fr"));
 
 export const metadata: Metadata = pageMetadata({
-  title: "Lexique du djongué",
+  title: "Lexique du djongué : le sens de chaque mot",
   description: "Djongué, bine-bine, thiouraye, bakhour, badiène : les mots du djongué et de l'art de recevoir sénégalais, expliqués simplement.",
   path: "/lexique",
   noindex: mots.length === 0,

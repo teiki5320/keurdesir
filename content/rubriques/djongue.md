@@ -22,9 +22,9 @@ Si vous découvrez le djongué, inutile de tout acheter d'un coup. Commencez par
 
 Quelques repères pour bien choisir :
 
-- **Pour l'encens**, privilégiez les mélanges artisanaux et, en appartement, un encensoir adapté ou un brûle-parfum électrique, toujours dans une pièce aérée.
-- **Pour les perles**, mesurez votre tour de taille sans serrer et choisissez un fil élastique si vous débutez.
-- **Pour le karité**, préférez un beurre non raffiné et lisez la liste des ingrédients.
+- **Pour l'encens**, privilégiez les mélanges artisanaux, comme ceux de notre [Top 10 des thiouraye artisanaux](/top-10/thiouraye-artisanaux), ou un bakhour de notre [sélection pour parfumer la maison](/top-10/bakhour-maison) et, en appartement, un encensoir adapté ou un brûle-parfum électrique, toujours dans une pièce aérée : comparez-les dans notre [Top 10 des encensoirs et brûle-parfums](/top-10/encensoirs-brule-parfums).
+- **Pour les perles**, mesurez votre tour de taille sans serrer et choisissez un fil élastique si vous débutez, par exemple avec un [lot de bine-bine élastiques multicolores](/produit/bine-bine-elastique-multicolore).
+- **Pour le karité**, préférez un beurre non raffiné et lisez la liste des ingrédients : nos repères sont dans [Comment choisir un beurre de karité non raffiné ?](/conseils/comment-choisir-un-beurre-de-karite-non-raffine)
 
 Nos sélections [Top 10](/top-10) rassemblent les produits que nous recommandons dans chaque univers, et nos [coffrets et idées cadeaux](/coffrets-cadeaux) vous aident à offrir pour un mariage, une fête ou un anniversaire.
 

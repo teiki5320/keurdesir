@@ -6,6 +6,8 @@ export const RUBRIQUES = [
   {
     slug: "djongue",
     nom: "Le djongué",
+    /** Titre pour Google, quand le nom seul est trop court pour dire ce que contient la page. */
+    titre: "Le djongué : histoire, traditions, transmission",
     court: "Djongué",
     description:
       "Le djongué, art sénégalais de la séduction : son histoire, ses traditions, sa transmission entre femmes et l'art de créer une ambiance chez soi.",

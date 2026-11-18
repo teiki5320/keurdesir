@@ -2,7 +2,7 @@
 
 Au Sénégal, le thiouraye se fait traditionnellement brûler dans l'**andé**, un encensoir en terre cuite que l'on garde dans un coin de la maison. Façonné à la main, parfois noirci ou gravé, il supporte bien la chaleur du charbon et reste le choix le plus fidèle à la tradition. Notre [encensoir en terre cuite façon andé](/produit/encensoir-terre-cuite-ande) en est l'exemple type ; les versions [peintes à la main](/produit/encensoir-terre-cuite-peint) ajoutent une touche de couleur.
 
-La **mabkhara**, venue de la péninsule Arabique, accompagne surtout le bakhour. Sa coupe en métal posée sur un pied en bois permet de la tenir en main et de la faire circuler parmi les invités. Les encensoirs en [laiton ciselé](/produit/encensoir-laiton-cisele) ou à [chaînes](/produit/encensoir-chaines-laiton) jouent la carte du raffinement, tandis que la [céramique](/produit/encensoir-ceramique-couvercle) et la [pierre à savon sculptée](/produit/brule-encens-pierre-a-savon) s'accordent aux intérieurs plus contemporains.
+La [mabkhara](/produit/mabkhara-bois-metal), venue de la péninsule Arabique, accompagne surtout le bakhour (voyez notre [Top 10 des bakhour pour parfumer la maison](/top-10/bakhour-maison)). Sa coupe en métal posée sur un pied en bois permet de la tenir en main et de la faire circuler parmi les invités. Les encensoirs en [laiton ciselé](/produit/encensoir-laiton-cisele) ou à [chaînes](/produit/encensoir-chaines-laiton) jouent la carte du raffinement, tandis que la [céramique](/produit/encensoir-ceramique-couvercle) et la [pierre à savon sculptée](/produit/brule-encens-pierre-a-savon) s'accordent aux intérieurs plus contemporains.
 
 ## Charbon ou électrique ?
 

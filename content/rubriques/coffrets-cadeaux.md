@@ -16,7 +16,7 @@ Pour un cadeau collectif, garnissez un [panier sénégalais tressé](/produit/pa
 
 ## Pour la Saint-Valentin et les anniversaires
 
-Pour une fête à deux ou un anniversaire, misez sur l'ambiance et sur un geste personnel. Une [bougie parfumée oud et ambre](/produit/bougie-parfumee-oud-ambre) rappelle les encens d'Afrique de l'Ouest sans charbon ni fumée. Un [écrin de bine-bine](/produit/ecrin-bine-bine), un bracelet de perles ou un carnet couvert de wax font des cadeaux délicats. Retrouvez nos dix idées dans le [Top 10 des cadeaux de Saint-Valentin africains](/top-10/cadeaux-saint-valentin).
+Pour une fête à deux ou un anniversaire, misez sur l'ambiance et sur un geste personnel. Une [bougie parfumée oud et ambre](/produit/bougie-parfumee-oud-ambre) rappelle les encens d'Afrique de l'Ouest sans charbon ni fumée. Un [écrin de bine-bine](/produit/ecrin-bine-bine), un bracelet de perles ou un [carnet couvert de wax](/produit/carnet-couverture-wax) font des cadeaux délicats. Un [foulard de tête en wax](/produit/foulard-tete-wax) a l'avantage de ne demander aucune taille, et une [calebasse décorative gravée](/produit/calebasse-decorative-gravee), unique par sa forme et ses gravures, plaira à celles et ceux qui aiment l'artisanat africain. Retrouvez nos dix idées dans le [Top 10 des cadeaux de Saint-Valentin africains](/top-10/cadeaux-saint-valentin).
 
 ## Nos conseils pour bien offrir
 

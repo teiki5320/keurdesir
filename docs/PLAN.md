@@ -36,7 +36,7 @@ Pas de rubrique « Actus » ni de veille d'actualités (la veille de Keurbook es
 7. **Lexique** : définitions courtes écrites par nous, chaque mot renvoie vers sa rubrique.
 8. **Pages légales** : comme Keurbook, avec deux mentions : Partenaires Amazon et liens affiliés Etsy (via Awin).
 
-Pied de page : navigation, « Ma liste d'envies », pages légales, « Gérer mes cookies », mentions Amazon et Etsy, « Un site TOA KEUR ».
+Pied de page : navigation, « Ma liste d'envies », pages légales, « Gérer mes cookies », mentions Amazon et Etsy, (le lien « Un site TOA KEUR » a été retiré le 19/11/2026 : plus de lien vers les autres sites).
 
 ## 3. Liens marchands (Amazon + Etsy)
 

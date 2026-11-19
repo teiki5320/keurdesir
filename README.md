@@ -2,7 +2,7 @@
 
 Le guide du djongué, l'art sénégalais et ouest-africain de la séduction : bine-bine, thiouraye et encens,
 encensoirs, karité et soins, petits pagnes et tenues de nuit, coffrets cadeaux, avec des sélections de produits.
-Site statique Next.js publié sur Cloudflare Pages (keurdesir.com). Un site [TOA KEUR](https://toakeur.com).
+Site statique Next.js publié sur Cloudflare Pages (keurdesir.com). Depuis le 19 novembre 2026, le pied de page ne renvoie plus vers les autres sites de Jean (pas de lien « Un site TOA KEUR »).
 
 Base technique reprise de Keurbook (structure et code seulement : aucun contenu éditorial).
 

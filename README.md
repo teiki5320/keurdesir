@@ -89,6 +89,6 @@ la liste d'envies et les pages légales. Consentement par le bandeau de Google.
 ## État de la mise en route (29 octobre 2026)
 
 - ✅ Plan validé, base technique prête, contrôles au vert (33 tests, 14 vérifications du site construit).
-- ✅ Contenus de lancement écrits (106 produits, 10 Top 10, 7 guides, lexique, 5 articles programmés ; 9 de plus ajoutés le 7 novembre 2026, soit 14 jusqu'au 30 novembre).
+- ✅ Contenus de lancement écrits (106 produits, 10 Top 10, 7 guides, lexique, 5 articles programmés ; 9 de plus ajoutés le 7 novembre 2026, soit 14 jusqu'au 30 novembre ; 3 de plus ajoutés le 19 novembre 2026, programmés les 20 et 25 novembre et le 2 décembre).
 - ✅ Dépôt GitHub public teiki5320/keurdesir (29 octobre 2026).
 - ✅ Projet Cloudflare Pages, secrets GitHub et domaine : site en ligne sur https://keurdesir.com depuis le 29 octobre 2026.

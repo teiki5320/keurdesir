@@ -10,6 +10,8 @@ export interface CreditImage {
 
 const CC0 = "https://creativecommons.org/publicdomain/zero/1.0/deed.fr";
 const BY = "https://creativecommons.org/licenses/by/4.0/deed.fr";
+const DP = "https://creativecommons.org/publicdomain/mark/1.0/deed.fr";
+const SMITHSONIAN = "https://www.flickr.com/commons/usage/";
 const BY_SA = "https://creativecommons.org/licenses/by-sa/4.0/deed.fr";
 const commons = (fichier: string) => `https://commons.wikimedia.org/wiki/File:${fichier}`;
 
@@ -74,5 +76,25 @@ export const CREDITS_IMAGES: Record<string, CreditImage> = {
     source: commons(
       "DFC_6183_A_single_tealight_glows_warmly_inside_a_glass_holder_surrounded_by_scattered_pink_and_purple_bougainvillea_petals.jpg",
     ),
+  },
+  "thiouraye-bienfaits-odeur-et-utilisation": {
+    auteur: "Gaius Cornelius",
+    licence: "Domaine public",
+    licenceUrl: DP,
+    source: commons("Frankincense.JPG"),
+  },
+  "ande-thiouraye-brule-encens-senegalais": {
+    auteur: "Smithsonian Institution",
+    licence: "Aucune restriction connue",
+    licenceUrl: SMITHSONIAN,
+    source: commons(
+      "Description-_A_woman_potter_from_Senegal_hand_shapes_a_pot_in_the_Roots_of_Virginia_Culture_program_at_the_2007_Smithsonian_Folklife_Festival_on_the_National_Mall,_Washington,_D.C._(2553825128).jpg",
+    ),
+  },
+  "comment-faire-du-thiouraye-maison": {
+    auteur: "Stefan.lefnaer",
+    licence: "CC BY-SA 4.0",
+    licenceUrl: BY_SA,
+    source: commons("Cyperus_rotundus_sl61.jpg"),
   },
 };

@@ -43,7 +43,7 @@ export const fiches: Partial<Record<(typeof SLUGS)[number], FicheLongue>> = {
     entretien:
       "Attendez toujours que l'encensoir soit complètement refroidi avant de le vider. Retirez les cendres et les restes de charbon avec une petite cuillère, puis essuyez l'intérieur avec un chiffon sec. La terre cuite est poreuse : évitez de la plonger dans l'eau, qui peut la fragiliser et ranimer les odeurs anciennes.\n\nLe fond noircit et se patine avec l'usage, c'est normal et même apprécié. Rangez-le à l'abri des chocs, sur une étagère stable, et posez-le toujours sur un support résistant à la chaleur quand il est en service. Gardez-le hors de portée des enfants et ne le laissez jamais allumé sans surveillance.",
     pourQui:
-      "Cet andé s'adresse à celles et ceux qui veulent retrouver le geste de la maison sénégalaise sans fioriture : une première fois, ou un remplacement du vieux pot de famille. Il se glisse bien dans une valise pour un proche resté loin du pays, et il fait un cadeau de crémaillère simple et plein de sens, surtout avec un sachet de thiouraye à côté.",
+      "Cet andé s'adresse à celles et ceux qui veulent retrouver le geste de la maison sénégalaise sans fioriture : une première fois, ou un remplacement du vieux pot de famille. Il se glisse bien dans une valise pour un proche resté loin du pays, et il fait un cadeau de crémaillère simple et plein de sens, surtout avec un sachet de thiouraye à côté. Notre guide [Thiouraye : bienfaits, odeur, comment l'utiliser ?](/conseils/thiouraye-bienfaits-odeur-et-utilisation) explique les gestes pour s'en servir.",
     faq: [
       {
         question: "Faut-il toujours mettre du sable dans un andé ?",

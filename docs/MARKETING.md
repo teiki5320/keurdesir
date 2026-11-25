@@ -26,7 +26,7 @@ publications réelles, ou routine qui publie).
 ## Canaux
 
 - ✅ Site : en ligne sur https://keurdesir.com depuis le 29 octobre 2026.
-- ✅ Référencement naturel : 10 Top 10, 7 guides et 17 articles programmés (30 octobre au 2 décembre 2026 ; 9 ajoutés le 7 novembre 2026, 3 le 19 novembre 2026), en ligne depuis le 29 octobre 2026 (articles au fil de leur date) ; Search Console et Bing Webmaster Tools ouverts, sitemap envoyé aux deux le 29 octobre 2026.
+- ✅ Référencement naturel : 10 Top 10, 7 guides et 26 articles programmés (30 octobre au 23 décembre 2026 ; 9 ajoutés le 7 novembre 2026, 3 le 19 novembre 2026, 9 le 25 novembre 2026), en ligne depuis le 29 octobre 2026 (articles au fil de leur date) ; Search Console et Bing Webmaster Tools ouverts, sitemap envoyé aux deux le 29 octobre 2026.
 - ⬜ Pinterest : épingles verticales 1000 × 1500 prévues pour les Top 10 (visuels sobres : produits, matières, couleurs).
 - ⬜ Réseaux sociaux : aucun compte.
 
@@ -36,6 +36,6 @@ publications réelles, ou routine qui publie).
 
 ## Les 3 priorités
 
-1. ✅ Visuels des produits (106 sur 106) et des 5 articles de lancement faits le 29 octobre 2026 avec OpenArt (les 9 articles ajoutés le 7 novembre 2026 et les 3 du 19 novembre 2026 sont illustrés par des photos libres de droits de Wikimedia Commons, le même jour) ; reste à compléter les ASIN (53 sur 106 au 9 novembre 2026).
+1. ✅ Visuels des produits (106 sur 106) et des 5 articles de lancement faits le 29 octobre 2026 avec OpenArt (les 9 articles ajoutés le 7 novembre 2026 et les 3 du 19 novembre 2026 sont illustrés par des photos libres de droits de Wikimedia Commons, le même jour ; les 9 articles du 25 novembre 2026 n'ont pas encore d'image et paraissent avec le visuel par défaut) ; reste à compléter les ASIN (53 sur 106 au 9 novembre 2026).
 2. Ouvrir Pinterest et publier les premières épingles des Top 10.
 3. ✅ Examen AdSense demandé le 29 octobre 2026 ; attendre la réponse de Google.

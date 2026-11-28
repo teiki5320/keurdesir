@@ -27,6 +27,12 @@ export const CREDITS_IMAGES: Record<string, CreditImage> = {
     licenceUrl: BY,
     source: commons("Ararrabi_(West_African_Frankincense_powder).jpg"),
   },
+  "d-ou-vient-le-beurre-de-karite": {
+    auteur: "Amuzujoe",
+    licence: "CC BY-SA 4.0",
+    licenceUrl: BY_SA,
+    source: commons("Shea_butter_1.jpg"),
+  },
   "comment-choisir-un-beurre-de-karite-non-raffine": {
     auteur: "Achiri Bitamsimli",
     licence: "CC BY-SA 4.0",
